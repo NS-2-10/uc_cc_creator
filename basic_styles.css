@@ -1,0 +1,116 @@
+h1 {
+    height: 5%;
+    width: 100%;
+    margin: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-size: 30px;
+    display: flex;
+    float: none;
+    align-items: center;
+    justify-content: center;
+}
+
+h2 {
+    height: 5%;
+    margin: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left_side {
+    float: left;
+    width: 30%;
+}
+
+.left_side .scroll {
+    margin-top: 20px;
+    overflow-y: scroll;
+    height: 80%;
+    white-space: normal;
+}
+
+.left_side .scroll button {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-size: 20px;
+    background-color: transparent;
+    margin-bottom: 20px;
+    text-align: left;
+    width: 100%;
+    border: none;
+}
+
+.right_side {
+    float: left;
+    width: 70%;
+}
+
+.right_side .scroll {
+    margin-top: 20px;
+    overflow-y: scroll;
+    height: 70%;
+    white-space: normal;
+}
+
+.right_side .scroll label {
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-size: 20px;
+    display: flex;
+    justify-content: right;
+    text-align: right;
+    width: 25%;
+    white-space: normal;
+    float: left;
+}
+
+.right_side .scroll textarea {
+    margin-bottom: 10px;
+    border-radius: 3px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-size: 20px;
+    width: 70%;
+    white-space: normal;
+    resize: none;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+}
+
+.right_side .scroll table {
+    margin-bottom: 20px;
+    border-color: black;
+    border-radius: 3px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-size: 20px;
+    width: 70%;
+    white-space: normal;
+}
+
+.right_side .button {
+    display: flex;
+    justify-content: center;
+}
+
+.right_side .button button {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-size: 20px;
+    border-color: black;
+    border-style: solid;
+    border-radius: 3px;
+    background-color: transparent;
+    margin-top: 20px;
+    margin-left: 20px;
+    height: 40px;
+}
