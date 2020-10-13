@@ -1,6 +1,4 @@
 var createUC = document.getElementById('createUC');
-var ucHeader = document.getElementById('ucHeader');
-var ucItems = document.getElementById('ucItems');
 var uName = [];
 var Actor = [];
 var r = [];
@@ -13,7 +11,6 @@ var da_i_3 = [];
 var pc = [];
 var gm = [];
 var gs = [];
-
 function saveData(){
 	if (document.getElementById('uName').value == "" ||
 		document.getElementById('Actor').value == "" ||
@@ -40,24 +37,7 @@ function saveData(){
 	gm.push(document.getElementById('gm').value);
 	gs.push(document.getElementById('gs').value);
 	alert('Прецедент создан!')
-	/*
-	alert("uName = " + uName + "\n" +
-		  "Actor = " + Actor + "\n" +
-		  "r = " + r + "\n" +
-		  "da_p = " + da_p_1 + " " + da_p_2 + " " + da_p_3 + "\n" +
-		  "da_i = " + da_i_1 + " " + da_i_2 + " " + da_i_3 + "\n" +
-		  "pc = " + pc + "\n" +
-		  "gm = " + gm + "\n" +
-		  "gs = " + gs + "\n"
-		  );
-	*/
+	//alert("uName = " + uName + "\n" + "Actor = " + Actor + "\n" + "r = " + r + "\n" + "da_p = " + da_p_1 + " " + da_p_2 + " " + da_p_3 + "\n" + "da_i = " + da_i_1 + " " + da_i_2 + " " + da_i_3 + "\n" + "pc = " + pc + "\n" + "gm = " + gm + "\n" + "gs = " + gs + "\n");
 	}
 }
 createUC.onclick = saveData;
-
-function createHeader() {
-	window.location.href = "items.html";
-	ucHeader.innerHTML = "Описание прецедента: " + uName;
-	alert("Описание прецедента: " + uName);
-}
-ucItems.onclick = createHeader;
