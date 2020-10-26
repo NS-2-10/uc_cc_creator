@@ -2,7 +2,7 @@ var ucScenario = document.getElementById('ucScenario');
 var items = document.getElementsByName('items');
 function itemChoice(){
 	if(items[0].checked){
-	window.location = "types/create.html";
+		window.location = "types/create.html";
 	}
 	if(items[1].checked){
 		window.location = "types/input.html";

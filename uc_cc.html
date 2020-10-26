@@ -1,0 +1,1668 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Usecase Creator</title>
+        <link rel="stylesheet" type="text/css" href="basic_styles.css">
+    </head>
+    <body>
+        <h1>Создание прецедента</h1>
+        <div class="left_side">
+            <h2>Созданные ранее</h2>
+                <div class="scroll">
+                    <button>~~~~~~~~~~~~~~~</button>
+                    <button>~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~</button>
+                    <button>~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~</button>
+                    <button>~~~~~~~~~~~~~~~</button>
+                    <button>~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~</button>
+                    <button>~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~</button>
+                    <button>~~~~~~~~~~~~~~~</button>
+                    <button>~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~</button>
+                    <button>~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~</button>
+                    <button>~~~~~~~~~~~~~~~</button>
+                    <button>~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~</button>
+                    <button>~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~</button>
+                    <button>~~~~~~~~~~~~~~~</button>
+                    <button>~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~</button>
+                    <button>~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~</button>
+                    <button>~~~~~~~~~~~~~~~</button>
+                    <button>~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~</button>
+                    <button>~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~</button>
+                </div>
+            </div>
+        <div class="right_side">
+            <h2>Пожалуйста, заполните следующие поля:</h2>
+            <div class="scroll">
+                <div>
+                    <label>Название:</label>
+                    <textarea name="" id="uName" cols="30" rows="2"></textarea>
+                </div>
+                <div>
+                    <label>Основное действующее лицо:</label>
+                    <textarea name="" id="Actor" cols="30" rows="2"></textarea>
+                </div>
+                <div>
+                    <label>Область действия:</label>
+                    <textarea name="" id="r" cols="30" rows="2"></textarea>
+                </div>
+                <div>
+                    <label>Интересы участников:</label>
+                    <table>
+                        <tr>
+                            <td><p>Участник</p></td>
+                            <td><p>Интерес</p></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <textarea name="" id="da_p_1" cols="30" rows=1></textarea>
+                            </td>
+                            <td>
+                                <textarea name="" id="da_i_1" cols="30" rows=1></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <textarea name="" id="da_p_2" cols="30" rows=1></textarea>
+                            </td>
+                            <td>
+                                <textarea name="" id="da_i_2" cols="30" rows=1></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <textarea name="" id="da_p_3" cols="30" rows=1></textarea>
+                            </td>
+                            <td>
+                                <textarea name="" id="da_i_3" cols="30" rows=1></textarea>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div>
+                    <label>Предусловия:</label>
+                    <textarea name="" id="pc" cols="30" rows="2"></textarea>
+                </div>
+                <div>
+                    <label>Минимальные гарантии:</label>
+                    <textarea name="" id="gm" cols="30" rows="2"></textarea>
+                </div>
+                <div>
+                    <label>Гарантии успеха:</label>
+                    <textarea name="" id="gs" cols="30" rows="2"></textarea>
+                </div>
+            </div>
+            <div class="button">
+                <!--<button>Сохранить изменения</button>-->
+                <button id = "createUC">Создать ВИ</button>      
+                <button id = "ucItems"><a href="items.html">Выбрать тип пункта</a></button>
+            </div>
+        </div>
+        <h1 id = "ucHeader">Описание прецедента</h1>
+        <div class="left_side">
+            <h2>Результат</h2>
+                <div class="scroll">
+                    <p>1. ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~</p>
+                    <p>1.1 ~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~</p>
+                    <p>1.1.а ~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~</p>
+                    <p>1.2 ~~~~~~~~~~~~~~~~</p>
+                    <p>1.2.а ~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~</p>
+                    <p>2. ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~</p>
+                    <p>3. ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~</p>
+                    <p>3.1 ~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~</p>
+                    <p>3.1.а ~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~</p>
+                    <p>3.1.b ~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~</p>
+                </div>
+            </div>
+        <div class="right_side">
+            <h2>Пожалуйста, выберите нужный тип пункта:</h2>
+            <div class="scroll">
+                <p><input type="radio" name="items" value="1">Создать</p>
+                <p><input type="radio" name="items" value="2">Ввести данные</p>
+                <p><input type="radio" name="items" value="3">Ввести и получить данные</p>
+                <p><input type="radio" name="items" value="4">Запросить значение</p>
+                <p><input type="radio" name="items" value="5">Запросить список</p>
+                <p><input type="radio" name="items" value="6">Выбрать из списка</p>
+                <p><input type="radio" name="items" value="7">Запросить услугу (документ)</p>
+                <p><input type="radio" name="items" value="8">Повторение действий</p>
+                <p><input type="radio" name="items" value="9">Свободно конструируемый пункт</p>
+                <p><input type="radio" name="items" value="10">Завершить ВИ</p>
+                <p><input type="radio" name="items" value="11">Вызов другого прецедента</p>
+            </div>
+            <div class="button">
+                <button><a href="usecase.html">Редактировать ВИ</a></button>
+                <button id = "ucScenario">Описать ВИ</button>
+            </div>
+        </div>
+        <h1>Описание прецедента “~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~”</h1>
+        <div class="left_side">
+            <h2>Результат</h2>
+                <div class="scroll">
+                    <p>1. ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~</p>
+                    <p>1.1 ~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~</p>
+                    <p>1.1.а ~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~</p>
+                    <p>1.2 ~~~~~~~~~~~~~~~~</p>
+                    <p>1.2.а ~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~</p>
+                    <p>2. ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~</p>
+                    <p>3. ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~</p>
+                    <p>3.1 ~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~</p>
+                    <p>3.1.а ~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~</p>
+                    <p>3.1.b ~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~</p>
+                </div>
+            </div>
+        <div class="right_side">
+            <h2>Пожалуйста, заполните следующие поля пункта “Вызов ВИ”:</h2>
+            <div class="scroll">
+                <div>
+                    <label>Номер пункта:</label>
+                    <textarea name="uName" id="" cols="30" rows="2"></textarea>
+                </div>
+                <div>
+                    <label>Название ВИ:</label>
+                    <textarea name="" id="" cols="30" rows="2"></textarea>
+                </div>
+                <div>
+                    <label>Идентификатор ВИ в системе:</label>
+                    <textarea name="" id="" cols="30" rows="2"></textarea>
+                </div>
+            </div>
+            <div class="button">
+                <button>
+                    <a href="../items.html">Выбрать тип пункта</a>
+                </button>
+                <button>
+                    Сохранить
+                </button>
+                <button>
+                    <a href="../concept_class.html">Cоздать КК</a>
+                </button>
+            </div>
+        </div>
+        <h1>Описание прецедента “~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~”</h1>
+        <div class="left_side">
+            <h2>Результат</h2>
+                <div class="scroll">
+                    <p>1. ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~</p>
+                    <p>1.1 ~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~</p>
+                    <p>1.1.а ~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~</p>
+                    <p>1.2 ~~~~~~~~~~~~~~~~</p>
+                    <p>1.2.а ~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~</p>
+                    <p>2. ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~</p>
+                    <p>3. ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~</p>
+                    <p>3.1 ~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~</p>
+                    <p>3.1.а ~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~</p>
+                    <p>3.1.b ~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~</p>
+                </div>
+            </div>
+        <div class="right_side">
+            <h2>Пожалуйста, заполните следующие поля пункта “Создать”:</h2>
+            <div class="scroll">
+                <div>
+                    <label>Номер пункта:</label>
+                    <textarea name="uName" id="" cols="30" rows="2"></textarea>
+                </div>
+                <div>
+                    <label>Клиент:</label>
+                    <textarea name="" id="" cols="30" rows="2"></textarea>
+                </div>
+                <div>
+                    <label>Актер:</label>
+                    <textarea name="" id="" cols="30" rows="2"></textarea>
+                </div>
+                <div>
+                    <label>Причина обращения:</label>
+                    <textarea name="" id="" cols="30" rows="2"></textarea>
+                </div>
+                <div>
+                    <label>Создаваемый объект:</label>
+                    <textarea name="" id="" cols="30" rows="2"></textarea>
+                </div>
+                <div>
+                    <label>Дополнительная информация:</label>
+                    <table>
+                        <tr>
+                            <td><p>Имя</p></td>
+                            <td><p>Цель</p></td>
+                            <td><p>Тип</p></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div>
+                    <label>Атрибуты объекта:</label>
+                    <textarea name="" id="" cols="30" rows="2"></textarea>
+                </div>
+                <div>
+                    <label>Дополнительная информация:</label>
+                    <table>
+                        <tr>
+                            <td><p>Имя</p></td>
+                            <td><p>Цель</p></td>
+                            <td><p>Тип</p></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="button">
+                <button>
+                    <a href="../items.html">Выбрать тип пункта</a>
+                </button>
+                <button>
+                    Сохранить
+                </button>
+                <button>
+                    <a href="../concept_class.html">Cоздать КК</a>
+                </button>
+            </div>
+        </div>
+        <h1>Описание прецедента “~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~”</h1>
+        <div class="left_side">
+            <h2>Результат</h2>
+                <div class="scroll">
+                    <p>1. ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~</p>
+                    <p>1.1 ~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~</p>
+                    <p>1.1.а ~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~</p>
+                    <p>1.2 ~~~~~~~~~~~~~~~~</p>
+                    <p>1.2.а ~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~</p>
+                    <p>2. ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~</p>
+                    <p>3. ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~</p>
+                    <p>3.1 ~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~</p>
+                    <p>3.1.а ~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~</p>
+                    <p>3.1.b ~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~</p>
+                </div>
+            </div>
+        <div class="right_side">
+            <h2>Пожалуйста, заполните следующие поля пункта “Завершить ВИ”:</h2>
+            <div class="scroll">
+                <div>
+                    <label>Номер пункта:</label>
+                    <textarea name="uName" id="" cols="30" rows="2"></textarea>
+                </div>
+                <p><b>Прием данных</b></p>
+                <div>
+                    <label>Клиент:</label>
+                    <textarea name="" id="" cols="30" rows="2"></textarea>
+                </div>
+                <div>
+                    <label>Актер:</label>
+                    <textarea name="" id="" cols="30" rows="2"></textarea>
+                </div>
+                <div>
+                    <label>Вводимое клиентом данное:</label>
+                    <textarea name="" id="" cols="30" rows="2"></textarea>
+                </div>
+                <div>
+                    <label>Вводимое актером данное:</label>
+                    <textarea name="" id="" cols="30" rows="2"></textarea>
+                </div>
+                <div>
+                    <label>Дополнительная информация:</label>
+                    <table>
+                        <tr>
+                            <td><p>Имя</p></td>
+                            <td><p>Цель</p></td>
+                            <td><p>Тип</p></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div>
+                    <label>Объект для хранения данного:</label>
+                    <div>
+                        <select id="selectvalue">
+                            <option>~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~</option>
+                            <option>~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~</option>
+                            <option>~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~</option>
+                            <option>~~~~~~~~~~~~~~~~~</option>
+                            <option>~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~</option>
+                            <option>~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~</option>
+                            <option>~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~</option>
+                            <option>~~~~~~~~~~~~~~~~~</option>
+                        </select>    
+                    </div>
+                </div>
+                <p><b>Регистрация данных</b></p>
+                <div>
+                    <label>Регистрируемое данное:</label>
+                    <textarea name="" id="" cols="30" rows="2"></textarea>
+                </div>
+                <div>
+                    <label>Дополнительная информация:</label>
+                    <table>
+                        <tr>
+                            <td><p>Имя</p></td>
+                            <td><p>Цель</p></td>
+                            <td><p>Тип</p></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div>
+                    <label>Объект для хранения данного:</label>
+                    <div>
+                        <select id="selectvalue">
+                            <option>~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~</option>
+                            <option>~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~</option>
+                            <option>~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~</option>
+                            <option>~~~~~~~~~~~~~~~~~</option>
+                            <option>~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~</option>
+                            <option>~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~</option>
+                            <option>~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~</option>
+                            <option>~~~~~~~~~~~~~~~~~</option>
+                        </select>    
+                    </div>
+                </div>
+                <p><b>Создание документа</b></p>
+                <div>
+                    <label>Документ:</label>
+                    <textarea name="" id="" cols="30" rows="2"></textarea>
+                </div>
+                <div>
+                    <label>Дополнительная информация:</label>
+                    <table>
+                        <tr>
+                            <td><p>Имя</p></td>
+                            <td><p>Цель</p></td>
+                            <td><p>Тип</p></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div>
+                    <label>Запись в документе:</label>
+                    <textarea name="" id="" cols="30" rows="2"></textarea>
+                </div>
+                <div>
+                    <label>Дополнительная информация:</label>
+                    <table>
+                        <tr>
+                            <td><p>Имя</p></td>
+                            <td><p>Цель</p></td>
+                            <td><p>Тип</p></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="button">
+                <button>
+                    <a href="../items.html">Выбрать тип пункта</a>
+                </button>
+                <button>
+                    Сохранить
+                </button>
+                <button>
+                    <a href="../concept_class.html">Cоздать КК</a>
+                </button>
+            </div>
+        </div>
+        <h1>Описание прецедента “~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~”</h1>
+        <div class="left_side">
+            <h2>Результат</h2>
+                <div class="scroll">
+                    <p>1. ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~</p>
+                    <p>1.1 ~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~</p>
+                    <p>1.1.а ~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~</p>
+                    <p>1.2 ~~~~~~~~~~~~~~~~</p>
+                    <p>1.2.а ~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~</p>
+                    <p>2. ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~</p>
+                    <p>3. ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~</p>
+                    <p>3.1 ~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~</p>
+                    <p>3.1.а ~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~</p>
+                    <p>3.1.b ~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~</p>
+                </div>
+            </div>
+        <div class="right_side">
+            <h2>Пожалуйста, заполните следующие поля пункта “Свободно конструируемый”:</h2>
+            <div class="scroll">
+                <div>
+                    <label>Номер пункта:</label>
+                    <textarea name="uName" id="" cols="30" rows="2"></textarea>
+                </div>
+                <div>
+                    <label>Клиент:</label>
+                    <textarea name="" id="" cols="30" rows="2"></textarea>
+                </div>
+                <div>
+                    <label>Актер:</label>
+                    <textarea name="" id="" cols="30" rows="2"></textarea>
+                </div>
+                <div>
+                    <label>Деятельность клиента:</label>
+                    <textarea name="" id="" cols="30" rows="2"></textarea>
+                </div>
+                <div>
+                    <label>Деятельность актера:</label>
+                    <textarea name="" id="" cols="30" rows="2"></textarea>
+                </div>
+                <div>
+                    <label>Действия:</label>
+                    <textarea name="" id="" cols="30" rows="2"></textarea>
+                </div>
+                <div>
+                    <label>Завершающая фраза:</label>
+                    <div>
+                        <select id="selectvalue">
+                            <option>Система  подтверждает  корректность условия</option>
+                            <option>Система проверяет и подтверждает возможность выполнения услуги</option>
+                            <option>Система подтверждает корректность данных</option>
+                            <option>Система подтверждает</option>
+                            <option>Клиент согласен</option>
+                            <option>Актер согласен</option>
+                            <option>Завершение варианта использования</option>
+                        </select>    
+                    </div>
+                </div>
+            </div>
+            <div class="button">
+                <button>
+                    <a href="../items.html">Выбрать тип пункта</a>
+                </button>
+                <button>
+                    Сохранить
+                </button>
+                <button>
+                    <a href="../concept_class.html">Cоздать КК</a>
+                </button>
+            </div>
+        </div>
+        <h1>Описание прецедента “~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~”</h1>
+        <div class="left_side">
+            <h2>Результат</h2>
+                <div class="scroll">
+                    <p>1. ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~</p>
+                    <p>1.1 ~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~</p>
+                    <p>1.1.а ~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~</p>
+                    <p>1.2 ~~~~~~~~~~~~~~~~</p>
+                    <p>1.2.а ~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~</p>
+                    <p>2. ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~</p>
+                    <p>3. ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~</p>
+                    <p>3.1 ~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~</p>
+                    <p>3.1.а ~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~</p>
+                    <p>3.1.b ~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~</p>
+                </div>
+            </div>
+        <div class="right_side">
+            <h2>Пожалуйста, заполните следующие поля пункта “Ввести и получить данные”:</h2>
+            <div class="scroll">
+                <div>
+                    <label>Номер пункта:</label>
+                    <textarea name="uName" id="" cols="30" rows="2"></textarea>
+                </div>
+                <div>
+                    <label>Клиент:</label>
+                    <textarea name="" id="" cols="30" rows="2"></textarea>
+                </div>
+                <div>
+                    <label>Актер:</label>
+                    <textarea name="" id="" cols="30" rows="2"></textarea>
+                </div>
+                <div>
+                    <label>Сообщаемые клиентом данные:</label>
+                    <textarea name="" id="" cols="30" rows="2"></textarea>
+                </div>
+                <div>
+                    <label>Вносимые актером данные:</label>
+                    <textarea name="" id="" cols="30" rows="2"></textarea>
+                </div>
+                <div>
+                    <label>Дополнительная информация:</label>
+                    <table>
+                        <tr>
+                            <td><p>Имя</p></td>
+                            <td><p>Цель</p></td>
+                            <td><p>Тип</p></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div>
+                    <label>Возвращаемое системой данное:</label>
+                    <textarea name="" id="" cols="30" rows="2"></textarea>
+                </div>
+                <div>
+                    <label>Дополнительная информация:</label>
+                    <table>
+                        <tr>
+                            <td><p>Имя</p></td>
+                            <td><p>Цель</p></td>
+                            <td><p>Тип</p></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="button">
+                <button>
+                    <a href="../items.html">Выбрать тип пункта</a>
+                </button>
+                <button>
+                    Сохранить
+                </button>
+                <button>
+                    <a href="../concept_class.html">Cоздать КК</a>
+                </button>
+            </div>
+        </div>
+        <h1>Описание прецедента “~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~”</h1>
+        <div class="left_side">
+            <h2>Результат</h2>
+                <div class="scroll">
+                    <p>1. ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~</p>
+                    <p>1.1 ~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~</p>
+                    <p>1.1.а ~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~</p>
+                    <p>1.2 ~~~~~~~~~~~~~~~~</p>
+                    <p>1.2.а ~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~</p>
+                    <p>2. ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~</p>
+                    <p>3. ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~</p>
+                    <p>3.1 ~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~</p>
+                    <p>3.1.а ~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~</p>
+                    <p>3.1.b ~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~</p>
+                </div>
+            </div>
+        <div class="right_side">
+            <h2>Пожалуйста, заполните следующие поля пункта “Ввести данные”:</h2>
+            <div class="scroll">
+                <div>
+                    <label>Номер пункта:</label>
+                    <textarea name="uName" id="" cols="30" rows="2"></textarea>
+                </div>
+                <div>
+                    <label>Клиент:</label>
+                    <textarea name="" id="" cols="30" rows="2"></textarea>
+                </div>
+                <div>
+                    <label>Актер:</label>
+                    <textarea name="" id="" cols="30" rows="2"></textarea>
+                </div>
+                <div>
+                    <label>Сообщаемые клиентом данные:</label>
+                    <textarea name="" id="" cols="30" rows="2"></textarea>
+                </div>
+                <div>
+                    <label>Вносимые актером данные:</label>
+                    <textarea name="" id="" cols="30" rows="2"></textarea>
+                </div>
+                <div>
+                    <label>Дополнительная информация:</label>
+                    <table>
+                        <tr>
+                            <td><p>Имя</p></td>
+                            <td><p>Цель</p></td>
+                            <td><p>Тип</p></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="button">
+                <button>
+                    <a href="../items.html">Выбрать тип пункта</a>
+                </button>
+                <button>
+                    Сохранить
+                </button>
+                <button>
+                    <a href="../concept_class.html">Cоздать КК</a>
+                </button>
+            </div>
+        </div>
+        <h1>Описание прецедента “~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~”</h1>
+        <div class="left_side">
+            <h2>Результат</h2>
+                <div class="scroll">
+                    <p>1. ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~</p>
+                    <p>1.1 ~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~</p>
+                    <p>1.1.а ~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~</p>
+                    <p>1.2 ~~~~~~~~~~~~~~~~</p>
+                    <p>1.2.а ~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~</p>
+                    <p>2. ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~</p>
+                    <p>3. ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~</p>
+                    <p>3.1 ~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~</p>
+                    <p>3.1.а ~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~</p>
+                    <p>3.1.b ~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~</p>
+                </div>
+            </div>
+        <div class="right_side">
+            <h2>Пожалуйста, заполните следующие поля пункта “Повторение действий”:</h2>
+            <div class="scroll">
+                <div>
+                    <label>Номер пункта:</label>
+                    <textarea name="uName" id="" cols="30" rows="2"></textarea>
+                </div>
+                <div>
+                    <label>Клиент:</label>
+                    <textarea name="" id="" cols="30" rows="2"></textarea>
+                </div>
+                <div>
+                    <label>Актер:</label>
+                    <textarea name="" id="" cols="30" rows="2"></textarea>
+                </div>
+                <div>
+                    <label>Начальный номер пункта повтора:</label>
+                    <textarea name="" id="" cols="30" rows="2"></textarea>
+                </div>
+            </div>
+            <div class="button">
+                <button>
+                    <a href="../items.html">Выбрать тип пункта</a>
+                </button>
+                <button>
+                    Сохранить
+                </button>
+                <button>
+                    <a href="../concept_class.html">Cоздать КК</a>
+                </button>
+            </div>
+        </div>
+        <h1>Описание прецедента “~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~”</h1>
+        <div class="left_side">
+            <h2>Результат</h2>
+                <div class="scroll">
+                    <p>1. ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~</p>
+                    <p>1.1 ~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~</p>
+                    <p>1.1.а ~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~</p>
+                    <p>1.2 ~~~~~~~~~~~~~~~~</p>
+                    <p>1.2.а ~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~</p>
+                    <p>2. ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~</p>
+                    <p>3. ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~</p>
+                    <p>3.1 ~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~</p>
+                    <p>3.1.а ~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~</p>
+                    <p>3.1.b ~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~</p>
+                </div>
+            </div>
+        <div class="right_side">
+            <h2>Пожалуйста, заполните следующие поля пункта “Запросить список”:</h2>
+            <div class="scroll">
+                <div>
+                    <label>Номер пункта:</label>
+                    <textarea name="uName" id="" cols="30" rows="2"></textarea>
+                </div>
+                <div>
+                    <label>Клиент:</label>
+                    <textarea name="" id="" cols="30" rows="2"></textarea>
+                </div>
+                <div>
+                    <label>Актер:</label>
+                    <textarea name="" id="" cols="30" rows="2"></textarea>
+                </div>
+                <div>
+                    <label>Запрашиваемый клиентом список:</label>
+                    <textarea name="" id="" cols="30" rows="2"></textarea>
+                </div>
+                <div>
+                    <label>Запрашиваемый актером список:</label>
+                    <textarea name="" id="" cols="30" rows="2"></textarea>
+                </div>
+                <div>
+                    <label>Дополнительная информация:</label>
+                    <table>
+                        <tr>
+                            <td><p>Имя</p></td>
+                            <td><p>Цель</p></td>
+                            <td><p>Тип</p></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div>
+                    <label>Условие запроса:</label>
+                    <textarea name="" id="" cols="30" rows="2"></textarea>
+                </div>
+                <div>
+                    <label>Дополнительная информация:</label>
+                    <table>
+                        <tr>
+                            <td><p>Имя</p></td>
+                            <td><p>Цель</p></td>
+                            <td><p>Тип</p></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="button">
+                <button>
+                    <a href="../items.html">Выбрать тип пункта</a>
+                </button>
+                <button>
+                    Сохранить
+                </button>
+                <button>
+                    <a href="../concept_class.html">Cоздать КК</a>
+                </button>
+            </div>
+        </div>
+        <h1>Описание прецедента “~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~”</h1>
+        <div class="left_side">
+            <h2>Результат</h2>
+                <div class="scroll">
+                    <p>1. ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~</p>
+                    <p>1.1 ~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~</p>
+                    <p>1.1.а ~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~</p>
+                    <p>1.2 ~~~~~~~~~~~~~~~~</p>
+                    <p>1.2.а ~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~</p>
+                    <p>2. ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~</p>
+                    <p>3. ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~</p>
+                    <p>3.1 ~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~</p>
+                    <p>3.1.а ~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~</p>
+                    <p>3.1.b ~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~</p>
+                </div>
+            </div>
+        <div class="right_side">
+            <h2>Пожалуйста, заполните следующие поля пункта “Запросить услугу (документ)”:</h2>
+            <div class="scroll">
+                <div>
+                    <label>Номер пункта:</label>
+                    <textarea name="uName" id="" cols="30" rows="2"></textarea>
+                </div>
+                <div>
+                    <label>Клиент:</label>
+                    <textarea name="" id="" cols="30" rows="2"></textarea>
+                </div>
+                <div>
+                    <label>Актер:</label>
+                    <textarea name="" id="" cols="30" rows="2"></textarea>
+                </div>
+                <div>
+                    <label>Запрашиваемый клиентом сервис:</label>
+                    <textarea name="" id="" cols="30" rows="2"></textarea>
+                </div>
+                <div>
+                    <label>Запрашиваемый актером сервис:</label>
+                    <textarea name="" id="" cols="30" rows="2"></textarea>
+                </div>
+                <div>
+                    <label>Дополнительная информация:</label>
+                    <table>
+                        <tr>
+                            <td><p>Имя</p></td>
+                            <td><p>Цель</p></td>
+                            <td><p>Тип</p></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div>
+                    <label>Номер пункта, выполняющего сервис:</label>
+                    <textarea name="" id="" cols="30" rows="2"></textarea>
+                </div>
+            </div>
+            <div class="button">
+                <button>
+                    <a href="../items.html">Выбрать тип пункта</a>
+                </button>
+                <button>
+                    Сохранить
+                </button>
+                <button>
+                    <a href="../concept_class.html">Cоздать КК</a>
+                </button>
+            </div>
+        </div>
+        <h1>Описание прецедента “~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~”</h1>
+        <div class="left_side">
+            <h2>Результат</h2>
+                <div class="scroll">
+                    <p>1. ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~</p>
+                    <p>1.1 ~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~</p>
+                    <p>1.1.а ~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~</p>
+                    <p>1.2 ~~~~~~~~~~~~~~~~</p>
+                    <p>1.2.а ~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~</p>
+                    <p>2. ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~</p>
+                    <p>3. ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~</p>
+                    <p>3.1 ~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~</p>
+                    <p>3.1.а ~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~</p>
+                    <p>3.1.b ~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~</p>
+                </div>
+            </div>
+        <div class="right_side">
+            <h2>Пожалуйста, заполните следующие поля пункта “Запросить значение”:</h2>
+            <div class="scroll">
+                <div>
+                    <label>Номер пункта:</label>
+                    <textarea name="uName" id="" cols="30" rows="2"></textarea>
+                </div>
+                <div>
+                    <label>Клиент:</label>
+                    <textarea name="" id="" cols="30" rows="2"></textarea>
+                </div>
+                <div>
+                    <label>Актер:</label>
+                    <textarea name="" id="" cols="30" rows="2"></textarea>
+                </div>
+                <div>
+                    <label>Запрашиваемое клиентом данное:</label>
+                    <textarea name="" id="" cols="30" rows="2"></textarea>
+                </div>
+                <div>
+                    <label>Запрашиваемое актером данное:</label>
+                    <textarea name="" id="" cols="30" rows="2"></textarea>
+                </div>
+                <div>
+                    <label>Дополнительная информация:</label>
+                    <table>
+                        <tr>
+                            <td><p>Имя</p></td>
+                            <td><p>Цель</p></td>
+                            <td><p>Тип</p></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div>
+                    <label>Основание для запроса:</label>
+                    <textarea name="" id="" cols="30" rows="2"></textarea>
+                </div>
+                <div>
+                    <label>Дополнительная информация:</label>
+                    <table>
+                        <tr>
+                            <td><p>Имя</p></td>
+                            <td><p>Цель</p></td>
+                            <td><p>Тип</p></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div>
+                    <label>Условие запроса:</label>
+                    <textarea name="" id="" cols="30" rows="2"></textarea>
+                </div>
+                <div>
+                    <label>Дополнительная информация:</label>
+                    <table>
+                        <tr>
+                            <td><p>Имя</p></td>
+                            <td><p>Цель</p></td>
+                            <td><p>Тип</p></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="button">
+                <button>
+                    <a href="../items.html">Выбрать тип пункта</a>
+                </button>
+                <button>
+                    Сохранить
+                </button>
+                <button>
+                    <a href="../concept_class.html">Cоздать КК</a>
+                </button>
+            </div>
+        </div>
+        <h1>Описание прецедента “~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~”</h1>
+        <div class="left_side">
+            <h2>Результат</h2>
+                <div class="scroll">
+                    <p>1. ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~</p>
+                    <p>1.1 ~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~</p>
+                    <p>1.1.а ~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~</p>
+                    <p>1.2 ~~~~~~~~~~~~~~~~</p>
+                    <p>1.2.а ~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~</p>
+                    <p>2. ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~</p>
+                    <p>3. ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~</p>
+                    <p>3.1 ~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~</p>
+                    <p>3.1.а ~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~</p>
+                    <p>3.1.b ~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~</p>
+                </div>
+            </div>
+        <div class="right_side">
+            <h2>Пожалуйста, заполните следующие поля пункта “Выбрать из списка”:</h2>
+            <div class="scroll">
+                <div>
+                    <label>Номер пункта:</label>
+                    <textarea name="uName" id="" cols="30" rows="2"></textarea>
+                </div>
+                <div>
+                    <label>Клиент:</label>
+                    <textarea name="" id="" cols="30" rows="2"></textarea>
+                </div>
+                <div>
+                    <label>Актер:</label>
+                    <textarea name="" id="" cols="30" rows="2"></textarea>
+                </div>
+                <div>
+                    <label>Запрашиваемые элементы списка:</label>
+                    <table>
+                        <tr>
+                            <td><p>Имя</p></td>
+                            <td><p>Цель</p></td>
+                            <td><p>Тип</p></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="button">
+                <button>
+                    <a href="../items.html">Выбрать тип пункта</a>
+                </button>
+                <button>
+                    Сохранить
+                </button>
+                <button>
+                    <a href="../concept_class.html">Cоздать КК</a>
+                </button>
+            </div>
+        </div>
+        <h1>Создание концептуального класса к пункту "~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~"</h1>
+        <div class="left_side">
+            <h2>Текст пункта</h2>
+                <div class="scroll">
+                    <p>1. ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~</p>
+                </div>
+            </div>
+        <div class="right_side">
+            <h2>Пожалуйста, заполните следующие поля:</h2>
+            <div class="scroll">
+                <div>
+                    <label>Название класса:</label>
+                    <textarea name="cName" id="" cols="30" rows="2"></textarea>
+                </div>
+                <div>
+                    <label>Вид класса:</label>
+                    <div>
+                        <select id="selectvalue">
+                            <option>Класс</option>
+                            <option>Пропотип</option>
+                        </select>    
+                    </div>
+                </div>
+                <div>
+                    <label>Время жизни объектов:</label>
+                    <div>
+                        <select id="selectvalue">
+                            <option>В течение выполнения прецедента</option>
+                            <option>В течение работы системы</option>
+                        </select>    
+                    </div>
+                </div>
+                <div>
+                    <label>Функции:</label>
+                    <table>
+                        <tr>
+                            <td><p>Название</p></td>
+                            <td><p>Цели</p></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div>
+                    <label>Аргументы функции:</label>
+                    <table>
+                        <tr>
+                            <td><p>Id</p></td>
+                            <td><p>Тип</p></td>
+                            <td><p>Цель</p></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                            <td>
+                                <select id="selectvalue">
+                                    <option>List</option>
+                                    <option>Struct</option>
+                                    <option>Text</option>
+                                    <option>Numb</option>
+                                    <option>Bool</option>
+                                    <option>PClass</option>
+                                </select>    
+                            </td>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                            <td>
+                                <select id="selectvalue">
+                                    <option>List</option>
+                                    <option>Struct</option>
+                                    <option>Text</option>
+                                    <option>Numb</option>
+                                    <option>Bool</option>
+                                    <option>PClass</option>
+                                </select>    
+                            </td>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                            <td>
+                                <select id="selectvalue">
+                                    <option>List</option>
+                                    <option>Struct</option>
+                                    <option>Text</option>
+                                    <option>Numb</option>
+                                    <option>Bool</option>
+                                    <option>PClass</option>
+                                </select>    
+                            </td>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div>
+                    <label>Возвращаемое значение:</label>
+                    <table>
+                        <tr>
+                            <td><p>Тип</p></td>
+                            <td><p>Цель</p></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <select id="selectvalue">
+                                    <option>List</option>
+                                    <option>Struct</option>
+                                    <option>Text</option>
+                                    <option>Numb</option>
+                                    <option>Bool</option>
+                                    <option>Void</option>
+                                </select>    
+                            </td>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div>
+                    <label>Аргументы, результат вычисления:</label>
+                    <textarea name="" id="" cols="30" rows="2"></textarea>
+                </div>
+                <div>
+                    <label>Атрибуты, новые значения:</label>
+                    <textarea name="" id="" cols="30" rows="2"></textarea>
+                </div>
+                <div>
+                    <label>Атрибуты, вычисления:</label>
+                    <textarea name="" id="" cols="30" rows="2"></textarea>
+                </div>
+                <div>
+                    <label>Ссылки на внешние функции:</label>
+                    <table>
+                        <tr>
+                            <td><p>Класс</p></td>
+                            <td><p>Функция</p></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                        </tr>
+                    </table>
+                </div> 
+                <div>
+                    <label>Атрибуты:</label>
+                    <table>
+                        <tr>
+                            <td><p>Название</p></td>
+                            <td><p>Цель</p></td>
+                            <td><p>Тип</p></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                            <td>
+                                <select id="selectvalue">
+                                    <option>List</option>
+                                    <option>Struct</option>
+                                    <option>Text</option>
+                                    <option>Numb</option>
+                                    <option>Bool</option>
+                                    <option>PClass</option>
+                                    <option>Void</option>
+                                </select>    
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                            <td>
+                                <select id="selectvalue">
+                                    <option>List</option>
+                                    <option>Struct</option>
+                                    <option>Text</option>
+                                    <option>Numb</option>
+                                    <option>Bool</option>
+                                    <option>PClass</option>
+                                    <option>Void</option>
+                                </select>    
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                            <td>
+                                <select id="selectvalue">
+                                    <option>List</option>
+                                    <option>Struct</option>
+                                    <option>Text</option>
+                                    <option>Numb</option>
+                                    <option>Bool</option>
+                                    <option>PClass</option>
+                                    <option>Void</option>
+                                </select>    
+                            </td>
+                        </tr>
+                    </table>
+                </div> 
+                <div>
+                    <label>Ссылки на внешние функции:</label>
+                    <table>
+                        <tr>
+                            <td><p>Класс</p></td>
+                            <td><p>Функция</p></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                            <td>
+                                <textarea name="" id="" cols="30" rows=1></textarea>
+                            </td>
+                        </tr>
+                    </table>
+                </div> 
+            </div>
+            <div class="button">
+                <button>
+                    <a href="items.html">Выбрать тип пункта</a>
+                </button>
+                <button>
+                    Сохранить
+                </button>
+            </div>
+        </div>
+        <script src="basic_scripts.js" defer></script>
+    </body>
+</html>
