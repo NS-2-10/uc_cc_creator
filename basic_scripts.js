@@ -13,7 +13,20 @@ var gm = [];
 var gs = [];
 
 window.onload = function() {
+	document.getElementById('ucHeader').hidden=true;
 	document.getElementById('items_page').hidden=true;
+	document.getElementById('call_page').hidden=true;
+	document.getElementById('create_page').hidden=true;
+	document.getElementById('finish_page').hidden=true;
+	document.getElementById('free_page').hidden=true;
+	document.getElementById('input_output_page').hidden=true;
+	document.getElementById('input_page').hidden=true;
+	document.getElementById('repeat_page').hidden=true;
+	document.getElementById('request_page').hidden=true;
+	document.getElementById('select_page').hidden=true;
+	document.getElementById('cc_page').hidden=true;
+	document.getElementById('request_list_page').hidden=true;
+	document.getElementById('request_service_page').hidden=true;
  };
 
 function saveData(){
