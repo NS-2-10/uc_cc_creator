@@ -1,4 +1,7 @@
 var createUC = document.getElementById('createUC');
+var ucItems = document.getElementById('ucItems');
+var ucScenario = document.getElementById('ucScenario');
+var items = document.getElementsByName('items');
 var uName = [];
 var Actor = [];
 var r = [];
@@ -62,41 +65,98 @@ function saveData(){
 }
 createUC.onclick = saveData;
 
-var ucScenario = document.getElementById('ucScenario');
-var items = document.getElementsByName('items');
+function openItems() {
+	document.getElementById('ucHeader').hidden=false;
+	document.getElementById('items_page').hidden=false;
+	document.getElementById('usecase_page').hidden=true;
+	document.getElementById('call_page').hidden=true;
+	document.getElementById('create_page').hidden=true;
+	document.getElementById('finish_page').hidden=true;
+	document.getElementById('free_page').hidden=true;
+	document.getElementById('input_output_page').hidden=true;
+	document.getElementById('input_page').hidden=true;
+	document.getElementById('repeat_page').hidden=true;
+	document.getElementById('request_page').hidden=true;
+	document.getElementById('select_page').hidden=true;
+	document.getElementById('cc_page').hidden=true;
+	document.getElementById('request_list_page').hidden=true;
+	document.getElementById('request_service_page').hidden=true;
+}
+ucItems.onclick = openItems;
+
 function itemChoice(){
 	if(items[0].checked){
-		window.location = "types/create.html";
+		document.getElementById('items_page').hidden=true;
+		document.getElementById('create_page').hidden=false;
 	}
 	if(items[1].checked){
-		window.location = "types/input.html";
+		document.getElementById('items_page').hidden=true;
+		document.getElementById('input_page').hidden=false;
 	}
 	if(items[2].checked){
-		window.location = "types/input_output.html";
+		document.getElementById('items_page').hidden=true;
+		document.getElementById('input_output_page').hidden=false;
 	}
 	if(items[3].checked){
-		window.location = "types/request.html";
+		document.getElementById('items_page').hidden=true;
+		document.getElementById('request_page').hidden=false;
 	}
 	if(items[4].checked){
-		window.location = "types/request_list.html";
+		document.getElementById('items_page').hidden=true;
+		document.getElementById('request_list_page').hidden=false;
 	}
 	if(items[5].checked){
-		window.location = "types/select.html";
+		document.getElementById('items_page').hidden=true;
+		document.getElementById('select_page').hidden=false;
 	}
 	if(items[6].checked){
-		window.location = "types/request_service.html";
+		document.getElementById('items_page').hidden=true;
+		document.getElementById('request_service_page').hidden=false;
 	}
 	if(items[7].checked){
-		window.location = "types/repeat.html";
+		document.getElementById('items_page').hidden=true;
+		document.getElementById('repeat_page').hidden=false;
 	}
 	if(items[8].checked){
-		window.location = "types/free.html";
+		document.getElementById('items_page').hidden=true;
+		document.getElementById('free_page').hidden=false;
 	}
 	if(items[9].checked){
-		window.location = "types/finish.html";
+		document.getElementById('items_page').hidden=true;
+		document.getElementById('finish_page').hidden=false;
 	}
 	if(items[10].checked){
-			window.location = "types/call.html";
+		document.getElementById('items_page').hidden=true;
+		document.getElementById('call_page').hidden=false;
 	}
 }
 ucScenario.onclick = itemChoice;
+
+function openCC() {
+	document.getElementById('cc_page').hidden=false;
+	document.getElementById('ucHeader').hidden=true;
+	document.getElementById('items_page').hidden=true;
+	document.getElementById('usecase_page').hidden=true;
+	document.getElementById('call_page').hidden=true;
+	document.getElementById('create_page').hidden=true;
+	document.getElementById('finish_page').hidden=true;
+	document.getElementById('free_page').hidden=true;
+	document.getElementById('input_output_page').hidden=true;
+	document.getElementById('input_page').hidden=true;
+	document.getElementById('repeat_page').hidden=true;
+	document.getElementById('request_page').hidden=true;
+	document.getElementById('select_page').hidden=true;
+	document.getElementById('request_list_page').hidden=true;
+	document.getElementById('request_service_page').hidden=true;
+}
+document.getElementById('ccCreate_call').onclick = openCC;
+document.getElementById('ccCreate_create').onclick = openCC;
+document.getElementById('ccCreate_finish').onclick = openCC;
+document.getElementById('ccCreate_free').onclick = openCC;
+document.getElementById('ccCreate_input_output').onclick = openCC;
+document.getElementById('ccCreate_input').onclick = openCC;
+document.getElementById('ccCreate_repeat').onclick = openCC;
+document.getElementById('ccCreate_list').onclick = openCC;
+document.getElementById('ccCreate_service').onclick = openCC;
+document.getElementById('ccCreate_request').onclick = openCC;
+document.getElementById('ccCreate_selection').onclick = openCC;
