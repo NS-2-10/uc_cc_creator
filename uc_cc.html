@@ -37,15 +37,15 @@
                 <div class="scroll">
                     <div>
                         <label>Название:</label>
-                        <textarea name="" id="uName" cols="30" rows="2"></textarea>
+                        <textarea id="uName" cols="30" rows="2"></textarea>
                     </div>
                     <div>
                         <label>Основное действующее лицо:</label>
-                        <textarea name="" id="Actor" cols="30" rows="2"></textarea>
+                        <textarea id="Actor" cols="30" rows="2"></textarea>
                     </div>
                     <div>
                         <label>Область действия:</label>
-                        <textarea name="" id="r" cols="30" rows="2"></textarea>
+                        <textarea id="r" cols="30" rows="2"></textarea>
                     </div>
                     <div>
                         <label>Интересы участников:</label>
@@ -56,79 +56,66 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <textarea name="" id="da_p_1" cols="30" rows=1></textarea>
+                                    <textarea id="da_p_1" cols="30" rows=1></textarea>
                                 </td>
                                 <td>
-                                    <textarea name="" id="da_i_1" cols="30" rows=1></textarea>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <textarea name="" id="da_p_2" cols="30" rows=1></textarea>
-                                </td>
-                                <td>
-                                    <textarea name="" id="da_i_2" cols="30" rows=1></textarea>
+                                    <textarea id="da_i_1" cols="30" rows=1></textarea>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <textarea name="" id="da_p_3" cols="30" rows=1></textarea>
+                                    <textarea id="da_p_2" cols="30" rows=1></textarea>
                                 </td>
                                 <td>
-                                    <textarea name="" id="da_i_3" cols="30" rows=1></textarea>
+                                    <textarea id="da_i_2" cols="30" rows=1></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <textarea id="da_p_3" cols="30" rows=1></textarea>
+                                </td>
+                                <td>
+                                    <textarea id="da_i_3" cols="30" rows=1></textarea>
                                 </td>
                             </tr>
                         </table>
                     </div>
                     <div>
                         <label>Предусловия:</label>
-                        <textarea name="" id="pc" cols="30" rows="2"></textarea>
+                        <textarea id="pc" cols="30" rows="2"></textarea>
                     </div>
                     <div>
                         <label>Минимальные гарантии:</label>
-                        <textarea name="" id="gm" cols="30" rows="2"></textarea>
+                        <textarea id="gm" cols="30" rows="2"></textarea>
                     </div>
                     <div>
                         <label>Гарантии успеха:</label>
-                        <textarea name="" id="gs" cols="30" rows="2"></textarea>
+                        <textarea id="gs" cols="30" rows="2"></textarea>
                     </div>
                 </div>
                 <div class="button">
                     <button id = "createUC">Создать ВИ</button>      
-                    <button id = "ucItems">Выбрать тип пункта</button>
                 </div>
             </div>
         </div>
 
 
 
+        <div  id = "ucHeader">
+            <h1 id = 'ucHeaderText'>Описание прецедента</h1>
+        </div>
 
 
-        <div  id = "ucHeader"><h1>Описание прецедента</h1></div>
+
             <div id = "items_page">
                 <div class="left_side">
                 <h2>Результат</h2>
                     <div class="scroll">
-                        <p id='p1'>1. </p>
-                        <p id='p2'>1.1 </p>
-                        <p id='p3'>1.1.а </p>
-                        <p id='p4'>1.2 </p>
-                        <p id='p5'>1.2.а </p>
-                        <p id='p6'>2. </p>
-                        <p id='p7'>3. </p>
-                        <p id='p8'>3.1 </p>
-                        <p id='p9'>3.1.а </p>
-                        <p id='p10'>3.1.b </p>
-                        <p id='p11'></p>
-                        <p id='p12'></p>
-                        <p id='p13'></p>
-                        <p id='p14'></p>
-                        <p id='p15'></p>
-                        <p id='p16'></p>
-                        <p id='p17'></p>
-                        <p id='p18'></p>
-                        <p id='p19'></p>
-                        <p id='p20'></p>
+                        <p id='p1_items'></p>
+                        <p id='p2_items'></p>
+                        <p id='p3_items'></p>
+                        <p id='p4_items'></p>
+                        <p id='p5_items'></p>
                     </div>
                 </div>
                 <div class="right_side">
@@ -147,7 +134,6 @@
                         <p><input type="radio" name="items" value="11">Вызов другого прецедента</p>
                     </div>
                     <div class="button">
-                        <button id='ucEdit'>Редактировать ВИ</button>
                         <button id = "ucScenario">Описать ВИ</button>
                     </div>
                 </div>
@@ -161,26 +147,11 @@
             <div class="left_side">
                 <h2>Результат</h2>
                 <div class="scroll">
-                    <p id='p1'>1. </p>
-                    <p id='p2'>1.1 </p>
-                    <p id='p3'>1.1.а </p>
-                    <p id='p4'>1.2 </p>
-                    <p id='p5'>1.2.а </p>
-                    <p id='p6'>2. </p>
-                    <p id='p7'>3. </p>
-                    <p id='p8'>3.1 </p>
-                    <p id='p9'>3.1.а </p>
-                    <p id='p10'>3.1.b </p>
-                    <p id='p11'></p>
-                    <p id='p12'></p>
-                    <p id='p13'></p>
-                    <p id='p14'></p>
-                    <p id='p15'></p>
-                    <p id='p16'></p>
-                    <p id='p17'></p>
-                    <p id='p18'></p>
-                    <p id='p19'></p>
-                    <p id='p20'></p>
+                    <p id='p1_call'></p>
+                    <p id='p2_call'></p>
+                    <p id='p3_call'></p>
+                    <p id='p4_call'></p>
+                    <p id='p5_call'></p>
                 </div>
             </div>
             <div class="right_side">
@@ -192,15 +163,15 @@
                     </div>
                     <div>
                         <label>Название ВИ:</label>
-                        <textarea name="" id="" cols="30" rows="2"></textarea>
+                        <textarea id="" cols="30" rows="2"></textarea>
                     </div>
                     <div>
                         <label>Идентификатор ВИ в системе:</label>
-                        <textarea name="" id="" cols="30" rows="2"></textarea>
+                        <textarea id="" cols="30" rows="2"></textarea>
                     </div>
                 </div>
                 <div class="button">
-                    <button>Выбрать тип пункта</button>
+                    <button id='items_call'>Выбрать тип пункта</button>
                     <button>Сохранить</button>
                     <button id='ccCreate_call'>Cоздать КК</button>
                 </div>
@@ -215,26 +186,11 @@
             <div class="left_side">
                 <h2>Результат</h2>
                 <div class="scroll">
-                    <p id='p1'>1. </p>
-                    <p id='p2'>1.1 </p>
-                    <p id='p3'>1.1.а </p>
-                    <p id='p4'>1.2 </p>
-                    <p id='p5'>1.2.а </p>
-                    <p id='p6'>2. </p>
-                    <p id='p7'>3. </p>
-                    <p id='p8'>3.1 </p>
-                    <p id='p9'>3.1.а </p>
-                    <p id='p10'>3.1.b </p>
-                    <p id='p11'></p>
-                    <p id='p12'></p>
-                    <p id='p13'></p>
-                    <p id='p14'></p>
-                    <p id='p15'></p>
-                    <p id='p16'></p>
-                    <p id='p17'></p>
-                    <p id='p18'></p>
-                    <p id='p19'></p>
-                    <p id='p20'></p>
+                    <p id='p1_create'></p>
+                    <p id='p2_create'></p>
+                    <p id='p3_create'></p>
+                    <p id='p4_create'></p>
+                    <p id='p5_create'></p>
                 </div>
             </div>
             <div class="right_side">
@@ -242,23 +198,23 @@
                 <div class="scroll">
                     <div>
                         <label>Номер пункта:</label>
-                        <textarea name="uName" id="" cols="30" rows="2"></textarea>
+                        <textarea id="numItemCreate" cols="30" rows="2"></textarea>
                     </div>
                     <div>
                         <label>Клиент:</label>
-                        <textarea name="" id="" cols="30" rows="2"></textarea>
+                        <textarea id="clientCreate" cols="30" rows="2"></textarea>
                     </div>
                     <div>
                         <label>Актер:</label>
-                        <textarea name="" id="" cols="30" rows="2"></textarea>
+                        <textarea id="actorCreate" cols="30" rows="2"></textarea>
                     </div>
                     <div>
                         <label>Причина обращения:</label>
-                        <textarea name="" id="" cols="30" rows="2"></textarea>
+                        <textarea id="reasonCreate" cols="30" rows="2"></textarea>
                     </div>
                     <div>
                         <label>Создаваемый объект:</label>
-                        <textarea name="" id="" cols="30" rows="2"></textarea>
+                        <textarea id="objectCreate" cols="30" rows="2"></textarea>
                     </div>
                     <div>
                         <label>Дополнительная информация:</label>
@@ -270,42 +226,42 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <textarea name="" id="" cols="30" rows=1></textarea>
+                                    <textarea id="object_name_1_Create" cols="30" rows=1></textarea>
                                 </td>
                                 <td>
-                                    <textarea name="" id="" cols="30" rows=1></textarea>
+                                    <textarea id="object_goal_1_Create" cols="30" rows=1></textarea>
                                 </td>
                                 <td>
-                                    <textarea name="" id="" cols="30" rows=1></textarea>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <textarea name="" id="" cols="30" rows=1></textarea>
-                                </td>
-                                <td>
-                                    <textarea name="" id="" cols="30" rows=1></textarea>
-                                </td>
-                                <td>
-                                    <textarea name="" id="" cols="30" rows=1></textarea>
+                                    <textarea id="object_type_1_Create" cols="30" rows=1></textarea>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <textarea name="" id="" cols="30" rows=1></textarea>
+                                    <textarea id="object_name_2_Create" cols="30" rows=1></textarea>
                                 </td>
                                 <td>
-                                    <textarea name="" id="" cols="30" rows=1></textarea>
+                                    <textarea id="object_goal_2_Create" cols="30" rows=1></textarea>
                                 </td>
                                 <td>
-                                    <textarea name="" id="" cols="30" rows=1></textarea>
+                                    <textarea id="object_type_3_Create" cols="30" rows=1></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <textarea id="object_name_3_Create" cols="30" rows=1></textarea>
+                                </td>
+                                <td>
+                                    <textarea id="object_goal_3_Create" cols="30" rows=1></textarea>
+                                </td>
+                                <td>
+                                    <textarea id="object_type_3_Create" cols="30" rows=1></textarea>
                                 </td>
                             </tr>
                         </table>
                     </div>
                     <div>
                         <label>Атрибуты объекта:</label>
-                        <textarea name="" id="" cols="30" rows="2"></textarea>
+                        <textarea id="attrCreate" cols="30" rows="2"></textarea>
                     </div>
                    <div>
                         <label>Дополнительная информация:</label>
@@ -317,43 +273,43 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <textarea name="" id="" cols="30" rows=1></textarea>
+                                    <textarea id="attr_name_1_Create" cols="30" rows=1></textarea>
                                 </td>
                                 <td>
-                                    <textarea name="" id="" cols="30" rows=1></textarea>
+                                    <textarea id="attr_goal_1_Create" cols="30" rows=1></textarea>
                                 </td>
                                 <td>
-                                    <textarea name="" id="" cols="30" rows=1></textarea>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <textarea name="" id="" cols="30" rows=1></textarea>
-                                </td>
-                                <td>
-                                    <textarea name="" id="" cols="30" rows=1></textarea>
-                                </td>
-                                <td>
-                                    <textarea name="" id="" cols="30" rows=1></textarea>
+                                    <textarea id="attr_type_1_Create" cols="30" rows=1></textarea>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <textarea name="" id="" cols="30" rows=1></textarea>
+                                    <textarea id="attr_name_2_Create" cols="30" rows=1></textarea>
                                 </td>
                                 <td>
-                                    <textarea name="" id="" cols="30" rows=1></textarea>
+                                    <textarea id="attr_goal_2_Create" cols="30" rows=1></textarea>
                                 </td>
                                 <td>
-                                    <textarea name="" id="" cols="30" rows=1></textarea>
+                                    <textarea id="attr_type_2_Create" cols="30" rows=1></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <textarea id="attr_name_3_Create" cols="30" rows=1></textarea>
+                                </td>
+                                <td>
+                                    <textarea id="attr_goal_3_Create" cols="30" rows=1></textarea>
+                                </td>
+                                <td>
+                                    <textarea id="attr_type_2_Create" cols="30" rows=1></textarea>
                                 </td>
                             </tr>
                         </table>
                     </div>
                 </div>
                 <div class="button">
-                    <button>Выбрать тип пункта</button>
-                    <button>Сохранить</button>
+                    <button id='items_create'>Выбрать тип пункта</button>
+                    <button id='save_create'>Сохранить</button>
                     <button id='ccCreate_create'>Cоздать КК</button>
                 </div>
             </div>
@@ -367,26 +323,11 @@
             <div class="left_side">
                 <h2>Результат</h2>
                 <div class="scroll">
-                    <p id='p1'>1. </p>
-                    <p id='p2'>1.1 </p>
-                    <p id='p3'>1.1.а </p>
-                    <p id='p4'>1.2 </p>
-                    <p id='p5'>1.2.а </p>
-                    <p id='p6'>2. </p>
-                    <p id='p7'>3. </p>
-                    <p id='p8'>3.1 </p>
-                    <p id='p9'>3.1.а </p>
-                    <p id='p10'>3.1.b </p>
-                    <p id='p11'></p>
-                    <p id='p12'></p>
-                    <p id='p13'></p>
-                    <p id='p14'></p>
-                    <p id='p15'></p>
-                    <p id='p16'></p>
-                    <p id='p17'></p>
-                    <p id='p18'></p>
-                    <p id='p19'></p>
-                    <p id='p20'></p>
+                    <p id='p1_finish'></p>
+                    <p id='p2_finish'></p>
+                    <p id='p3_finish'></p>
+                    <p id='p4_finish'></p>
+                    <p id='p5_finish'></p>
                 </div>
             </div>
             <div class="right_side">
@@ -399,19 +340,19 @@
                     <p><b>Прием данных</b></p>
                     <div>
                         <label>Клиент:</label>
-                        <textarea name="" id="" cols="30" rows="2"></textarea>
+                        <textarea id="" cols="30" rows="2"></textarea>
                     </div>
                     <div>
                         <label>Актер:</label>
-                        <textarea name="" id="" cols="30" rows="2"></textarea>
+                        <textarea id="" cols="30" rows="2"></textarea>
                     </div>
                     <div>
                         <label>Вводимое клиентом данное:</label>
-                        <textarea name="" id="" cols="30" rows="2"></textarea>
+                        <textarea id="" cols="30" rows="2"></textarea>
                     </div>
                     <div>
                         <label>Вводимое актером данное:</label>
-                        <textarea name="" id="" cols="30" rows="2"></textarea>
+                        <textarea id="" cols="30" rows="2"></textarea>
                     </div>
                     <div>
                         <label>Дополнительная информация:</label>
@@ -423,13 +364,13 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <textarea name="" id="" cols="30" rows=1></textarea>
+                                    <textarea id="" cols="30" rows=1></textarea>
                                 </td>
                                 <td>
-                                    <textarea name="" id="" cols="30" rows=1></textarea>
+                                    <textarea id="" cols="30" rows=1></textarea>
                                 </td>
                                 <td>
-                                    <textarea name="" id="" cols="30" rows=1></textarea>
+                                    <textarea id="" cols="30" rows=1></textarea>
                                 </td>
                             </tr>
                         </table>
@@ -452,7 +393,7 @@
                     <p><b>Регистрация данных</b></p>
                     <div>
                         <label>Регистрируемое данное:</label>
-                        <textarea name="" id="" cols="30" rows="2"></textarea>
+                        <textarea id="" cols="30" rows="2"></textarea>
                     </div>
                     <div>
                         <label>Дополнительная информация:</label>
@@ -464,13 +405,13 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <textarea name="" id="" cols="30" rows=1></textarea>
+                                    <textarea id="" cols="30" rows=1></textarea>
                                 </td>
                                 <td>
-                                    <textarea name="" id="" cols="30" rows=1></textarea>
+                                    <textarea id="" cols="30" rows=1></textarea>
                                 </td>
                                 <td>
-                                    <textarea name="" id="" cols="30" rows=1></textarea>
+                                    <textarea id="" cols="30" rows=1></textarea>
                                 </td>
                             </tr>
                         </table>
@@ -493,7 +434,7 @@
                     <p><b>Создание документа</b></p>
                     <div>
                         <label>Документ:</label>
-                        <textarea name="" id="" cols="30" rows="2"></textarea>
+                        <textarea id="" cols="30" rows="2"></textarea>
                     </div>
                     <div>
                         <label>Дополнительная информация:</label>
@@ -505,20 +446,20 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <textarea name="" id="" cols="30" rows=1></textarea>
+                                    <textarea id="" cols="30" rows=1></textarea>
                                 </td>
                                 <td>
-                                    <textarea name="" id="" cols="30" rows=1></textarea>
+                                    <textarea id="" cols="30" rows=1></textarea>
                                 </td>
                                 <td>
-                                    <textarea name="" id="" cols="30" rows=1></textarea>
+                                    <textarea id="" cols="30" rows=1></textarea>
                                 </td>
                             </tr>
                         </table>
                     </div>
                     <div>
                         <label>Запись в документе:</label>
-                        <textarea name="" id="" cols="30" rows="2"></textarea>
+                        <textarea id="" cols="30" rows="2"></textarea>
                     </div>
                     <div>
                         <label>Дополнительная информация:</label>
@@ -530,42 +471,42 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <textarea name="" id="" cols="30" rows=1></textarea>
+                                    <textarea id="" cols="30" rows=1></textarea>
                                 </td>
                                 <td>
-                                    <textarea name="" id="" cols="30" rows=1></textarea>
+                                    <textarea id="" cols="30" rows=1></textarea>
                                 </td>
                                 <td>
-                                    <textarea name="" id="" cols="30" rows=1></textarea>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <textarea name="" id="" cols="30" rows=1></textarea>
-                                </td>
-                                <td>
-                                    <textarea name="" id="" cols="30" rows=1></textarea>
-                                </td>
-                                <td>
-                                    <textarea name="" id="" cols="30" rows=1></textarea>
+                                    <textarea id="" cols="30" rows=1></textarea>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <textarea name="" id="" cols="30" rows=1></textarea>
+                                    <textarea id="" cols="30" rows=1></textarea>
                                 </td>
                                 <td>
-                                    <textarea name="" id="" cols="30" rows=1></textarea>
+                                    <textarea id="" cols="30" rows=1></textarea>
                                 </td>
                                 <td>
-                                    <textarea name="" id="" cols="30" rows=1></textarea>
+                                    <textarea id="" cols="30" rows=1></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <textarea id="" cols="30" rows=1></textarea>
+                                </td>
+                                <td>
+                                    <textarea id="" cols="30" rows=1></textarea>
+                                </td>
+                                <td>
+                                    <textarea id="" cols="30" rows=1></textarea>
                                 </td>
                             </tr>
                         </table>
                     </div>
                 </div>
                 <div class="button">
-                    <button>Выбрать тип пункта</button>
+                    <button id='items_finish'>Выбрать тип пункта</button>
                     <button>Сохранить</button>
                     <button id='ccCreate_finish'>Cоздать КК</button>
                 </div>
@@ -580,26 +521,11 @@
             <div class="left_side">
                 <h2>Результат</h2>
                 <div class="scroll">
-                    <p id='p1'>1. </p>
-                    <p id='p2'>1.1 </p>
-                    <p id='p3'>1.1.а </p>
-                    <p id='p4'>1.2 </p>
-                    <p id='p5'>1.2.а </p>
-                    <p id='p6'>2. </p>
-                    <p id='p7'>3. </p>
-                    <p id='p8'>3.1 </p>
-                    <p id='p9'>3.1.а </p>
-                    <p id='p10'>3.1.b </p>
-                    <p id='p11'></p>
-                    <p id='p12'></p>
-                    <p id='p13'></p>
-                    <p id='p14'></p>
-                    <p id='p15'></p>
-                    <p id='p16'></p>
-                    <p id='p17'></p>
-                    <p id='p18'></p>
-                    <p id='p19'></p>
-                    <p id='p20'></p>
+                    <p id='p1_free'></p>
+                    <p id='p2_free'></p>
+                    <p id='p3_free'></p>
+                    <p id='p4_free'></p>
+                    <p id='p5_free'></p>
                 </div>
             </div>
             <div class="right_side">
@@ -611,23 +537,23 @@
                     </div>
                     <div>
                         <label>Клиент:</label>
-                        <textarea name="" id="" cols="30" rows="2"></textarea>
+                        <textarea id="" cols="30" rows="2"></textarea>
                     </div>
                     <div>
                         <label>Актер:</label>
-                        <textarea name="" id="" cols="30" rows="2"></textarea>
+                        <textarea id="" cols="30" rows="2"></textarea>
                     </div>
                     <div>
                         <label>Деятельность клиента:</label>
-                        <textarea name="" id="" cols="30" rows="2"></textarea>
+                        <textarea id="" cols="30" rows="2"></textarea>
                     </div>
                     <div>
                         <label>Деятельность актера:</label>
-                        <textarea name="" id="" cols="30" rows="2"></textarea>
+                        <textarea id="" cols="30" rows="2"></textarea>
                     </div>
                     <div>
                         <label>Действия:</label>
-                        <textarea name="" id="" cols="30" rows="2"></textarea>
+                        <textarea id="" cols="30" rows="2"></textarea>
                     </div>
                     <div>
                         <label>Завершающая фраза:</label>
@@ -645,7 +571,7 @@
                     </div>
                 </div>
                 <div class="button">
-                    <button>Выбрать тип пункта</button>
+                    <button id='items_free'>Выбрать тип пункта</button>
                     <button>Сохранить</button>
                     <button id='ccCreate_free'>Cоздать КК</button>
                 </div>
@@ -660,26 +586,11 @@
             <div class="left_side">
                 <h2>Результат</h2>
                 <div class="scroll">
-                    <p id='p1'>1. </p>
-                    <p id='p2'>1.1 </p>
-                    <p id='p3'>1.1.а </p>
-                    <p id='p4'>1.2 </p>
-                    <p id='p5'>1.2.а </p>
-                    <p id='p6'>2. </p>
-                    <p id='p7'>3. </p>
-                    <p id='p8'>3.1 </p>
-                    <p id='p9'>3.1.а </p>
-                    <p id='p10'>3.1.b </p>
-                    <p id='p11'></p>
-                    <p id='p12'></p>
-                    <p id='p13'></p>
-                    <p id='p14'></p>
-                    <p id='p15'></p>
-                    <p id='p16'></p>
-                    <p id='p17'></p>
-                    <p id='p18'></p>
-                    <p id='p19'></p>
-                    <p id='p20'></p>
+                    <p id='p1_input_output'></p>
+                    <p id='p2_input_output'></p>
+                    <p id='p3_input_output'></p>
+                    <p id='p4_input_output'></p>
+                    <p id='p5_input_output'></p>
                 </div>
             </div>
             <div class="right_side">
@@ -687,23 +598,23 @@
                 <div class="scroll">
                     <div>
                         <label>Номер пункта:</label>
-                        <textarea name="uName" id="" cols="30" rows="2"></textarea>
+                        <textarea id="numItemInputOutput" cols="30" rows="2"></textarea>
                     </div>
                     <div>
                         <label>Клиент:</label>
-                        <textarea name="" id="" cols="30" rows="2"></textarea>
+                        <textarea id="clientInputOutput" cols="30" rows="2"></textarea>
                     </div>
                     <div>
                         <label>Актер:</label>
-                        <textarea name="" id="" cols="30" rows="2"></textarea>
+                        <textarea id="actorInputOutput" cols="30" rows="2"></textarea>
                     </div>
                     <div>
                         <label>Сообщаемые клиентом данные:</label>
-                        <textarea name="" id="" cols="30" rows="2"></textarea>
+                        <textarea id="clientDataInputOutput" cols="30" rows="2"></textarea>
                     </div>
                     <div>
                         <label>Вносимые актером данные:</label>
-                        <textarea name="" id="" cols="30" rows="2"></textarea>
+                        <textarea id="actorDataInputOutput" cols="30" rows="2"></textarea>
                     </div>
                     <div>
                         <label>Дополнительная информация:</label>
@@ -715,42 +626,42 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <textarea name="" id="" cols="30" rows=1></textarea>
+                                    <textarea id="actorData_name_1_InputOutput" cols="30" rows=1></textarea>
                                 </td>
                                 <td>
-                                    <textarea name="" id="" cols="30" rows=1></textarea>
+                                    <textarea id="actorData_goal_1_InputOutput" cols="30" rows=1></textarea>
                                 </td>
                                 <td>
-                                    <textarea name="" id="" cols="30" rows=1></textarea>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <textarea name="" id="" cols="30" rows=1></textarea>
-                                </td>
-                                <td>
-                                    <textarea name="" id="" cols="30" rows=1></textarea>
-                                </td>
-                                <td>
-                                    <textarea name="" id="" cols="30" rows=1></textarea>
+                                    <textarea id="actorData_type_1_InputOutput" cols="30" rows=1></textarea>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                        <textarea name="" id="" cols="30" rows=1></textarea>
+                                    <textarea id="actorData_name_2_InputOutput" cols="30" rows=1></textarea>
                                 </td>
                                 <td>
-                                    <textarea name="" id="" cols="30" rows=1></textarea>
+                                    <textarea id="actorData_goal_2_InputOutput" cols="30" rows=1></textarea>
                                 </td>
                                 <td>
-                                    <textarea name="" id="" cols="30" rows=1></textarea>
+                                    <textarea id="actorData_type_2_InputOutput" cols="30" rows=1></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <textarea id="actorData_name_3_InputOutput" cols="30" rows=1></textarea>
+                                </td>
+                                <td>
+                                    <textarea id="actorData_goal_3_InputOutput" cols="30" rows=1></textarea>
+                                </td>
+                                <td>
+                                    <textarea id="actorData_type_3_InputOutput" cols="30" rows=1></textarea>
                                 </td>
                             </tr>
                         </table>
                     </div>
                     <div>
                         <label>Возвращаемое системой данное:</label>
-                        <textarea name="" id="" cols="30" rows="2"></textarea>
+                        <textarea id="returnInputOutput" cols="30" rows="2"></textarea>
                     </div>
                     <div>
                         <label>Дополнительная информация:</label>
@@ -762,21 +673,21 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <textarea name="" id="" cols="30" rows=1></textarea>
+                                    <textarea id="return_name_1_InputOutput" cols="30" rows=1></textarea>
                                 </td>
                                 <td>
-                                    <textarea name="" id="" cols="30" rows=1></textarea>
+                                    <textarea id="return_goal_1_InputOutput" cols="30" rows=1></textarea>
                                 </td>
                                 <td>
-                                    <textarea name="" id="" cols="30" rows=1></textarea>
+                                    <textarea id="return_type_1_InputOutput" cols="30" rows=1></textarea>
                                 </td>
                             </tr>
                         </table>
                     </div>
                 </div>
                 <div class="button">
-                    <button>Выбрать тип пункта</button>
-                    <button>Сохранить</button>
+                    <button id='items_input_output'>Выбрать тип пункта</button>
+                    <button id='save_input_output'>Сохранить</button>
                     <button id='ccCreate_input_output'>Cоздать КК</button>
                 </div>
             </div>
@@ -790,26 +701,11 @@
             <div class="left_side">
                     <h2>Результат</h2>
                     <div class="scroll">
-                        <p id='p1'>1. </p>
-                        <p id='p2'>1.1 </p>
-                        <p id='p3'>1.1.а </p>
-                        <p id='p4'>1.2 </p>
-                        <p id='p5'>1.2.а </p>
-                        <p id='p6'>2. </p>
-                        <p id='p7'>3. </p>
-                        <p id='p8'>3.1 </p>
-                        <p id='p9'>3.1.а </p>
-                        <p id='p10'>3.1.b </p>
-                        <p id='p11'></p>
-                        <p id='p12'></p>
-                        <p id='p13'></p>
-                        <p id='p14'></p>
-                        <p id='p15'></p>
-                        <p id='p16'></p>
-                        <p id='p17'></p>
-                        <p id='p18'></p>
-                        <p id='p19'></p>
-                        <p id='p20'></p>
+                        <p id='p1_input'></p>
+                        <p id='p2_input'></p>
+                        <p id='p3_input'></p>
+                        <p id='p4_input'></p>
+                        <p id='p5_input'></p>
                     </div>
                 </div>
                 <div class="right_side">
@@ -817,23 +713,23 @@
                     <div class="scroll">
                         <div>
                         <label>Номер пункта:</label>
-                        <textarea name="uName" id="" cols="30" rows="2"></textarea>
+                        <textarea id="numItemInput" cols="30" rows="2"></textarea>
                     </div>
                     <div>
                         <label>Клиент:</label>
-                        <textarea name="" id="" cols="30" rows="2"></textarea>  
+                        <textarea id="clientInput" cols="30" rows="2"></textarea>  
                     </div>
                     <div>
                         <label>Актер:</label>
-                        <textarea name="" id="" cols="30" rows="2"></textarea>
+                        <textarea id="actorInput" cols="30" rows="2"></textarea>
                     </div>
                     <div>
                         <label>Сообщаемые клиентом данные:</label>
-                        <textarea name="" id="" cols="30" rows="2"></textarea>
+                        <textarea id="clientDataInput" cols="30" rows="2"></textarea>
                     </div>
                     <div>
                         <label>Вносимые актером данные:</label>
-                        <textarea name="" id="" cols="30" rows="2"></textarea>
+                        <textarea id="actorDataInput" cols="30" rows="2"></textarea>
                     </div>
                     <div>
                         <label>Дополнительная информация:</label>
@@ -845,43 +741,43 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <textarea name="" id="" cols="30" rows=1></textarea>
+                                    <textarea id="actorData_name_1_Input" cols="30" rows=1></textarea>
                                 </td>
                                 <td>
-                                    <textarea name="" id="" cols="30" rows=1></textarea>
+                                    <textarea id="actorData_goal_1_Input" cols="30" rows=1></textarea>
                                 </td>
                                 <td>
-                                    <textarea name="" id="" cols="30" rows=1></textarea>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <textarea name="" id="" cols="30" rows=1></textarea>
-                                </td>
-                                <td>
-                                    <textarea name="" id="" cols="30" rows=1></textarea>
-                                </td>
-                                <td>
-                                    <textarea name="" id="" cols="30" rows=1></textarea>
+                                    <textarea id="actorData_type_1_Input" cols="30" rows=1></textarea>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <textarea name="" id="" cols="30" rows=1></textarea>
+                                    <textarea id="actorData_name_2_Input" cols="30" rows=1></textarea>
                                 </td>
                                 <td>
-                                    <textarea name="" id="" cols="30" rows=1></textarea>
+                                    <textarea id="actorData_goal_2_Input" cols="30" rows=1></textarea>
                                 </td>
                                 <td>
-                                    <textarea name="" id="" cols="30" rows=1></textarea>
+                                    <textarea id="actorData_type_3_Input" cols="30" rows=1></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <textarea id="actorData_name_3_Input" cols="30" rows=1></textarea>
+                                </td>
+                                <td>
+                                    <textarea id="actorData_goal_2_Input" cols="30" rows=1></textarea>
+                                </td>
+                                <td>
+                                    <textarea id="actorData_type_3_Input" cols="30" rows=1></textarea>
                                 </td>
                             </tr>
                         </table>
                     </div>
                 </div>
                 <div class="button">
-                    <button>Выбрать тип пункта</button>
-                    <button>Сохранить</button>
+                    <button id='items_input'>Выбрать тип пункта</button>
+                    <button id='save_input'>Сохранить</button>
                     <button id='ccCreate_input'>Cоздать КК</button>
                 </div>
             </div>
@@ -895,26 +791,11 @@
             <div class="left_side">
                 <h2>Результат</h2>
                 <div class="scroll">
-                    <p id='p1'>1. </p>
-                    <p id='p2'>1.1 </p>
-                    <p id='p3'>1.1.а </p>
-                    <p id='p4'>1.2 </p>
-                    <p id='p5'>1.2.а </p>
-                    <p id='p6'>2. </p>
-                    <p id='p7'>3. </p>
-                    <p id='p8'>3.1 </p>
-                    <p id='p9'>3.1.а </p>
-                    <p id='p10'>3.1.b </p>
-                    <p id='p11'></p>
-                    <p id='p12'></p>
-                    <p id='p13'></p>
-                    <p id='p14'></p>
-                    <p id='p15'></p>
-                    <p id='p16'></p>
-                    <p id='p17'></p>
-                    <p id='p18'></p>
-                    <p id='p19'></p>
-                    <p id='p20'></p>
+                    <p id='p1_repeat'></p>
+                    <p id='p2_repeat'></p>
+                    <p id='p3_repeat'></p>
+                    <p id='p4_repeat'></p>
+                    <p id='p5_repeat'></p>
                 </div>
             </div>
             <div class="right_side">
@@ -926,19 +807,19 @@
                     </div>
                     <div>
                         <label>Клиент:</label>
-                        <textarea name="" id="" cols="30" rows="2"></textarea>
+                        <textarea id="" cols="30" rows="2"></textarea>
                     </div>
                     <div>
                         <label>Актер:</label>
-                        <textarea name="" id="" cols="30" rows="2"></textarea>
+                        <textarea id="" cols="30" rows="2"></textarea>
                     </div>
                     <div>
                         <label>Начальный номер пункта повтора:</label>
-                        <textarea name="" id="" cols="30" rows="2"></textarea>
+                        <textarea id="" cols="30" rows="2"></textarea>
                     </div>
                 </div>
                 <div class="button">
-                    <button>Выбрать тип пункта</button>
+                    <button id='items_repeat'>Выбрать тип пункта</button>
                     <button>Сохранить</button>
                     <button id='ccCreate_repeat'>Cоздать КК</button>
                 </div>
@@ -953,26 +834,11 @@
             <div class="left_side">
                 <h2>Результат</h2>
                 <div class="scroll">
-                    <p id='p1'>1. </p>
-                    <p id='p2'>1.1 </p>
-                    <p id='p3'>1.1.а </p>
-                    <p id='p4'>1.2 </p>
-                    <p id='p5'>1.2.а </p>
-                    <p id='p6'>2. </p>
-                    <p id='p7'>3. </p>
-                    <p id='p8'>3.1 </p>
-                    <p id='p9'>3.1.а </p>
-                    <p id='p10'>3.1.b </p>
-                    <p id='p11'></p>
-                    <p id='p12'></p>
-                    <p id='p13'></p>
-                    <p id='p14'></p>
-                    <p id='p15'></p>
-                    <p id='p16'></p>
-                    <p id='p17'></p>
-                    <p id='p18'></p>
-                    <p id='p19'></p>
-                    <p id='p20'></p>
+                    <p id='p1_list'></p>
+                    <p id='p2_list'></p>
+                    <p id='p3_list'></p>
+                    <p id='p4_list'></p>
+                    <p id='p5_list'></p>
                 </div>
             </div>
             <div class="right_side">
@@ -984,19 +850,19 @@
                     </div>
                     <div>
                         <label>Клиент:</label>
-                        <textarea name="" id="" cols="30" rows="2"></textarea>
+                        <textarea id="" cols="30" rows="2"></textarea>
                     </div>
                     <div>
                         <label>Актер:</label>
-                        <textarea name="" id="" cols="30" rows="2"></textarea>
+                        <textarea id="" cols="30" rows="2"></textarea>
                     </div>
                     <div>
                         <label>Запрашиваемый клиентом список:</label>
-                        <textarea name="" id="" cols="30" rows="2"></textarea>
+                        <textarea id="" cols="30" rows="2"></textarea>
                     </div>
                     <div>
                         <label>Запрашиваемый актером список:</label>
-                        <textarea name="" id="" cols="30" rows="2"></textarea>
+                        <textarea id="" cols="30" rows="2"></textarea>
                     </div>
                     <div>
                         <label>Дополнительная информация:</label>
@@ -1008,42 +874,42 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <textarea name="" id="" cols="30" rows=1></textarea>
+                                    <textarea id="" cols="30" rows=1></textarea>
                                 </td>
                                 <td>
-                                    <textarea name="" id="" cols="30" rows=1></textarea>
+                                    <textarea id="" cols="30" rows=1></textarea>
                                 </td>
                                 <td>
-                                    <textarea name="" id="" cols="30" rows=1></textarea>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <textarea name="" id="" cols="30" rows=1></textarea>
-                                </td>
-                                <td>
-                                    <textarea name="" id="" cols="30" rows=1></textarea>
-                                </td>
-                                <td>
-                                    <textarea name="" id="" cols="30" rows=1></textarea>
+                                    <textarea id="" cols="30" rows=1></textarea>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <textarea name="" id="" cols="30" rows=1></textarea>
+                                    <textarea id="" cols="30" rows=1></textarea>
                                 </td>
                                 <td>
-                                    <textarea name="" id="" cols="30" rows=1></textarea>
+                                    <textarea id="" cols="30" rows=1></textarea>
                                 </td>
                                 <td>
-                                    <textarea name="" id="" cols="30" rows=1></textarea>
+                                    <textarea id="" cols="30" rows=1></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <textarea id="" cols="30" rows=1></textarea>
+                                </td>
+                                <td>
+                                    <textarea id="" cols="30" rows=1></textarea>
+                                </td>
+                                <td>
+                                    <textarea id="" cols="30" rows=1></textarea>
                                 </td>
                             </tr>
                         </table>
                     </div>
                     <div>
                         <label>Условие запроса:</label>
-                        <textarea name="" id="" cols="30" rows="2"></textarea>
+                        <textarea id="" cols="30" rows="2"></textarea>
                     </div>
                     <div>
                         <label>Дополнительная информация:</label>
@@ -1055,42 +921,42 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <textarea name="" id="" cols="30" rows=1></textarea>
+                                    <textarea id="" cols="30" rows=1></textarea>
                                 </td>
                                 <td>
-                                    <textarea name="" id="" cols="30" rows=1></textarea>
+                                    <textarea id="" cols="30" rows=1></textarea>
                                 </td>
                                 <td>
-                                    <textarea name="" id="" cols="30" rows=1></textarea>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <textarea name="" id="" cols="30" rows=1></textarea>
-                                </td>
-                                <td>
-                                    <textarea name="" id="" cols="30" rows=1></textarea>
-                                </td>
-                                <td>
-                                    <textarea name="" id="" cols="30" rows=1></textarea>
+                                    <textarea id="" cols="30" rows=1></textarea>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <textarea name="" id="" cols="30" rows=1></textarea>
+                                    <textarea id="" cols="30" rows=1></textarea>
                                 </td>
                                 <td>
-                                    <textarea name="" id="" cols="30" rows=1></textarea>
+                                    <textarea id="" cols="30" rows=1></textarea>
                                 </td>
                                 <td>
-                                    <textarea name="" id="" cols="30" rows=1></textarea>
+                                    <textarea id="" cols="30" rows=1></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <textarea id="" cols="30" rows=1></textarea>
+                                </td>
+                                <td>
+                                    <textarea id="" cols="30" rows=1></textarea>
+                                </td>
+                                <td>
+                                    <textarea id="" cols="30" rows=1></textarea>
                                 </td>
                             </tr>
                         </table>
                     </div>
                 </div>
                 <div class="button">
-                    <button>Выбрать тип пункта</button>
+                    <button id='items_list'>Выбрать тип пункта</button>
                     <button>Сохранить</button>
                     <button id='ccCreate_list'>Cоздать КК</button>
                 </div>
@@ -1105,26 +971,11 @@
             <div class="left_side">
                 <h2>Результат</h2>
                 <div class="scroll">
-                    <p id='p1'>1. </p>
-                    <p id='p2'>1.1 </p>
-                    <p id='p3'>1.1.а </p>
-                    <p id='p4'>1.2 </p>
-                    <p id='p5'>1.2.а </p>
-                    <p id='p6'>2. </p>
-                    <p id='p7'>3. </p>
-                    <p id='p8'>3.1 </p>
-                    <p id='p9'>3.1.а </p>
-                    <p id='p10'>3.1.b </p>
-                    <p id='p11'></p>
-                    <p id='p12'></p>
-                    <p id='p13'></p>
-                    <p id='p14'></p>
-                    <p id='p15'></p>
-                    <p id='p16'></p>
-                    <p id='p17'></p>
-                    <p id='p18'></p>
-                    <p id='p19'></p>
-                    <p id='p20'></p>
+                    <p id='p1_service'></p>
+                    <p id='p2_service'></p>
+                    <p id='p3_service'></p>
+                    <p id='p4_service'></p>
+                    <p id='p5_service'></p>
                 </div>
             </div>
             <div class="right_side">
@@ -1136,19 +987,19 @@
                     </div>
                     <div>
                         <label>Клиент:</label>
-                        <textarea name="" id="" cols="30" rows="2"></textarea>
+                        <textarea id="" cols="30" rows="2"></textarea>
                     </div>
                     <div>
                         <label>Актер:</label>
-                        <textarea name="" id="" cols="30" rows="2"></textarea>
+                        <textarea id="" cols="30" rows="2"></textarea>
                     </div>
                     <div>
                         <label>Запрашиваемый клиентом сервис:</label>
-                        <textarea name="" id="" cols="30" rows="2"></textarea>
+                        <textarea id="" cols="30" rows="2"></textarea>
                     </div>
                     <div>
                         <label>Запрашиваемый актером сервис:</label>
-                        <textarea name="" id="" cols="30" rows="2"></textarea>
+                        <textarea id="" cols="30" rows="2"></textarea>
                     </div>
                     <div>
                         <label>Дополнительная информация:</label>
@@ -1160,46 +1011,46 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <textarea name="" id="" cols="30" rows=1></textarea>
+                                    <textarea id="" cols="30" rows=1></textarea>
                                 </td>
                                 <td>
-                                    <textarea name="" id="" cols="30" rows=1></textarea>
+                                    <textarea id="" cols="30" rows=1></textarea>
                                 </td>
                                 <td>
-                                    <textarea name="" id="" cols="30" rows=1></textarea>
+                                    <textarea id="" cols="30" rows=1></textarea>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <textarea name="" id="" cols="30" rows=1></textarea>
+                                    <textarea id="" cols="30" rows=1></textarea>
                                 </td>
                                 <td>
-                                    <textarea name="" id="" cols="30" rows=1></textarea>
+                                    <textarea id="" cols="30" rows=1></textarea>
                                 </td>
                                 <td>
-                                    <textarea name="" id="" cols="30" rows=1></textarea>
+                                    <textarea id="" cols="30" rows=1></textarea>
                                 </td>
                             </tr>
                             <tr>    
                                 <td>
-                                    <textarea name="" id="" cols="30" rows=1></textarea>
+                                    <textarea id="" cols="30" rows=1></textarea>
                                 </td>
                                 <td>
-                                    <textarea name="" id="" cols="30" rows=1></textarea>
+                                    <textarea id="" cols="30" rows=1></textarea>
                                 </td>
                                 <td>
-                                    <textarea name="" id="" cols="30" rows=1></textarea>
+                                    <textarea id="" cols="30" rows=1></textarea>
                                 </td>
                             </tr>
                         </table>
                     </div>
                     <div>
                         <label>Номер пункта, выполняющего сервис:</label>
-                        <textarea name="" id="" cols="30" rows="2"></textarea>
+                        <textarea id="" cols="30" rows="2"></textarea>
                     </div>
                 </div>
                 <div class="button">
-                    <button>Выбрать тип пункта</button>
+                    <button id='items_service'>Выбрать тип пункта</button>
                     <button>Сохранить</button>
                     <button id='ccCreate_service'>Cоздать КК</button>
                 </div>
@@ -1214,26 +1065,11 @@
             <div class="left_side">
                 <h2>Результат</h2>
                 <div class="scroll">
-                    <p id='p1'>1. </p>
-                    <p id='p2'>1.1 </p>
-                    <p id='p3'>1.1.а </p>
-                    <p id='p4'>1.2 </p>
-                    <p id='p5'>1.2.а </p>
-                    <p id='p6'>2. </p>
-                    <p id='p7'>3. </p>
-                    <p id='p8'>3.1 </p>
-                    <p id='p9'>3.1.а </p>
-                    <p id='p10'>3.1.b </p>
-                    <p id='p11'></p>
-                    <p id='p12'></p>
-                    <p id='p13'></p>
-                    <p id='p14'></p>
-                    <p id='p15'></p>
-                    <p id='p16'></p>
-                    <p id='p17'></p>
-                    <p id='p18'></p>
-                    <p id='p19'></p>
-                    <p id='p20'></p>
+                    <p id='p1_request'></p>
+                    <p id='p2_request'></p>
+                    <p id='p3_request'></p>
+                    <p id='p4_request'></p>
+                    <p id='p5_request'></p>
                 </div>
             </div>
             <div class="right_side">
@@ -1241,23 +1077,23 @@
                 <div class="scroll">
                     <div>
                         <label>Номер пункта:</label>
-                        <textarea name="uName" id="" cols="30" rows="2"></textarea>
+                        <textarea id="numItemRequest" cols="30" rows="2"></textarea>
                     </div>
                     <div>
                         <label>Клиент:</label>
-                        <textarea name="" id="" cols="30" rows="2"></textarea>
+                        <textarea id="clientRequest" cols="30" rows="2"></textarea>
                     </div>
                     <div>
                         <label>Актер:</label>
-                        <textarea name="" id="" cols="30" rows="2"></textarea>
+                        <textarea id="actorRequest" cols="30" rows="2"></textarea>
                     </div>
                     <div>
                         <label>Запрашиваемое клиентом данное:</label>
-                        <textarea name="" id="" cols="30" rows="2"></textarea>
+                        <textarea id="clientDataRequest" cols="30" rows="2"></textarea>
                     </div>
                     <div>
                         <label>Запрашиваемое актером данное:</label>
-                        <textarea name="" id="" cols="30" rows="2"></textarea>
+                        <textarea id="actorDataRequest" cols="30" rows="2"></textarea>
                     </div>
                     <div>
                         <label>Дополнительная информация:</label>
@@ -1269,42 +1105,42 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <textarea name="" id="" cols="30" rows=1></textarea>
+                                    <textarea id="actorData_name_1_Request" cols="30" rows=1></textarea>
                                 </td>
                                 <td>
-                                    <textarea name="" id="" cols="30" rows=1></textarea>
+                                    <textarea id="actor_goal_1_Request" cols="30" rows=1></textarea>
                                 </td>
                                 <td>
-                                    <textarea name="" id="" cols="30" rows=1></textarea>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <textarea name="" id="" cols="30" rows=1></textarea>
-                                </td>
-                                <td>
-                                    <textarea name="" id="" cols="30" rows=1></textarea>
-                                </td>
-                                <td>
-                                    <textarea name="" id="" cols="30" rows=1></textarea>
+                                    <textarea id="actorData_type_1_Request" cols="30" rows=1></textarea>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <textarea name="" id="" cols="30" rows=1></textarea>
+                                    <textarea id="actorData_name_2_Request" cols="30" rows=1></textarea>
                                 </td>
                                 <td>
-                                    <textarea name="" id="" cols="30" rows=1></textarea>
+                                    <textarea id="actor_goal_2_Request" cols="30" rows=1></textarea>
                                 </td>
                                 <td>
-                                    <textarea name="" id="" cols="30" rows=1></textarea>
+                                    <textarea id="actorData_type_2_Request" cols="30" rows=1></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <textarea id="actorData_name_3_Request" cols="30" rows=1></textarea>
+                                </td>
+                                <td>
+                                    <textarea id="actor_goal_3_Request" cols="30" rows=1></textarea>
+                                </td>
+                                <td>
+                                    <textarea id="actorData_type_3_Request" cols="30" rows=1></textarea>
                                 </td>
                             </tr>
                         </table>
                     </div>
                     <div>
                         <label>Основание для запроса:</label>
-                        <textarea name="" id="" cols="30" rows="2"></textarea>
+                        <textarea id="reasonRequest" cols="30" rows="2"></textarea>
                     </div>
                     <div>
                         <label>Дополнительная информация:</label>
@@ -1316,42 +1152,42 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <textarea name="" id="" cols="30" rows=1></textarea>
+                                    <textarea id="reason_name_1_Request" cols="30" rows=1></textarea>
                                 </td>
                                 <td>
-                                    <textarea name="" id="" cols="30" rows=1></textarea>
+                                    <textarea id="reason_goal_1_Request" cols="30" rows=1></textarea>
                                 </td>
                                 <td>
-                                    <textarea name="" id="" cols="30" rows=1></textarea>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <textarea name="" id="" cols="30" rows=1></textarea>
-                                </td>
-                                <td>
-                                    <textarea name="" id="" cols="30" rows=1></textarea>
-                                </td>
-                                <td>
-                                    <textarea name="" id="" cols="30" rows=1></textarea>
+                                    <textarea id="reason_type_1_Request" cols="30" rows=1></textarea>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <textarea name="" id="" cols="30" rows=1></textarea>
+                                    <textarea id="reason_name_2_Request" cols="30" rows=1></textarea>
                                 </td>
                                 <td>
-                                    <textarea name="" id="" cols="30" rows=1></textarea>
+                                    <textarea id="reason_goal_2_Request" cols="30" rows=1></textarea>
                                 </td>
                                 <td>
-                                    <textarea name="" id="" cols="30" rows=1></textarea>
+                                    <textarea id="reason_type_2_Request" cols="30" rows=1></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <textarea id="reason_name_3_Request" cols="30" rows=1></textarea>
+                                </td>
+                                <td>
+                                    <textarea id="reason_goal_3_Request" cols="30" rows=1></textarea>
+                                </td>
+                                <td>
+                                    <textarea id="reason_type_3_Request" cols="30" rows=1></textarea>
                                 </td>
                             </tr>
                         </table>
                     </div>
                     <div>
                         <label>Условие запроса:</label>
-                        <textarea name="" id="" cols="30" rows="2"></textarea>
+                        <textarea id="conditionRequest" cols="30" rows="2"></textarea>
                     </div>
                     <div>
                         <label>Дополнительная информация:</label>
@@ -1363,43 +1199,43 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <textarea name="" id="" cols="30" rows=1></textarea>
+                                    <textarea id="condition_name_1_Request" cols="30" rows=1></textarea>
                                 </td>
                                 <td>
-                                    <textarea name="" id="" cols="30" rows=1></textarea>
+                                    <textarea id="condition_goal_1_Request" cols="30" rows=1></textarea>
                                 </td>
                                 <td>
-                                    <textarea name="" id="" cols="30" rows=1></textarea>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <textarea name="" id="" cols="30" rows=1></textarea>
-                                </td>
-                                <td>
-                                    <textarea name="" id="" cols="30" rows=1></textarea>
-                                </td>
-                                <td>
-                                    <textarea name="" id="" cols="30" rows=1></textarea>
+                                    <textarea id="condition_type_1_Request" cols="30" rows=1></textarea>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <textarea name="" id="" cols="30" rows=1></textarea>
+                                    <textarea id="condition_name_2_Request" cols="30" rows=1></textarea>
                                 </td>
                                 <td>
-                                    <textarea name="" id="" cols="30" rows=1></textarea>
+                                    <textarea id="condition_goal_2_Request" cols="30" rows=1></textarea>
                                 </td>
                                 <td>
-                                    <textarea name="" id="" cols="30" rows=1></textarea>
+                                    <textarea id="condition_type_2_Request" cols="30" rows=1></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <textarea id="condition_name_1_Request" cols="30" rows=1></textarea>
+                                </td>
+                                <td>
+                                    <textarea id="condition_goal_2_Request" cols="30" rows=1></textarea>
+                                </td>
+                                <td>
+                                    <textarea id="condition_type_3_Request" cols="30" rows=1></textarea>
                                 </td>
                             </tr>
                         </table>
                     </div>
                 </div>
                 <div class="button">
-                    <button>Выбрать тип пункта</button>
-                    <button>Сохранить</button>
+                    <button id='items_request'>Выбрать тип пункта</button>
+                    <button id='save_request'>Сохранить</button>
                     <button id='ccCreate_request'>Cоздать КК</button>
                 </div>
             </div>
@@ -1413,26 +1249,11 @@
             <div class="left_side">
                 <h2>Результат</h2>
                 <div class="scroll">
-                    <p id='p1'>1. </p>
-                    <p id='p2'>1.1 </p>
-                    <p id='p3'>1.1.а </p>
-                    <p id='p4'>1.2 </p>
-                    <p id='p5'>1.2.а </p>
-                    <p id='p6'>2. </p>
-                    <p id='p7'>3. </p>
-                    <p id='p8'>3.1 </p>
-                    <p id='p9'>3.1.а </p>
-                    <p id='p10'>3.1.b </p>
-                    <p id='p11'></p>
-                    <p id='p12'></p>
-                    <p id='p13'></p>
-                    <p id='p14'></p>
-                    <p id='p15'></p>
-                    <p id='p16'></p>
-                    <p id='p17'></p>
-                    <p id='p18'></p>
-                    <p id='p19'></p>
-                    <p id='p20'></p>
+                    <p id='p1_select'></p>
+                    <p id='p2_select'></p>
+                    <p id='p3_select'></p>
+                    <p id='p4_select'></p>
+                    <p id='p5_select'></p>
                 </div>
             </div>
             <div class="right_side">
@@ -1444,11 +1265,11 @@
                     </div>
                     <div>
                         <label>Клиент:</label>
-                        <textarea name="" id="" cols="30" rows="2"></textarea>
+                        <textarea id="" cols="30" rows="2"></textarea>
                     </div>
                     <div>
                         <label>Актер:</label>
-                        <textarea name="" id="" cols="30" rows="2"></textarea>
+                        <textarea id="" cols="30" rows="2"></textarea>
                     </div>
                     <div>
                         <label>Запрашиваемые элементы списка:</label>
@@ -1460,42 +1281,42 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <textarea name="" id="" cols="30" rows=1></textarea>
+                                    <textarea id="" cols="30" rows=1></textarea>
                                 </td>
                                 <td>
-                                    <textarea name="" id="" cols="30" rows=1></textarea>
+                                    <textarea id="" cols="30" rows=1></textarea>
                                 </td>
                                 <td>
-                                    <textarea name="" id="" cols="30" rows=1></textarea>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <textarea name="" id="" cols="30" rows=1></textarea>
-                                </td>
-                                <td>
-                                    <textarea name="" id="" cols="30" rows=1></textarea>
-                                </td>
-                                <td>
-                                    <textarea name="" id="" cols="30" rows=1></textarea>
+                                    <textarea id="" cols="30" rows=1></textarea>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <textarea name="" id="" cols="30" rows=1></textarea>
+                                    <textarea id="" cols="30" rows=1></textarea>
                                 </td>
                                 <td>
-                                    <textarea name="" id="" cols="30" rows=1></textarea>
+                                    <textarea id="" cols="30" rows=1></textarea>
                                 </td>
                                 <td>
-                                    <textarea name="" id="" cols="30" rows=1></textarea>
+                                    <textarea id="" cols="30" rows=1></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <textarea id="" cols="30" rows=1></textarea>
+                                </td>
+                                <td>
+                                    <textarea id="" cols="30" rows=1></textarea>
+                                </td>
+                                <td>
+                                    <textarea id="" cols="30" rows=1></textarea>
                                 </td>
                             </tr>
                         </table>
                     </div>
                 </div>
                 <div class="button">
-                    <button>Выбрать тип пункта</button>
+                    <button id='items_selection'>Выбрать тип пункта</button>
                     <button>Сохранить</button>
                     <button id='ccCreate_selection'>Cоздать КК</button>
                 </div>
@@ -1511,7 +1332,7 @@
             <div class="left_side">
                 <h2>Текст пункта</h2>
                 <div class="scroll">
-                    <p id='p1'>1. </p>
+                    <p id='p_cc'></p>
                 </div>
             </div>
             <div class="right_side">
@@ -1548,10 +1369,10 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <textarea name="" id="" cols="30" rows=1></textarea>
+                                    <textarea id="" cols="30" rows=1></textarea>
                                 </td>
                                 <td>
-                                    <textarea name="" id="" cols="30" rows=1></textarea>
+                                    <textarea id="" cols="30" rows=1></textarea>
                                 </td>
                             </tr>
                         </table>
@@ -1566,7 +1387,7 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <textarea name="" id="" cols="30" rows=1></textarea>
+                                    <textarea id="" cols="30" rows=1></textarea>
                                 </td>
                                 <td>
                                     <select id="selectvalue">
@@ -1579,12 +1400,12 @@
                                     </select>    
                                 </td>
                                 <td>
-                                    <textarea name="" id="" cols="30" rows=1></textarea>
+                                    <textarea id="" cols="30" rows=1></textarea>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <textarea name="" id="" cols="30" rows=1></textarea>
+                                    <textarea id="" cols="30" rows=1></textarea>
                                 </td>
                                 <td>
                                     <select id="selectvalue">
@@ -1597,12 +1418,12 @@
                                     </select>    
                                 </td>
                                 <td>
-                                    <textarea name="" id="" cols="30" rows=1></textarea>
+                                    <textarea id="" cols="30" rows=1></textarea>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <textarea name="" id="" cols="30" rows=1></textarea>
+                                    <textarea id="" cols="30" rows=1></textarea>
                                 </td>
                                 <td>
                                     <select id="selectvalue">
@@ -1615,7 +1436,7 @@
                                     </select>    
                                 </td>
                                 <td>
-                                    <textarea name="" id="" cols="30" rows=1></textarea>
+                                    <textarea id="" cols="30" rows=1></textarea>
                                 </td>
                             </tr>
                         </table>
@@ -1639,22 +1460,22 @@
                                     </select>    
                                 </td>
                                 <td>
-                                    <textarea name="" id="" cols="30" rows=1></textarea>
+                                    <textarea id="" cols="30" rows=1></textarea>
                                 </td>
                             </tr>
                         </table>
                     </div>
                     <div>
                         <label>Аргументы, результат вычисления:</label>
-                        <textarea name="" id="" cols="30" rows="2"></textarea>
+                        <textarea id="" cols="30" rows="2"></textarea>
                     </div>
                     <div>
                         <label>Атрибуты, новые значения:</label>
-                        <textarea name="" id="" cols="30" rows="2"></textarea>
+                        <textarea id="" cols="30" rows="2"></textarea>
                     </div>
                     <div>
                         <label>Атрибуты, вычисления:</label>
-                        <textarea name="" id="" cols="30" rows="2"></textarea>
+                        <textarea id="" cols="30" rows="2"></textarea>
                     </div>
                     <div>
                         <label>Ссылки на внешние функции:</label>
@@ -1665,26 +1486,26 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <textarea name="" id="" cols="30" rows=1></textarea>
+                                    <textarea id="" cols="30" rows=1></textarea>
                                 </td>
                                 <td>
-                                    <textarea name="" id="" cols="30" rows=1></textarea>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <textarea name="" id="" cols="30" rows=1></textarea>
-                                </td>
-                                <td>
-                                    <textarea name="" id="" cols="30" rows=1></textarea>
+                                    <textarea id="" cols="30" rows=1></textarea>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <textarea name="" id="" cols="30" rows=1></textarea>
+                                    <textarea id="" cols="30" rows=1></textarea>
                                 </td>
                                 <td>
-                                    <textarea name="" id="" cols="30" rows=1></textarea>
+                                    <textarea id="" cols="30" rows=1></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <textarea id="" cols="30" rows=1></textarea>
+                                </td>
+                                <td>
+                                    <textarea id="" cols="30" rows=1></textarea>
                                 </td>
                             </tr>
                         </table>
@@ -1699,29 +1520,10 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <textarea name="" id="" cols="30" rows=1></textarea>
+                                    <textarea id="" cols="30" rows=1></textarea>
                                 </td>
                                 <td>
-                                    <textarea name="" id="" cols="30" rows=1></textarea>
-                                </td>
-                                <td>
-                                    <select id="selectvalue">
-                                        <option>List</option>
-                                        <option>Struct</option>
-                                        <option>Text</option>
-                                        <option>Numb</option>
-                                        <option>Bool</option>
-                                        <option>PClass</option>
-                                        <option>Void</option>
-                                    </select>    
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <textarea name="" id="" cols="30" rows=1></textarea>
-                                </td>
-                                <td>
-                                    <textarea name="" id="" cols="30" rows=1></textarea>
+                                    <textarea id="" cols="30" rows=1></textarea>
                                 </td>
                                 <td>
                                     <select id="selectvalue">
@@ -1737,10 +1539,29 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <textarea name="" id="" cols="30" rows=1></textarea>
+                                    <textarea id="" cols="30" rows=1></textarea>
                                 </td>
                                 <td>
-                                    <textarea name="" id="" cols="30" rows=1></textarea>
+                                    <textarea id="" cols="30" rows=1></textarea>
+                                </td>
+                                <td>
+                                    <select id="selectvalue">
+                                        <option>List</option>
+                                        <option>Struct</option>
+                                        <option>Text</option>
+                                        <option>Numb</option>
+                                        <option>Bool</option>
+                                        <option>PClass</option>
+                                        <option>Void</option>
+                                    </select>    
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <textarea id="" cols="30" rows=1></textarea>
+                                </td>
+                                <td>
+                                    <textarea id="" cols="30" rows=1></textarea>
                                 </td>
                                 <td>
                                     <select id="selectvalue">
@@ -1765,34 +1586,35 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <textarea name="" id="" cols="30" rows=1></textarea>
+                                    <textarea id="" cols="30" rows=1></textarea>
                                 </td>
                                 <td>
-                                    <textarea name="" id="" cols="30" rows=1></textarea>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <textarea name="" id="" cols="30" rows=1></textarea>
-                                </td>
-                                <td>
-                                    <textarea name="" id="" cols="30" rows=1></textarea>
+                                    <textarea id="" cols="30" rows=1></textarea>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <textarea name="" id="" cols="30" rows=1></textarea>
+                                    <textarea id="" cols="30" rows=1></textarea>
                                 </td>
                                 <td>
-                                    <textarea name="" id="" cols="30" rows=1></textarea>
+                                    <textarea id="" cols="30" rows=1></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <textarea id="" cols="30" rows=1></textarea>
+                                </td>
+                                <td>
+                                    <textarea id="" cols="30" rows=1></textarea>
                                 </td>
                             </tr>
                         </table>
                     </div> 
                 </div>
                 <div class="button">
-                    <button>Выбрать тип пункта</button>
+                    <button id='items_cc'>Выбрать тип пункта</button>
                     <button>Сохранить</button>
+                    <button id='finish'>Завершить и получить документацию</button>
                 </div>
             </div>
         </div>
