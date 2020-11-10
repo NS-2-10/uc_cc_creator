@@ -576,11 +576,11 @@ function requestText() {
 				+ " запрашивает у системы "
 				+ document.getElementById('actorDataRequest').value;
 	
-	if (document.getElementById('reasonRequest') != "")			
+	if (document.getElementById('reasonRequest').value != "")			
 		item_text += " на основании "
 					+ document.getElementById('reasonRequest').value;
 
-	if (document.getElementById('conditionRequest') != "")			
+	if (document.getElementById('conditionRequest').value != "")			
 		item_text += " при условии "
 					+ document.getElementById('conditionRequest').value;
 
@@ -607,7 +607,7 @@ function requestText() {
 				+ "Завершение варианта использования"
 				+ ". ";
 
-	if (document.getElementById('conditionRequest') != ""){
+	if (document.getElementById('conditionRequest').value != ""){
 		item_text += "\n";
 
 		item_text += document.getElementById('numItemRequest').value + ".b "
@@ -700,3 +700,120 @@ switch (item_counter) {
 }
 document.getElementById('save_request').onclick = requestText;
 
+function listText() {
+	item_text = document.getElementById('numItemList').value + ". ";
+
+	if (document.getElementById('clientList').value != "") 
+	item_text += document.getElementById('clientList').value 
+				+ " желает получить список " 
+				+ document.getElementById('clientDataList').value
+				+ ". ";
+
+	item_text += document.getElementById('actorList').value
+				+ " вводит в систему запрос на получение "
+				+ document.getElementById('actorDataList').value;
+
+	if (document.getElementById('conditionList').value != "")	{	
+		item_text += " при условии "
+					+ document.getElementById('conditionList').value;
+					+ ". "
+					+ "Система подтверждает выполнение условия. ";
+	}
+	else
+		item_text += ". ";
+
+
+	item_text += "Система выводит "
+				+ document.getElementById('actorDataList').value
+				+ ". ";
+
+	if (document.getElementById('conditionList').value != ""){
+		item_text += "\n";
+
+		item_text += document.getElementById('numItemList').value + ".a "
+					+ "Условие " 
+					+ document.getElementById('conditionList').value
+					+ " для получения списка недопустимо"
+					+ ". \n";
+				
+		item_text += document.getElementById('numItemRequest').value + ".a.1 "
+				+ "Введите новое условие. Переход к пункту "
+				+ document.getElementById('numItemList').value
+				+ ". ";
+	}
+
+switch (item_counter) {
+	case 1: 
+		document.getElementById('p1_items').innerText = item_text;
+		document.getElementById('p1_call').innerText = item_text;
+		document.getElementById('p1_create').innerText = item_text;
+		document.getElementById('p1_finish').innerText = item_text;
+		document.getElementById('p1_free').innerText = item_text;
+		document.getElementById('p1_input_output').innerText = item_text;
+		document.getElementById('p1_input').innerText = item_text;
+		document.getElementById('p1_repeat').innerText = item_text;
+		document.getElementById('p1_list').innerText = item_text;
+		document.getElementById('p1_service').innerText = item_text;
+		document.getElementById('p1_request').innerText = item_text;
+		document.getElementById('p1_select').innerText = item_text;
+		break;
+	case 2: 
+		document.getElementById('p2_items').innerText = item_text;
+		document.getElementById('p2_call').innerText = item_text;
+		document.getElementById('p2_create').innerText = item_text;
+		document.getElementById('p2_finish').innerText = item_text;
+		document.getElementById('p2_free').innerText = item_text;
+		document.getElementById('p2_input_output').innerText = item_text;
+		document.getElementById('p2_input').innerText = item_text;
+		document.getElementById('p2_repeat').innerText = item_text;
+		document.getElementById('p2_list').innerText = item_text;
+		document.getElementById('p2_service').innerText = item_text;
+		document.getElementById('p2_request').innerText = item_text;
+		document.getElementById('p2_select').innerText = item_text;
+		break;
+	case 3: 
+		document.getElementById('p3_items').innerText = item_text;
+		document.getElementById('p3_call').innerText = item_text;
+		document.getElementById('p3_create').innerText = item_text;
+		document.getElementById('p3_finish').innerText = item_text;
+		document.getElementById('p3_free').innerText = item_text;
+		document.getElementById('p3_input_output').innerText = item_text;
+		document.getElementById('p3_input').innerText = item_text;
+		document.getElementById('p3_repeat').innerText = item_text;
+		document.getElementById('p3_list').innerText = item_text;
+		document.getElementById('p3_service').innerText = item_text;
+		document.getElementById('p3_request').innerText = item_text;
+		document.getElementById('p3_select').innerText = item_text;
+		break;
+	case 4: 
+		document.getElementById('p4_items').innerText = item_text;
+		document.getElementById('p4_call').innerText = item_text;
+		document.getElementById('p4_create').innerText = item_text;
+		document.getElementById('p4_finish').innerText = item_text;
+		document.getElementById('p4_free').innerText = item_text;
+		document.getElementById('p4_input_output').innerText = item_text;
+		document.getElementById('p4_input').innerText = item_text;
+		document.getElementById('p4_repeat').innerText = item_text;
+		document.getElementById('p4_list').innerText = item_text;
+		document.getElementById('p4_service').innerText = item_text;
+		document.getElementById('p4_request').innerText = item_text;
+		document.getElementById('p4_select').innerText = item_text;
+		break;
+	case 5: 
+		document.getElementById('p5_items').innerText = item_text;
+		document.getElementById('p5_call').innerText = item_text;
+		document.getElementById('p5_create').innerText = item_text;
+		document.getElementById('p5_finish').innerText = item_text;
+		document.getElementById('p5_free').innerText = item_text;
+		document.getElementById('p5_input_output').innerText = item_text;
+		document.getElementById('p5_input').innerText = item_text;
+		document.getElementById('p5_repeat').innerText = item_text;
+		document.getElementById('p5_list').innerText = item_text;
+		document.getElementById('p5_service').innerText = item_text;
+		document.getElementById('p5_request').innerText = item_text;
+		document.getElementById('p5_select').innerText = item_text;
+		break;
+}
+//alert(item_text);
+}
+document.getElementById('save_list').onclick = listText;
