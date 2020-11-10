@@ -14,6 +14,7 @@ var gs = "";
 var item_counter = 0;
 var uc_counter = 0;
 var item_text = "";
+var item_num;
 
 window.onload = function() {
 	document.getElementById('ucHeader').hidden=true;
@@ -101,6 +102,7 @@ document.getElementById('createUC').onclick = saveData;
 
 function itemChoice(){
 	if(items[0].checked){
+		item_num = 0;
 		document.getElementById('items_page').hidden=true;
 		document.getElementById('create_page').hidden=false;
 		item_counter = item_counter + 1;
@@ -108,6 +110,7 @@ function itemChoice(){
 		document.getElementById('actorCreate').innerText = Actor;
 	}
 	if(items[1].checked){
+		item_num = 1;
 		document.getElementById('items_page').hidden=true;
 		document.getElementById('input_page').hidden=false;
 		item_counter = item_counter + 1;
@@ -115,6 +118,7 @@ function itemChoice(){
 		document.getElementById('actorInput').innerText = Actor;
 	}
 	if(items[2].checked){
+		item_num = 2;
 		document.getElementById('items_page').hidden=true;
 		document.getElementById('input_output_page').hidden=false;
 		item_counter = item_counter + 1;
@@ -122,6 +126,7 @@ function itemChoice(){
 		document.getElementById('actorInputOutput').innerText = Actor;
 	}
 	if(items[3].checked){
+		item_num = 3;
 		document.getElementById('items_page').hidden=true;
 		document.getElementById('request_page').hidden=false;
 		item_counter = item_counter + 1;
@@ -129,6 +134,7 @@ function itemChoice(){
 		document.getElementById('actorRequest').innerText = Actor;
 	}
 	if(items[4].checked){
+		item_num = 4;
 		document.getElementById('items_page').hidden=true;
 		document.getElementById('request_list_page').hidden=false;
 		item_counter = item_counter + 1;
@@ -136,6 +142,7 @@ function itemChoice(){
 		document.getElementById('actorList').innerText = Actor;
 	}
 	if(items[5].checked){
+		item_num = 5;
 		document.getElementById('items_page').hidden=true;
 		document.getElementById('select_page').hidden=false;
 		item_counter = item_counter + 1;
@@ -143,6 +150,7 @@ function itemChoice(){
 		document.getElementById('actorSelect').innerText = Actor;
 	}
 	if(items[6].checked){
+		item_num = 6;
 		document.getElementById('items_page').hidden=true;
 		document.getElementById('request_service_page').hidden=false;
 		item_counter = item_counter + 1;
@@ -150,6 +158,7 @@ function itemChoice(){
 		document.getElementById('actorService').innerText = Actor;
 	}
 	if(items[7].checked){
+		item_num = 7;
 		document.getElementById('items_page').hidden=true;
 		document.getElementById('repeat_page').hidden=false;
 		item_counter = item_counter + 1;
@@ -157,6 +166,7 @@ function itemChoice(){
 		document.getElementById('actorRepeat').innerText = Actor;
 	}
 	if(items[8].checked){
+		item_num = 8;
 		document.getElementById('items_page').hidden=true;
 		document.getElementById('free_page').hidden=false;
 		item_counter = item_counter + 1;
@@ -164,6 +174,7 @@ function itemChoice(){
 		document.getElementById('actorFree').innerText = Actor;
 	}
 	if(items[9].checked){
+		item_num = 9;
 		document.getElementById('items_page').hidden=true;
 		document.getElementById('finish_page').hidden=false;
 		item_counter = item_counter + 1;
@@ -171,6 +182,7 @@ function itemChoice(){
 		document.getElementById('actorFinish').innerText = Actor;
 	}
 	if(items[10].checked){
+		item_num = 10;
 		document.getElementById('items_page').hidden=true;
 		document.getElementById('call_page').hidden=false;
 		item_counter = item_counter + 1;
@@ -1346,7 +1358,33 @@ function finishText() {
 document.getElementById('save_finish').onclick = finishText;
 
 function ccText() {
-	item_text = "";
+	item_text = "Тип пункта: ";
+	if(item_num === 0) 
+		item_text += "Создать";
+	if(item_num === 1) 
+		item_text += "Ввести данные";
+	if(item_num === 2) 
+		item_text += "Ввести и получить данные";
+	if(item_num === 3) 
+		item_text += "Запросить значение";
+	if(item_num === 4) 
+		item_text += "Запросить список";
+	if(item_num === 5) 
+		item_text += "Выбрать из списка";
+	if(item_num === 6) 
+		item_text += "Запросить услугу (документ)";
+	if(item_num === 7) 
+		item_text += "Повторение действий";
+	if(item_num === 8) 
+		item_text += "Свободно конструируемый пункт";
+	if(item_num === 9) 
+		item_text += "Завершить ВИ";
+	if(item_num === 10) 
+		item_text += "Вызов другого прецедента";
+	item_text += "\n";
+	item_text += "Название класса: "
+				+ document.getElementById('cName').value
+				+"\n";
 	document.getElementById('p_cc').innerText = item_text;
 }
 document.getElementById('save_cc').onclick = ccText;
