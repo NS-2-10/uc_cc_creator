@@ -1411,3 +1411,10 @@ function finishText() {
 	//alert(item_text);	
 }
 document.getElementById('save_finish').onclick = finishText;
+
+function ccText() {
+	item_text = "";
+	
+	document.getElementById('p_cc').innerText = item_text;
+}
+document.getElementById('save_cc').onclick = ccText;
