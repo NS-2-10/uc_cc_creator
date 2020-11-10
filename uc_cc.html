@@ -1356,10 +1356,11 @@
         
         
         <div id="cc_page">
-            <h1>Создание концептуального класса к пункту №</h1>
+            <h1 id='ccHeader'>Создание концептуального класса к пункту №</h1>
             <div class="left_side">
                 <h2>Текст пункта</h2>
                 <div class="scroll">
+                    <p id='p_item'></p>
                     <p id='p_cc'></p>
                 </div>
             </div>
@@ -1368,12 +1369,12 @@
                 <div class="scroll">
                     <div>
                         <label>Название класса:</label>
-                        <textarea name="cName" id="" cols="30" rows="2"></textarea>
+                        <textarea id="cName" cols="30" rows="2"></textarea>
                     </div>
                     <div>
                         <label>Вид класса:</label>
                         <div>
-                            <select id="selectvalue">
+                            <select id="selectvalueClass">
                                 <option>Класс</option>
                                 <option>Прототип</option>
                             </select>    
@@ -1382,7 +1383,7 @@
                     <div>
                         <label>Время жизни объектов:</label>
                         <div>
-                            <select id="selectvalue">
+                            <select id="selectvalueTime">
                                 <option>В течение выполнения прецедента</option>
                                 <option>В течение работы системы</option>
                             </select>    
@@ -1397,10 +1398,10 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <textarea id="" cols="30" rows=1></textarea>
+                                    <textarea id="fName" cols="30" rows=1></textarea>
                                 </td>
                                 <td>
-                                    <textarea id="" cols="30" rows=1></textarea>
+                                    <textarea id="fGoal" cols="30" rows=1></textarea>
                                 </td>
                             </tr>
                         </table>
@@ -1415,10 +1416,10 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <textarea id="" cols="30" rows=1></textarea>
+                                    <textarea id="idAr_1" cols="30" rows=1></textarea>
                                 </td>
                                 <td>
-                                    <select id="selectvalue">
+                                    <select id="selectvalueAr_1">
                                         <option>List</option>
                                         <option>Struct</option>
                                         <option>Text</option>
@@ -1428,15 +1429,15 @@
                                     </select>    
                                 </td>
                                 <td>
-                                    <textarea id="" cols="30" rows=1></textarea>
+                                    <textarea id="goalAr_1" cols="30" rows=1></textarea>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <textarea id="" cols="30" rows=1></textarea>
+                                    <textarea id="idAr_2" cols="30" rows=1></textarea>
                                 </td>
                                 <td>
-                                    <select id="selectvalue">
+                                    <select id="selectvalueAr_2">
                                         <option>List</option>
                                         <option>Struct</option>
                                         <option>Text</option>
@@ -1446,15 +1447,15 @@
                                     </select>    
                                 </td>
                                 <td>
-                                    <textarea id="" cols="30" rows=1></textarea>
+                                    <textarea id="goalAr_2" cols="30" rows=1></textarea>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <textarea id="" cols="30" rows=1></textarea>
+                                    <textarea id="idAr_3" cols="30" rows=1></textarea>
                                 </td>
                                 <td>
-                                    <select id="selectvalue">
+                                    <select id="selectvalueAr_3">
                                         <option>List</option>
                                         <option>Struct</option>
                                         <option>Text</option>
@@ -1464,7 +1465,7 @@
                                     </select>    
                                 </td>
                                 <td>
-                                    <textarea id="" cols="30" rows=1></textarea>
+                                    <textarea id="goalAr_3" cols="30" rows=1></textarea>
                                 </td>
                             </tr>
                         </table>
@@ -1478,7 +1479,7 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <select id="selectvalue">
+                                    <select id="selectvalueRet">
                                         <option>List</option>
                                         <option>Struct</option>
                                         <option>Text</option>
@@ -1488,22 +1489,22 @@
                                     </select>    
                                 </td>
                                 <td>
-                                    <textarea id="" cols="30" rows=1></textarea>
+                                    <textarea id="goalRet" cols="30" rows=1></textarea>
                                 </td>
                             </tr>
                         </table>
                     </div>
                     <div>
                         <label>Аргументы, результат вычисления:</label>
-                        <textarea id="" cols="30" rows="2"></textarea>
+                        <textarea id="ResCalc" cols="30" rows="2"></textarea>
                     </div>
                     <div>
                         <label>Атрибуты, новые значения:</label>
-                        <textarea id="" cols="30" rows="2"></textarea>
+                        <textarea id="New" cols="30" rows="2"></textarea>
                     </div>
                     <div>
                         <label>Атрибуты, вычисления:</label>
-                        <textarea id="" cols="30" rows="2"></textarea>
+                        <textarea id="Calc" cols="30" rows="2"></textarea>
                     </div>
                     <div>
                         <label>Ссылки на внешние функции:</label>
@@ -1514,26 +1515,26 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <textarea id="" cols="30" rows=1></textarea>
+                                    <textarea id="extClass_1" cols="30" rows=1></textarea>
                                 </td>
                                 <td>
-                                    <textarea id="" cols="30" rows=1></textarea>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <textarea id="" cols="30" rows=1></textarea>
-                                </td>
-                                <td>
-                                    <textarea id="" cols="30" rows=1></textarea>
+                                    <textarea id="extFunc_1" cols="30" rows=1></textarea>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <textarea id="" cols="30" rows=1></textarea>
+                                    <textarea id="extClass_2" cols="30" rows=1></textarea>
                                 </td>
                                 <td>
-                                    <textarea id="" cols="30" rows=1></textarea>
+                                    <textarea id="extFunc_2" cols="30" rows=1></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <textarea id="extClass_3" cols="30" rows=1></textarea>
+                                </td>
+                                <td>
+                                    <textarea id="extFunc_3" cols="30" rows=1></textarea>
                                 </td>
                             </tr>
                         </table>
@@ -1548,13 +1549,13 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <textarea id="" cols="30" rows=1></textarea>
+                                    <textarea id="nameAttr_1" cols="30" rows=1></textarea>
                                 </td>
                                 <td>
-                                    <textarea id="" cols="30" rows=1></textarea>
+                                    <textarea id="goalAttr_1" cols="30" rows=1></textarea>
                                 </td>
                                 <td>
-                                    <select id="selectvalue">
+                                    <select id="selectvalueAttr_1">
                                         <option>List</option>
                                         <option>Struct</option>
                                         <option>Text</option>
@@ -1567,13 +1568,13 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <textarea id="" cols="30" rows=1></textarea>
+                                    <textarea id="nameAttr_2" cols="30" rows=1></textarea>
                                 </td>
                                 <td>
-                                    <textarea id="" cols="30" rows=1></textarea>
+                                    <textarea id="goalAttr_2" cols="30" rows=1></textarea>
                                 </td>
                                 <td>
-                                    <select id="selectvalue">
+                                    <select id="selectvalueAttr_2">
                                         <option>List</option>
                                         <option>Struct</option>
                                         <option>Text</option>
@@ -1586,13 +1587,13 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <textarea id="" cols="30" rows=1></textarea>
+                                    <textarea id="nameAttr_3" cols="30" rows=1></textarea>
                                 </td>
                                 <td>
-                                    <textarea id="" cols="30" rows=1></textarea>
+                                    <textarea id="goalAttr_3" cols="30" rows=1></textarea>
                                 </td>
                                 <td>
-                                    <select id="selectvalue">
+                                    <select id="selectvalueAttr_3">
                                         <option>List</option>
                                         <option>Struct</option>
                                         <option>Text</option>
@@ -1614,26 +1615,26 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <textarea id="" cols="30" rows=1></textarea>
+                                    <textarea id="extAttrClass_1" cols="30" rows=1></textarea>
                                 </td>
                                 <td>
-                                    <textarea id="" cols="30" rows=1></textarea>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <textarea id="" cols="30" rows=1></textarea>
-                                </td>
-                                <td>
-                                    <textarea id="" cols="30" rows=1></textarea>
+                                    <textarea id="extAttrFunc_1" cols="30" rows=1></textarea>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <textarea id="" cols="30" rows=1></textarea>
+                                    <textarea id="extAttrClass_2" cols="30" rows=1></textarea>
                                 </td>
                                 <td>
-                                    <textarea id="" cols="30" rows=1></textarea>
+                                    <textarea id="extAttrFunc_2" cols="30" rows=1></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <textarea id="extAttrClass_3" cols="30" rows=1></textarea>
+                                </td>
+                                <td>
+                                    <textarea id="extAttrFunc_3" cols="30" rows=1></textarea>
                                 </td>
                             </tr>
                         </table>
@@ -1641,7 +1642,7 @@
                 </div>
                 <div class="button">
                     <button id='items_cc'>Выбрать тип пункта</button>
-                    <button>Сохранить</button>
+                    <button id='save_cc'>Сохранить</button>
                     <button id='finish'>Завершить и получить документацию</button>
                 </div>
             </div>

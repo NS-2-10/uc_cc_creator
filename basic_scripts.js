@@ -197,6 +197,8 @@ function openCC() {
 	document.getElementById('select_page').hidden=true;
 	document.getElementById('request_list_page').hidden=true;
 	document.getElementById('request_service_page').hidden=true;
+	document.getElementById('p_item').innerText = item_text;
+	document.getElementById('ccHeader').innerText += item_counter;
 }
 document.getElementById('ccCreate_call').onclick = openCC;
 document.getElementById('ccCreate_create').onclick = openCC;
