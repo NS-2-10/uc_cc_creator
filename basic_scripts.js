@@ -1197,7 +1197,7 @@ function callText() {
 document.getElementById('save_call').onclick = callText;
 
 function freeText() {
-	item_text = document.getElementById('numItemFree').value + ". ";
+	item_text = document.getElementById('numItemFree').value + ". ";	
 
 	if (document.getElementById('clientFree').value != "")
 		item_text += document.getElementById('clientFree').value
@@ -1290,3 +1290,117 @@ function freeText() {
 	//alert(item_text);		
 }
 document.getElementById('save_free').onclick = freeText;
+
+function finishText() {
+	item_text = document.getElementById('numItemFinish').value + ". ";
+
+	if (document.getElementById('cb_1').checked) {
+		if (document.getElementById('clientFinish').value != "")
+			item_text += document.getElementById('clientFinish').value
+						+ " сообщает "
+						+ document.getElementById('clientDataFinish').value
+						+ ". ";
+
+		item_text += document.getElementById('actorFinish').value
+					+ " вводит "
+					+ document.getElementById('actorDataFinish').value
+					+ ". ";
+
+		item_text += "Система сохраняет данное в "
+					+ document.getElementById('objectSaveFinish').value
+					+ ". ";
+	}	
+
+	if (document.getElementById('cb_2').checked) {
+		item_text += "Система регистрирует "
+					+ document.getElementById('regDataFinish').value
+					+ " в "
+					+ document.getElementById('regSaveFinish').value
+					+ ". ";
+	}	
+
+	if (document.getElementById('cb_3').checked) {
+		item_text += "Система выдает "
+					+ document.getElementById('docFinish').value
+					+ " где содержится "
+					+ document.getElementById('dataDocFinish').value
+					+ ". ";
+	}
+
+	item_text += "Завершение работы прецедента. ";
+
+	switch (item_counter) {
+		case 1: 
+			document.getElementById('p1_items').innerText = item_text;
+			document.getElementById('p1_call').innerText = item_text;
+			document.getElementById('p1_create').innerText = item_text;
+			document.getElementById('p1_finish').innerText = item_text;
+			document.getElementById('p1_free').innerText = item_text;
+			document.getElementById('p1_input_output').innerText = item_text;
+			document.getElementById('p1_input').innerText = item_text;
+			document.getElementById('p1_repeat').innerText = item_text;
+			document.getElementById('p1_list').innerText = item_text;
+			document.getElementById('p1_service').innerText = item_text;
+			document.getElementById('p1_request').innerText = item_text;
+			document.getElementById('p1_select').innerText = item_text;
+			break;
+		case 2: 
+			document.getElementById('p2_items').innerText = item_text;
+			document.getElementById('p2_call').innerText = item_text;
+			document.getElementById('p2_create').innerText = item_text;
+			document.getElementById('p2_finish').innerText = item_text;
+			document.getElementById('p2_free').innerText = item_text;
+			document.getElementById('p2_input_output').innerText = item_text;
+			document.getElementById('p2_input').innerText = item_text;
+			document.getElementById('p2_repeat').innerText = item_text;
+			document.getElementById('p2_list').innerText = item_text;
+			document.getElementById('p2_service').innerText = item_text;
+			document.getElementById('p2_request').innerText = item_text;
+			document.getElementById('p2_select').innerText = item_text;
+			break;
+		case 3: 
+			document.getElementById('p3_items').innerText = item_text;
+			document.getElementById('p3_call').innerText = item_text;
+			document.getElementById('p3_create').innerText = item_text;
+			document.getElementById('p3_finish').innerText = item_text;
+			document.getElementById('p3_free').innerText = item_text;
+			document.getElementById('p3_input_output').innerText = item_text;
+			document.getElementById('p3_input').innerText = item_text;
+			document.getElementById('p3_repeat').innerText = item_text;
+			document.getElementById('p3_list').innerText = item_text;
+			document.getElementById('p3_service').innerText = item_text;
+			document.getElementById('p3_request').innerText = item_text;
+			document.getElementById('p3_select').innerText = item_text;
+			break;
+		case 4: 
+			document.getElementById('p4_items').innerText = item_text;
+			document.getElementById('p4_call').innerText = item_text;
+			document.getElementById('p4_create').innerText = item_text;
+			document.getElementById('p4_finish').innerText = item_text;
+			document.getElementById('p4_free').innerText = item_text;
+			document.getElementById('p4_input_output').innerText = item_text;
+			document.getElementById('p4_input').innerText = item_text;
+			document.getElementById('p4_repeat').innerText = item_text;
+			document.getElementById('p4_list').innerText = item_text;
+			document.getElementById('p4_service').innerText = item_text;
+			document.getElementById('p4_request').innerText = item_text;
+			document.getElementById('p4_select').innerText = item_text;
+			break;
+		case 5: 
+			document.getElementById('p5_items').innerText = item_text;
+			document.getElementById('p5_call').innerText = item_text;
+			document.getElementById('p5_create').innerText = item_text;
+			document.getElementById('p5_finish').innerText = item_text;
+			document.getElementById('p5_free').innerText = item_text;
+			document.getElementById('p5_input_output').innerText = item_text;
+			document.getElementById('p5_input').innerText = item_text;
+			document.getElementById('p5_repeat').innerText = item_text;
+			document.getElementById('p5_list').innerText = item_text;
+			document.getElementById('p5_service').innerText = item_text;
+			document.getElementById('p5_request').innerText = item_text;
+			document.getElementById('p5_select').innerText = item_text;
+			break;
+	}
+	//alert(item_text);	
+}
+document.getElementById('save_finish').onclick = finishText;

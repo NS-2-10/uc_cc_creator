@@ -339,24 +339,24 @@
                 <div class="scroll">
                     <div>
                         <label>Номер пункта:</label>
-                        <textarea name="uName" id="" cols="30" rows="2"></textarea>
+                        <textarea id="numItemFinish" cols="30" rows="2"></textarea>
                     </div>
-                    <p><b>Прием данных</b></p>
+                    <p><input type="checkbox" id="cb_1"><b>Прием данных</b></p>
                     <div>
                         <label>Клиент:</label>
-                        <textarea id="" cols="30" rows="2"></textarea>
+                        <textarea id="clientFinish" cols="30" rows="2"></textarea>
                     </div>
                     <div>
                         <label>Актер:</label>
-                        <textarea id="" cols="30" rows="2"></textarea>
+                        <textarea id="actorFinish" cols="30" rows="2"></textarea>
                     </div>
                     <div>
                         <label>Вводимое клиентом данное:</label>
-                        <textarea id="" cols="30" rows="2"></textarea>
+                        <textarea id="clientDataFinish" cols="30" rows="2"></textarea>
                     </div>
                     <div>
                         <label>Вводимое актером данное:</label>
-                        <textarea id="" cols="30" rows="2"></textarea>
+                        <textarea id="actorDataFinish" cols="30" rows="2"></textarea>
                     </div>
                     <div>
                         <label>Дополнительная информация:</label>
@@ -368,13 +368,13 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <textarea id="" cols="30" rows=1></textarea>
+                                    <textarea id="actorData_name_1_Finish" cols="30" rows=1></textarea>
                                 </td>
                                 <td>
-                                    <textarea id="" cols="30" rows=1></textarea>
+                                    <textarea id="actorData_goal_1_Finish" cols="30" rows=1></textarea>
                                 </td>
                                 <td>
-                                    <textarea id="" cols="30" rows=1></textarea>
+                                    <textarea id="actorData_type_1_Finish" cols="30" rows=1></textarea>
                                 </td>
                             </tr>
                         </table>
@@ -382,22 +382,34 @@
                     <div>
                         <label>Объект для хранения данного:</label>
                         <div>
-                            <select id="selectvalue">
-                                <option>~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~</option>
-                                <option>~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~</option>
-                                <option>~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~</option>
-                                <option>~~~~~~~~~~~~~~~~~</option>
-                                <option>~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~</option>
-                                <option>~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~</option>
-                                <option>~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~</option>
-                                <option>~~~~~~~~~~~~~~~~~</option>
-                            </select>    
+                            <textarea id="objectSaveFinish" cols="30" rows=2></textarea>
+                        </div>
+                        <div>
+                            <label>Дополнительная информация:</label>
+                            <table>
+                                <tr>
+                                    <td><p>Имя</p></td>
+                                    <td><p>Цель</p></td>
+                                    <td><p>Тип</p></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <textarea id="objectSave_name_1_Finish" cols="30" rows=1></textarea>
+                                    </td>
+                                    <td>
+                                        <textarea id="objectSave_goal_1_Finish" cols="30" rows=1></textarea>
+                                    </td>
+                                    <td>
+                                        <textarea id="objectSave_type_1_Finish" cols="30" rows=1></textarea>
+                                    </td>
+                                </tr>
+                            </table>
                         </div>
                     </div>
-                    <p><b>Регистрация данных</b></p>
+                    <p><input type="checkbox" id="cb_2"><b>Регистрация данных</b></p>
                     <div>
                         <label>Регистрируемое данное:</label>
-                        <textarea id="" cols="30" rows="2"></textarea>
+                        <textarea id="regDataFinish" cols="30" rows="2"></textarea>
                     </div>
                     <div>
                         <label>Дополнительная информация:</label>
@@ -409,13 +421,13 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <textarea id="" cols="30" rows=1></textarea>
+                                    <textarea id="regData_name_1_Finish" cols="30" rows=1></textarea>
                                 </td>
                                 <td>
-                                    <textarea id="" cols="30" rows=1></textarea>
+                                    <textarea id="regData_goal_1_Finish" cols="30" rows=1></textarea>
                                 </td>
                                 <td>
-                                    <textarea id="" cols="30" rows=1></textarea>
+                                    <textarea id="regData_type_1_Finish" cols="30" rows=1></textarea>
                                 </td>
                             </tr>
                         </table>
@@ -423,22 +435,34 @@
                     <div>
                         <label>Объект для хранения данного:</label>
                         <div>
-                            <select id="selectvalue">
-                                <option>~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~</option>
-                                <option>~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~</option>
-                                <option>~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~</option>
-                                <option>~~~~~~~~~~~~~~~~~</option>
-                                <option>~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~</option>
-                                <option>~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~</option>
-                                <option>~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~</option>
-                                <option>~~~~~~~~~~~~~~~~~</option>
-                            </select>    
+                            <textarea id="regSaveFinish" cols="30" rows=2></textarea>  
+                        </div>
+                        <div>
+                            <label>Дополнительная информация:</label>
+                            <table>
+                                <tr>
+                                    <td><p>Имя</p></td>
+                                    <td><p>Цель</p></td>
+                                    <td><p>Тип</p></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <textarea id="regSave_name_1_Finish" cols="30" rows=1></textarea>
+                                    </td>
+                                    <td>
+                                        <textarea id="regSave_goal_1_Finish" cols="30" rows=1></textarea>
+                                    </td>
+                                    <td>
+                                        <textarea id="regSave_type_1_Finish" cols="30" rows=1></textarea>
+                                    </td>
+                                </tr>
+                            </table>
                         </div>
                     </div>
-                    <p><b>Создание документа</b></p>
+                    <p><input type="checkbox" id="cb_3"><b>Создание документа</b></p>
                     <div>
                         <label>Документ:</label>
-                        <textarea id="" cols="30" rows="2"></textarea>
+                        <textarea id="docFinish" cols="30" rows="2"></textarea>
                     </div>
                     <div>
                         <label>Дополнительная информация:</label>
@@ -450,20 +474,20 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <textarea id="" cols="30" rows=1></textarea>
+                                    <textarea id="doc_name_1_Finish" cols="30" rows=1></textarea>
                                 </td>
                                 <td>
-                                    <textarea id="" cols="30" rows=1></textarea>
+                                    <textarea id="doc_goal_1_Finish" cols="30" rows=1></textarea>
                                 </td>
                                 <td>
-                                    <textarea id="" cols="30" rows=1></textarea>
+                                    <textarea id="doc_type_1_Finish" cols="30" rows=1></textarea>
                                 </td>
                             </tr>
                         </table>
                     </div>
                     <div>
                         <label>Запись в документе:</label>
-                        <textarea id="" cols="30" rows="2"></textarea>
+                        <textarea id="dataDocFinish" cols="30" rows="2"></textarea>
                     </div>
                     <div>
                         <label>Дополнительная информация:</label>
@@ -475,35 +499,35 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <textarea id="" cols="30" rows=1></textarea>
+                                    <textarea id="dataDoc_name_1_Finish" cols="30" rows=1></textarea>
                                 </td>
                                 <td>
-                                    <textarea id="" cols="30" rows=1></textarea>
+                                    <textarea id="dataDoc_goal_1_Finish" cols="30" rows=1></textarea>
                                 </td>
                                 <td>
-                                    <textarea id="" cols="30" rows=1></textarea>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <textarea id="" cols="30" rows=1></textarea>
-                                </td>
-                                <td>
-                                    <textarea id="" cols="30" rows=1></textarea>
-                                </td>
-                                <td>
-                                    <textarea id="" cols="30" rows=1></textarea>
+                                    <textarea id="dataDoc_type_1_Finish" cols="30" rows=1></textarea>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <textarea id="" cols="30" rows=1></textarea>
+                                    <textarea id="dataDoc_name_2_Finish" cols="30" rows=1></textarea>
                                 </td>
                                 <td>
-                                    <textarea id="" cols="30" rows=1></textarea>
+                                    <textarea id="dataDoc_goal_2_Finish" cols="30" rows=1></textarea>
                                 </td>
                                 <td>
-                                    <textarea id="" cols="30" rows=1></textarea>
+                                    <textarea id="dataDoc_type_2_Finish" cols="30" rows=1></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <textarea id="dataDoc_name_3_Finish" cols="30" rows=1></textarea>
+                                </td>
+                                <td>
+                                    <textarea id="dataDoc_goal_3_Finish" cols="30" rows=1></textarea>
+                                </td>
+                                <td>
+                                    <textarea id="dataDoc_type_3_Finish" cols="30" rows=1></textarea>
                                 </td>
                             </tr>
                         </table>
@@ -511,7 +535,7 @@
                 </div>
                 <div class="button">
                     <button id='items_finish'>Выбрать тип пункта</button>
-                    <button>Сохранить</button>
+                    <button id='save_finish'>Сохранить</button>
                     <button id='ccCreate_finish'>Cоздать КК</button>
                 </div>
             </div>
