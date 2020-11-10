@@ -715,7 +715,7 @@ function listText() {
 
 	if (document.getElementById('conditionList').value != "")	{	
 		item_text += " при условии "
-					+ document.getElementById('conditionList').value;
+					+ document.getElementById('conditionList').value
 					+ ". "
 					+ "Система подтверждает выполнение условия. ";
 	}
@@ -736,7 +736,7 @@ function listText() {
 					+ " для получения списка недопустимо"
 					+ ". \n";
 				
-		item_text += document.getElementById('numItemRequest').value + ".a.1 "
+		item_text += document.getElementById('numItemList').value + ".a.1 "
 				+ "Введите новое условие. Переход к пункту "
 				+ document.getElementById('numItemList').value
 				+ ". ";
