@@ -385,79 +385,79 @@ function inputText() {
 				+ document.getElementById('numItemInput').value
 				+ ". ";
 
-switch (item_counter) {
-	case 1: 
-		document.getElementById('p1_items').innerText = item_text;
-		document.getElementById('p1_call').innerText = item_text;
-		document.getElementById('p1_create').innerText = item_text;
-		document.getElementById('p1_finish').innerText = item_text;
-		document.getElementById('p1_free').innerText = item_text;
-		document.getElementById('p1_input_output').innerText = item_text;
-		document.getElementById('p1_input').innerText = item_text;
-		document.getElementById('p1_repeat').innerText = item_text;
-		document.getElementById('p1_list').innerText = item_text;
-		document.getElementById('p1_service').innerText = item_text;
-		document.getElementById('p1_request').innerText = item_text;
-		document.getElementById('p1_select').innerText = item_text;
-		break;
-	case 2: 
-		document.getElementById('p2_items').innerText = item_text;
-		document.getElementById('p2_call').innerText = item_text;
-		document.getElementById('p2_create').innerText = item_text;
-		document.getElementById('p2_finish').innerText = item_text;
-		document.getElementById('p2_free').innerText = item_text;
-		document.getElementById('p2_input_output').innerText = item_text;
-		document.getElementById('p2_input').innerText = item_text;
-		document.getElementById('p2_repeat').innerText = item_text;
-		document.getElementById('p2_list').innerText = item_text;
-		document.getElementById('p2_service').innerText = item_text;
-		document.getElementById('p2_request').innerText = item_text;
-		document.getElementById('p2_select').innerText = item_text;
-		break;
-	case 3: 
-		document.getElementById('p3_items').innerText = item_text;
-		document.getElementById('p3_call').innerText = item_text;
-		document.getElementById('p3_create').innerText = item_text;
-		document.getElementById('p3_finish').innerText = item_text;
-		document.getElementById('p3_free').innerText = item_text;
-		document.getElementById('p3_input_output').innerText = item_text;
-		document.getElementById('p3_input').innerText = item_text;
-		document.getElementById('p3_repeat').innerText = item_text;
-		document.getElementById('p3_list').innerText = item_text;
-		document.getElementById('p3_service').innerText = item_text;
-		document.getElementById('p3_request').innerText = item_text;
-		document.getElementById('p3_select').innerText = item_text;
-		break;
-	case 4: 
-		document.getElementById('p4_items').innerText = item_text;
-		document.getElementById('p4_call').innerText = item_text;
-		document.getElementById('p4_create').innerText = item_text;
-		document.getElementById('p4_finish').innerText = item_text;
-		document.getElementById('p4_free').innerText = item_text;
-		document.getElementById('p4_input_output').innerText = item_text;
-		document.getElementById('p4_input').innerText = item_text;
-		document.getElementById('p4_repeat').innerText = item_text;
-		document.getElementById('p4_list').innerText = item_text;
-		document.getElementById('p4_service').innerText = item_text;
-		document.getElementById('p4_request').innerText = item_text;
-		document.getElementById('p4_select').innerText = item_text;
-		break;
-	case 5: 
-		document.getElementById('p5_items').innerText = item_text;
-		document.getElementById('p5_call').innerText = item_text;
-		document.getElementById('p5_create').innerText = item_text;
-		document.getElementById('p5_finish').innerText = item_text;
-		document.getElementById('p5_free').innerText = item_text;
-		document.getElementById('p5_input_output').innerText = item_text;
-		document.getElementById('p5_input').innerText = item_text;
-		document.getElementById('p5_repeat').innerText = item_text;
-		document.getElementById('p5_list').innerText = item_text;
-		document.getElementById('p5_service').innerText = item_text;
-		document.getElementById('p5_request').innerText = item_text;
-		document.getElementById('p5_select').innerText = item_text;
-		break;
-}
-//alert(item_text);
+	switch (item_counter) {
+		case 1: 
+			document.getElementById('p1_items').innerText = item_text;
+			document.getElementById('p1_call').innerText = item_text;
+			document.getElementById('p1_create').innerText = item_text;
+			document.getElementById('p1_finish').innerText = item_text;
+			document.getElementById('p1_free').innerText = item_text;
+			document.getElementById('p1_input_output').innerText = item_text;
+			document.getElementById('p1_input').innerText = item_text;
+			document.getElementById('p1_repeat').innerText = item_text;
+			document.getElementById('p1_list').innerText = item_text;
+			document.getElementById('p1_service').innerText = item_text;
+			document.getElementById('p1_request').innerText = item_text;
+			document.getElementById('p1_select').innerText = item_text;
+			break;
+		case 2: 
+			document.getElementById('p2_items').innerText = item_text;
+			document.getElementById('p2_call').innerText = item_text;
+			document.getElementById('p2_create').innerText = item_text;
+			document.getElementById('p2_finish').innerText = item_text;
+			document.getElementById('p2_free').innerText = item_text;
+			document.getElementById('p2_input_output').innerText = item_text;
+			document.getElementById('p2_input').innerText = item_text;
+			document.getElementById('p2_repeat').innerText = item_text;
+			document.getElementById('p2_list').innerText = item_text;
+			document.getElementById('p2_service').innerText = item_text;
+			document.getElementById('p2_request').innerText = item_text;
+			document.getElementById('p2_select').innerText = item_text;
+			break;
+		case 3: 
+			document.getElementById('p3_items').innerText = item_text;
+			document.getElementById('p3_call').innerText = item_text;
+			document.getElementById('p3_create').innerText = item_text;
+			document.getElementById('p3_finish').innerText = item_text;
+			document.getElementById('p3_free').innerText = item_text;
+			document.getElementById('p3_input_output').innerText = item_text;
+			document.getElementById('p3_input').innerText = item_text;
+			document.getElementById('p3_repeat').innerText = item_text;
+			document.getElementById('p3_list').innerText = item_text;
+			document.getElementById('p3_service').innerText = item_text;
+			document.getElementById('p3_request').innerText = item_text;
+			document.getElementById('p3_select').innerText = item_text;
+			break;
+		case 4: 
+			document.getElementById('p4_items').innerText = item_text;
+			document.getElementById('p4_call').innerText = item_text;
+			document.getElementById('p4_create').innerText = item_text;
+			document.getElementById('p4_finish').innerText = item_text;
+			document.getElementById('p4_free').innerText = item_text;
+			document.getElementById('p4_input_output').innerText = item_text;
+			document.getElementById('p4_input').innerText = item_text;
+			document.getElementById('p4_repeat').innerText = item_text;
+			document.getElementById('p4_list').innerText = item_text;
+			document.getElementById('p4_service').innerText = item_text;
+			document.getElementById('p4_request').innerText = item_text;
+			document.getElementById('p4_select').innerText = item_text;
+			break;
+		case 5: 
+			document.getElementById('p5_items').innerText = item_text;
+			document.getElementById('p5_call').innerText = item_text;
+			document.getElementById('p5_create').innerText = item_text;
+			document.getElementById('p5_finish').innerText = item_text;
+			document.getElementById('p5_free').innerText = item_text;
+			document.getElementById('p5_input_output').innerText = item_text;
+			document.getElementById('p5_input').innerText = item_text;
+			document.getElementById('p5_repeat').innerText = item_text;
+			document.getElementById('p5_list').innerText = item_text;
+			document.getElementById('p5_service').innerText = item_text;
+			document.getElementById('p5_request').innerText = item_text;
+			document.getElementById('p5_select').innerText = item_text;
+			break;
+	}
+	//alert(item_text);
 }
 document.getElementById('save_input').onclick = inputText;
 
@@ -487,79 +487,79 @@ function inputOutputText() {
 				+ document.getElementById('returnInputOutput').value
 				+ ". ";
 
-switch (item_counter) {
-	case 1: 
-		document.getElementById('p1_items').innerText = item_text;
-		document.getElementById('p1_call').innerText = item_text;
-		document.getElementById('p1_create').innerText = item_text;
-		document.getElementById('p1_finish').innerText = item_text;
-		document.getElementById('p1_free').innerText = item_text;
-		document.getElementById('p1_input_output').innerText = item_text;
-		document.getElementById('p1_input').innerText = item_text;
-		document.getElementById('p1_repeat').innerText = item_text;
-		document.getElementById('p1_list').innerText = item_text;
-		document.getElementById('p1_service').innerText = item_text;
-		document.getElementById('p1_request').innerText = item_text;
-		document.getElementById('p1_select').innerText = item_text;
-		break;
-	case 2: 
-		document.getElementById('p2_items').innerText = item_text;
-		document.getElementById('p2_call').innerText = item_text;
-		document.getElementById('p2_create').innerText = item_text;
-		document.getElementById('p2_finish').innerText = item_text;
-		document.getElementById('p2_free').innerText = item_text;
-		document.getElementById('p2_input_output').innerText = item_text;
-		document.getElementById('p2_input').innerText = item_text;
-		document.getElementById('p2_repeat').innerText = item_text;
-		document.getElementById('p2_list').innerText = item_text;
-		document.getElementById('p2_service').innerText = item_text;
-		document.getElementById('p2_request').innerText = item_text;
-		document.getElementById('p2_select').innerText = item_text;
-		break;
-	case 3: 
-		document.getElementById('p3_items').innerText = item_text;
-		document.getElementById('p3_call').innerText = item_text;
-		document.getElementById('p3_create').innerText = item_text;
-		document.getElementById('p3_finish').innerText = item_text;
-		document.getElementById('p3_free').innerText = item_text;
-		document.getElementById('p3_input_output').innerText = item_text;
-		document.getElementById('p3_input').innerText = item_text;
-		document.getElementById('p3_repeat').innerText = item_text;
-		document.getElementById('p3_list').innerText = item_text;
-		document.getElementById('p3_service').innerText = item_text;
-		document.getElementById('p3_request').innerText = item_text;
-		document.getElementById('p3_select').innerText = item_text;
-		break;
-	case 4: 
-		document.getElementById('p4_items').innerText = item_text;
-		document.getElementById('p4_call').innerText = item_text;
-		document.getElementById('p4_create').innerText = item_text;
-		document.getElementById('p4_finish').innerText = item_text;
-		document.getElementById('p4_free').innerText = item_text;
-		document.getElementById('p4_input_output').innerText = item_text;
-		document.getElementById('p4_input').innerText = item_text;
-		document.getElementById('p4_repeat').innerText = item_text;
-		document.getElementById('p4_list').innerText = item_text;
-		document.getElementById('p4_service').innerText = item_text;
-		document.getElementById('p4_request').innerText = item_text;
-		document.getElementById('p4_select').innerText = item_text;
-		break;
-	case 5: 
-		document.getElementById('p5_items').innerText = item_text;
-		document.getElementById('p5_call').innerText = item_text;
-		document.getElementById('p5_create').innerText = item_text;
-		document.getElementById('p5_finish').innerText = item_text;
-		document.getElementById('p5_free').innerText = item_text;
-		document.getElementById('p5_input_output').innerText = item_text;
-		document.getElementById('p5_input').innerText = item_text;
-		document.getElementById('p5_repeat').innerText = item_text;
-		document.getElementById('p5_list').innerText = item_text;
-		document.getElementById('p5_service').innerText = item_text;
-		document.getElementById('p5_request').innerText = item_text;
-		document.getElementById('p5_select').innerText = item_text;
-		break;
-}
-//alert(item_text);
+	switch (item_counter) {
+		case 1: 
+			document.getElementById('p1_items').innerText = item_text;
+			document.getElementById('p1_call').innerText = item_text;
+			document.getElementById('p1_create').innerText = item_text;
+			document.getElementById('p1_finish').innerText = item_text;
+			document.getElementById('p1_free').innerText = item_text;
+			document.getElementById('p1_input_output').innerText = item_text;
+			document.getElementById('p1_input').innerText = item_text;
+			document.getElementById('p1_repeat').innerText = item_text;
+			document.getElementById('p1_list').innerText = item_text;
+			document.getElementById('p1_service').innerText = item_text;
+			document.getElementById('p1_request').innerText = item_text;
+			document.getElementById('p1_select').innerText = item_text;
+			break;
+		case 2: 
+			document.getElementById('p2_items').innerText = item_text;
+			document.getElementById('p2_call').innerText = item_text;
+			document.getElementById('p2_create').innerText = item_text;
+			document.getElementById('p2_finish').innerText = item_text;
+			document.getElementById('p2_free').innerText = item_text;
+			document.getElementById('p2_input_output').innerText = item_text;
+			document.getElementById('p2_input').innerText = item_text;
+			document.getElementById('p2_repeat').innerText = item_text;
+			document.getElementById('p2_list').innerText = item_text;
+			document.getElementById('p2_service').innerText = item_text;
+			document.getElementById('p2_request').innerText = item_text;
+			document.getElementById('p2_select').innerText = item_text;
+			break;
+		case 3: 
+			document.getElementById('p3_items').innerText = item_text;
+			document.getElementById('p3_call').innerText = item_text;
+			document.getElementById('p3_create').innerText = item_text;
+			document.getElementById('p3_finish').innerText = item_text;
+			document.getElementById('p3_free').innerText = item_text;
+			document.getElementById('p3_input_output').innerText = item_text;
+			document.getElementById('p3_input').innerText = item_text;
+			document.getElementById('p3_repeat').innerText = item_text;
+			document.getElementById('p3_list').innerText = item_text;
+			document.getElementById('p3_service').innerText = item_text;
+			document.getElementById('p3_request').innerText = item_text;
+			document.getElementById('p3_select').innerText = item_text;
+			break;
+		case 4: 
+			document.getElementById('p4_items').innerText = item_text;
+			document.getElementById('p4_call').innerText = item_text;
+			document.getElementById('p4_create').innerText = item_text;
+			document.getElementById('p4_finish').innerText = item_text;
+			document.getElementById('p4_free').innerText = item_text;
+			document.getElementById('p4_input_output').innerText = item_text;
+			document.getElementById('p4_input').innerText = item_text;
+			document.getElementById('p4_repeat').innerText = item_text;
+			document.getElementById('p4_list').innerText = item_text;
+			document.getElementById('p4_service').innerText = item_text;
+			document.getElementById('p4_request').innerText = item_text;
+			document.getElementById('p4_select').innerText = item_text;
+			break;
+		case 5: 
+			document.getElementById('p5_items').innerText = item_text;
+			document.getElementById('p5_call').innerText = item_text;
+			document.getElementById('p5_create').innerText = item_text;
+			document.getElementById('p5_finish').innerText = item_text;
+			document.getElementById('p5_free').innerText = item_text;
+			document.getElementById('p5_input_output').innerText = item_text;
+			document.getElementById('p5_input').innerText = item_text;
+			document.getElementById('p5_repeat').innerText = item_text;
+			document.getElementById('p5_list').innerText = item_text;
+			document.getElementById('p5_service').innerText = item_text;
+			document.getElementById('p5_request').innerText = item_text;
+			document.getElementById('p5_select').innerText = item_text;
+			break;
+	}
+	//alert(item_text);
 }
 document.getElementById('save_input_output').onclick = inputOutputText;
 
@@ -592,13 +592,14 @@ function requestText() {
 				+ document.getElementById('actorDataRequest').value
 				+ ". ";
 
-	if (document.getElementById('clientRequest').value != "")
+	if (document.getElementById('clientRequest').value != "") 
 		item_text += document.getElementById('clientRequest').value
 					+ " / "
 					+ document.getElementById('actorRequest').value
 					+ " согласен"
 					+ ". \n";
 
+	if (document.getElementById('clientRequest').value != "") {
 	item_text += document.getElementById('numItemRequest').value + ".a "
 				+ "Клиент не согласен"
 				+ ". \n"
@@ -606,6 +607,7 @@ function requestText() {
 	item_text += document.getElementById('numItemRequest').value + ".a.1 "
 				+ "Завершение варианта использования"
 				+ ". ";
+	}
 
 	if (document.getElementById('conditionRequest').value != ""){
 		item_text += "\n";
@@ -624,79 +626,79 @@ function requestText() {
 				+ ". ";
 	}
 
-switch (item_counter) {
-	case 1: 
-		document.getElementById('p1_items').innerText = item_text;
-		document.getElementById('p1_call').innerText = item_text;
-		document.getElementById('p1_create').innerText = item_text;
-		document.getElementById('p1_finish').innerText = item_text;
-		document.getElementById('p1_free').innerText = item_text;
-		document.getElementById('p1_input_output').innerText = item_text;
-		document.getElementById('p1_input').innerText = item_text;
-		document.getElementById('p1_repeat').innerText = item_text;
-		document.getElementById('p1_list').innerText = item_text;
-		document.getElementById('p1_service').innerText = item_text;
-		document.getElementById('p1_request').innerText = item_text;
-		document.getElementById('p1_select').innerText = item_text;
-		break;
-	case 2: 
-		document.getElementById('p2_items').innerText = item_text;
-		document.getElementById('p2_call').innerText = item_text;
-		document.getElementById('p2_create').innerText = item_text;
-		document.getElementById('p2_finish').innerText = item_text;
-		document.getElementById('p2_free').innerText = item_text;
-		document.getElementById('p2_input_output').innerText = item_text;
-		document.getElementById('p2_input').innerText = item_text;
-		document.getElementById('p2_repeat').innerText = item_text;
-		document.getElementById('p2_list').innerText = item_text;
-		document.getElementById('p2_service').innerText = item_text;
-		document.getElementById('p2_request').innerText = item_text;
-		document.getElementById('p2_select').innerText = item_text;
-		break;
-	case 3: 
-		document.getElementById('p3_items').innerText = item_text;
-		document.getElementById('p3_call').innerText = item_text;
-		document.getElementById('p3_create').innerText = item_text;
-		document.getElementById('p3_finish').innerText = item_text;
-		document.getElementById('p3_free').innerText = item_text;
-		document.getElementById('p3_input_output').innerText = item_text;
-		document.getElementById('p3_input').innerText = item_text;
-		document.getElementById('p3_repeat').innerText = item_text;
-		document.getElementById('p3_list').innerText = item_text;
-		document.getElementById('p3_service').innerText = item_text;
-		document.getElementById('p3_request').innerText = item_text;
-		document.getElementById('p3_select').innerText = item_text;
-		break;
-	case 4: 
-		document.getElementById('p4_items').innerText = item_text;
-		document.getElementById('p4_call').innerText = item_text;
-		document.getElementById('p4_create').innerText = item_text;
-		document.getElementById('p4_finish').innerText = item_text;
-		document.getElementById('p4_free').innerText = item_text;
-		document.getElementById('p4_input_output').innerText = item_text;
-		document.getElementById('p4_input').innerText = item_text;
-		document.getElementById('p4_repeat').innerText = item_text;
-		document.getElementById('p4_list').innerText = item_text;
-		document.getElementById('p4_service').innerText = item_text;
-		document.getElementById('p4_request').innerText = item_text;
-		document.getElementById('p4_select').innerText = item_text;
-		break;
-	case 5: 
-		document.getElementById('p5_items').innerText = item_text;
-		document.getElementById('p5_call').innerText = item_text;
-		document.getElementById('p5_create').innerText = item_text;
-		document.getElementById('p5_finish').innerText = item_text;
-		document.getElementById('p5_free').innerText = item_text;
-		document.getElementById('p5_input_output').innerText = item_text;
-		document.getElementById('p5_input').innerText = item_text;
-		document.getElementById('p5_repeat').innerText = item_text;
-		document.getElementById('p5_list').innerText = item_text;
-		document.getElementById('p5_service').innerText = item_text;
-		document.getElementById('p5_request').innerText = item_text;
-		document.getElementById('p5_select').innerText = item_text;
-		break;
-}
-//alert(item_text);
+	switch (item_counter) {
+		case 1: 
+			document.getElementById('p1_items').innerText = item_text;
+			document.getElementById('p1_call').innerText = item_text;
+			document.getElementById('p1_create').innerText = item_text;
+			document.getElementById('p1_finish').innerText = item_text;
+			document.getElementById('p1_free').innerText = item_text;
+			document.getElementById('p1_input_output').innerText = item_text;
+			document.getElementById('p1_input').innerText = item_text;
+			document.getElementById('p1_repeat').innerText = item_text;
+			document.getElementById('p1_list').innerText = item_text;
+			document.getElementById('p1_service').innerText = item_text;
+			document.getElementById('p1_request').innerText = item_text;
+			document.getElementById('p1_select').innerText = item_text;
+			break;
+		case 2: 
+			document.getElementById('p2_items').innerText = item_text;
+			document.getElementById('p2_call').innerText = item_text;
+			document.getElementById('p2_create').innerText = item_text;
+			document.getElementById('p2_finish').innerText = item_text;
+			document.getElementById('p2_free').innerText = item_text;
+			document.getElementById('p2_input_output').innerText = item_text;
+			document.getElementById('p2_input').innerText = item_text;
+			document.getElementById('p2_repeat').innerText = item_text;
+			document.getElementById('p2_list').innerText = item_text;
+			document.getElementById('p2_service').innerText = item_text;
+			document.getElementById('p2_request').innerText = item_text;
+			document.getElementById('p2_select').innerText = item_text;
+			break;
+		case 3: 
+			document.getElementById('p3_items').innerText = item_text;
+			document.getElementById('p3_call').innerText = item_text;
+			document.getElementById('p3_create').innerText = item_text;
+			document.getElementById('p3_finish').innerText = item_text;
+			document.getElementById('p3_free').innerText = item_text;
+			document.getElementById('p3_input_output').innerText = item_text;
+			document.getElementById('p3_input').innerText = item_text;
+			document.getElementById('p3_repeat').innerText = item_text;
+			document.getElementById('p3_list').innerText = item_text;
+			document.getElementById('p3_service').innerText = item_text;
+			document.getElementById('p3_request').innerText = item_text;
+			document.getElementById('p3_select').innerText = item_text;
+			break;
+		case 4: 
+			document.getElementById('p4_items').innerText = item_text;
+			document.getElementById('p4_call').innerText = item_text;
+			document.getElementById('p4_create').innerText = item_text;
+			document.getElementById('p4_finish').innerText = item_text;
+			document.getElementById('p4_free').innerText = item_text;
+			document.getElementById('p4_input_output').innerText = item_text;
+			document.getElementById('p4_input').innerText = item_text;
+			document.getElementById('p4_repeat').innerText = item_text;
+			document.getElementById('p4_list').innerText = item_text;
+			document.getElementById('p4_service').innerText = item_text;
+			document.getElementById('p4_request').innerText = item_text;
+			document.getElementById('p4_select').innerText = item_text;
+			break;
+		case 5: 
+			document.getElementById('p5_items').innerText = item_text;
+			document.getElementById('p5_call').innerText = item_text;
+			document.getElementById('p5_create').innerText = item_text;
+			document.getElementById('p5_finish').innerText = item_text;
+			document.getElementById('p5_free').innerText = item_text;
+			document.getElementById('p5_input_output').innerText = item_text;
+			document.getElementById('p5_input').innerText = item_text;
+			document.getElementById('p5_repeat').innerText = item_text;
+			document.getElementById('p5_list').innerText = item_text;
+			document.getElementById('p5_service').innerText = item_text;
+			document.getElementById('p5_request').innerText = item_text;
+			document.getElementById('p5_select').innerText = item_text;
+			break;
+	}
+	//alert(item_text);
 }
 document.getElementById('save_request').onclick = requestText;
 
@@ -742,78 +744,177 @@ function listText() {
 				+ ". ";
 	}
 
-switch (item_counter) {
-	case 1: 
-		document.getElementById('p1_items').innerText = item_text;
-		document.getElementById('p1_call').innerText = item_text;
-		document.getElementById('p1_create').innerText = item_text;
-		document.getElementById('p1_finish').innerText = item_text;
-		document.getElementById('p1_free').innerText = item_text;
-		document.getElementById('p1_input_output').innerText = item_text;
-		document.getElementById('p1_input').innerText = item_text;
-		document.getElementById('p1_repeat').innerText = item_text;
-		document.getElementById('p1_list').innerText = item_text;
-		document.getElementById('p1_service').innerText = item_text;
-		document.getElementById('p1_request').innerText = item_text;
-		document.getElementById('p1_select').innerText = item_text;
-		break;
-	case 2: 
-		document.getElementById('p2_items').innerText = item_text;
-		document.getElementById('p2_call').innerText = item_text;
-		document.getElementById('p2_create').innerText = item_text;
-		document.getElementById('p2_finish').innerText = item_text;
-		document.getElementById('p2_free').innerText = item_text;
-		document.getElementById('p2_input_output').innerText = item_text;
-		document.getElementById('p2_input').innerText = item_text;
-		document.getElementById('p2_repeat').innerText = item_text;
-		document.getElementById('p2_list').innerText = item_text;
-		document.getElementById('p2_service').innerText = item_text;
-		document.getElementById('p2_request').innerText = item_text;
-		document.getElementById('p2_select').innerText = item_text;
-		break;
-	case 3: 
-		document.getElementById('p3_items').innerText = item_text;
-		document.getElementById('p3_call').innerText = item_text;
-		document.getElementById('p3_create').innerText = item_text;
-		document.getElementById('p3_finish').innerText = item_text;
-		document.getElementById('p3_free').innerText = item_text;
-		document.getElementById('p3_input_output').innerText = item_text;
-		document.getElementById('p3_input').innerText = item_text;
-		document.getElementById('p3_repeat').innerText = item_text;
-		document.getElementById('p3_list').innerText = item_text;
-		document.getElementById('p3_service').innerText = item_text;
-		document.getElementById('p3_request').innerText = item_text;
-		document.getElementById('p3_select').innerText = item_text;
-		break;
-	case 4: 
-		document.getElementById('p4_items').innerText = item_text;
-		document.getElementById('p4_call').innerText = item_text;
-		document.getElementById('p4_create').innerText = item_text;
-		document.getElementById('p4_finish').innerText = item_text;
-		document.getElementById('p4_free').innerText = item_text;
-		document.getElementById('p4_input_output').innerText = item_text;
-		document.getElementById('p4_input').innerText = item_text;
-		document.getElementById('p4_repeat').innerText = item_text;
-		document.getElementById('p4_list').innerText = item_text;
-		document.getElementById('p4_service').innerText = item_text;
-		document.getElementById('p4_request').innerText = item_text;
-		document.getElementById('p4_select').innerText = item_text;
-		break;
-	case 5: 
-		document.getElementById('p5_items').innerText = item_text;
-		document.getElementById('p5_call').innerText = item_text;
-		document.getElementById('p5_create').innerText = item_text;
-		document.getElementById('p5_finish').innerText = item_text;
-		document.getElementById('p5_free').innerText = item_text;
-		document.getElementById('p5_input_output').innerText = item_text;
-		document.getElementById('p5_input').innerText = item_text;
-		document.getElementById('p5_repeat').innerText = item_text;
-		document.getElementById('p5_list').innerText = item_text;
-		document.getElementById('p5_service').innerText = item_text;
-		document.getElementById('p5_request').innerText = item_text;
-		document.getElementById('p5_select').innerText = item_text;
-		break;
-}
-//alert(item_text);
+	switch (item_counter) {
+		case 1: 
+			document.getElementById('p1_items').innerText = item_text;
+			document.getElementById('p1_call').innerText = item_text;
+			document.getElementById('p1_create').innerText = item_text;
+			document.getElementById('p1_finish').innerText = item_text;
+			document.getElementById('p1_free').innerText = item_text;
+			document.getElementById('p1_input_output').innerText = item_text;
+			document.getElementById('p1_input').innerText = item_text;
+			document.getElementById('p1_repeat').innerText = item_text;
+			document.getElementById('p1_list').innerText = item_text;
+			document.getElementById('p1_service').innerText = item_text;
+			document.getElementById('p1_request').innerText = item_text;
+			document.getElementById('p1_select').innerText = item_text;
+			break;
+		case 2: 
+			document.getElementById('p2_items').innerText = item_text;
+			document.getElementById('p2_call').innerText = item_text;
+			document.getElementById('p2_create').innerText = item_text;
+			document.getElementById('p2_finish').innerText = item_text;
+			document.getElementById('p2_free').innerText = item_text;
+			document.getElementById('p2_input_output').innerText = item_text;
+			document.getElementById('p2_input').innerText = item_text;
+			document.getElementById('p2_repeat').innerText = item_text;
+			document.getElementById('p2_list').innerText = item_text;
+			document.getElementById('p2_service').innerText = item_text;
+			document.getElementById('p2_request').innerText = item_text;
+			document.getElementById('p2_select').innerText = item_text;
+			break;
+		case 3: 
+			document.getElementById('p3_items').innerText = item_text;
+			document.getElementById('p3_call').innerText = item_text;
+			document.getElementById('p3_create').innerText = item_text;
+			document.getElementById('p3_finish').innerText = item_text;
+			document.getElementById('p3_free').innerText = item_text;
+			document.getElementById('p3_input_output').innerText = item_text;
+			document.getElementById('p3_input').innerText = item_text;
+			document.getElementById('p3_repeat').innerText = item_text;
+			document.getElementById('p3_list').innerText = item_text;
+			document.getElementById('p3_service').innerText = item_text;
+			document.getElementById('p3_request').innerText = item_text;
+			document.getElementById('p3_select').innerText = item_text;
+			break;
+		case 4: 
+			document.getElementById('p4_items').innerText = item_text;
+			document.getElementById('p4_call').innerText = item_text;
+			document.getElementById('p4_create').innerText = item_text;
+			document.getElementById('p4_finish').innerText = item_text;
+			document.getElementById('p4_free').innerText = item_text;
+			document.getElementById('p4_input_output').innerText = item_text;
+			document.getElementById('p4_input').innerText = item_text;
+			document.getElementById('p4_repeat').innerText = item_text;
+			document.getElementById('p4_list').innerText = item_text;
+			document.getElementById('p4_service').innerText = item_text;
+			document.getElementById('p4_request').innerText = item_text;
+			document.getElementById('p4_select').innerText = item_text;
+			break;
+		case 5: 
+			document.getElementById('p5_items').innerText = item_text;
+			document.getElementById('p5_call').innerText = item_text;
+			document.getElementById('p5_create').innerText = item_text;
+			document.getElementById('p5_finish').innerText = item_text;
+			document.getElementById('p5_free').innerText = item_text;
+			document.getElementById('p5_input_output').innerText = item_text;
+			document.getElementById('p5_input').innerText = item_text;
+			document.getElementById('p5_repeat').innerText = item_text;
+			document.getElementById('p5_list').innerText = item_text;
+			document.getElementById('p5_service').innerText = item_text;
+			document.getElementById('p5_request').innerText = item_text;
+			document.getElementById('p5_select').innerText = item_text;
+			break;
+	}
+	//alert(item_text);
 }
 document.getElementById('save_list').onclick = listText;
+
+function selectText() {
+	item_text = document.getElementById('numItemSelect').value + ". ";
+
+	if (document.getElementById('clientSelect').value != "") 
+	item_text += document.getElementById('clientSelect').value 
+				+ " указывает на нужный элемент из списка " 
+				+ ". ";
+
+	item_text += document.getElementById('actorSelect').value
+				+ " выбирает элемент списка "
+				+ "и вводит его в систему"
+				+ ". \n";
+
+	if (document.getElementById('clientSelect').value != "") {
+		item_text += document.getElementById('numItemSelect').value + ".a "
+					+ "Клиент не согласен"
+					+ ". \n"
+						
+		item_text += document.getElementById('numItemSelect').value + ".a.1 "
+					+ "Завершение варианта использования"
+					+ ". ";
+	}
+
+	switch (item_counter) {
+		case 1: 
+			document.getElementById('p1_items').innerText = item_text;
+			document.getElementById('p1_call').innerText = item_text;
+			document.getElementById('p1_create').innerText = item_text;
+			document.getElementById('p1_finish').innerText = item_text;
+			document.getElementById('p1_free').innerText = item_text;
+			document.getElementById('p1_input_output').innerText = item_text;
+			document.getElementById('p1_input').innerText = item_text;
+			document.getElementById('p1_repeat').innerText = item_text;
+			document.getElementById('p1_list').innerText = item_text;
+			document.getElementById('p1_service').innerText = item_text;
+			document.getElementById('p1_request').innerText = item_text;
+			document.getElementById('p1_select').innerText = item_text;
+			break;
+		case 2: 
+			document.getElementById('p2_items').innerText = item_text;
+			document.getElementById('p2_call').innerText = item_text;
+			document.getElementById('p2_create').innerText = item_text;
+			document.getElementById('p2_finish').innerText = item_text;
+			document.getElementById('p2_free').innerText = item_text;
+			document.getElementById('p2_input_output').innerText = item_text;
+			document.getElementById('p2_input').innerText = item_text;
+			document.getElementById('p2_repeat').innerText = item_text;
+			document.getElementById('p2_list').innerText = item_text;
+			document.getElementById('p2_service').innerText = item_text;
+			document.getElementById('p2_request').innerText = item_text;
+			document.getElementById('p2_select').innerText = item_text;
+			break;
+		case 3: 
+			document.getElementById('p3_items').innerText = item_text;
+			document.getElementById('p3_call').innerText = item_text;
+			document.getElementById('p3_create').innerText = item_text;
+			document.getElementById('p3_finish').innerText = item_text;
+			document.getElementById('p3_free').innerText = item_text;
+			document.getElementById('p3_input_output').innerText = item_text;
+			document.getElementById('p3_input').innerText = item_text;
+			document.getElementById('p3_repeat').innerText = item_text;
+			document.getElementById('p3_list').innerText = item_text;
+			document.getElementById('p3_service').innerText = item_text;
+			document.getElementById('p3_request').innerText = item_text;
+			document.getElementById('p3_select').innerText = item_text;
+			break;
+		case 4: 
+			document.getElementById('p4_items').innerText = item_text;
+			document.getElementById('p4_call').innerText = item_text;
+			document.getElementById('p4_create').innerText = item_text;
+			document.getElementById('p4_finish').innerText = item_text;
+			document.getElementById('p4_free').innerText = item_text;
+			document.getElementById('p4_input_output').innerText = item_text;
+			document.getElementById('p4_input').innerText = item_text;
+			document.getElementById('p4_repeat').innerText = item_text;
+			document.getElementById('p4_list').innerText = item_text;
+			document.getElementById('p4_service').innerText = item_text;
+			document.getElementById('p4_request').innerText = item_text;
+			document.getElementById('p4_select').innerText = item_text;
+			break;
+		case 5: 
+			document.getElementById('p5_items').innerText = item_text;
+			document.getElementById('p5_call').innerText = item_text;
+			document.getElementById('p5_create').innerText = item_text;
+			document.getElementById('p5_finish').innerText = item_text;
+			document.getElementById('p5_free').innerText = item_text;
+			document.getElementById('p5_input_output').innerText = item_text;
+			document.getElementById('p5_input').innerText = item_text;
+			document.getElementById('p5_repeat').innerText = item_text;
+			document.getElementById('p5_list').innerText = item_text;
+			document.getElementById('p5_service').innerText = item_text;
+			document.getElementById('p5_request').innerText = item_text;
+			document.getElementById('p5_select').innerText = item_text;
+			break;
+	}
+	//alert(item_text);
+}
+document.getElementById('save_select').onclick = selectText;
