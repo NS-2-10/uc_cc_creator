@@ -263,7 +263,6 @@ document.getElementById('finish').onclick = openUC;
 
 function createText() {
 	item_text = document.getElementById('numItemCreate').value + ". ";
-
 	if (document.getElementById('clientCreate').value != "") 
 		item_text += document.getElementById('clientCreate').value 
 					+ " обращается к " 
@@ -271,18 +270,15 @@ function createText() {
 					+ " по поводу "
 					+ document.getElementById('reasonCreate').value
 					+ ". ";
-	
 	item_text += document.getElementById('actorCreate').value
 				+ " создает в системе "
 				+ document.getElementById('objectCreate').value;
-
 	if (document.getElementById('attrCreate').value != "")
 		item_text += " с данными "
 					+ document.getElementById('attrCreate').value
 					+ ". ";
 	else
 		item_text += ". ";
-
 	switch (item_counter) {
 		case 1: 
 			document.getElementById('p1_items').innerText = item_text;
@@ -361,25 +357,20 @@ document.getElementById('save_create').onclick = createText;
 
 function inputText() {
 	item_text = document.getElementById('numItemInput').value + ". ";
-
 	if (document.getElementById('clientInput').value != "") 
 	item_text += document.getElementById('clientInput').value 
 				+ " сообщает " 
 				+ document.getElementById('clientDataInput').value
 				+ ". ";
-
 	item_text += document.getElementById('actorInput').value
 				+ " вводит в систему "
 				+ document.getElementById('actorDataInput').value
 				+ ". ";
-
 	item_text += "Система подтверждает корректность данных. \n";
-
 	item_text += document.getElementById('numItemInput').value + ".a "
 				+ "Значение данного "
 				+ document.getElementById('actorDataInput').value
 				+ " недопустимо. \n"
-
 	item_text += document.getElementById('numItemInput').value + ".a.1 "
 				+ "Введите новое значение "
 				+ document.getElementById('clientDataInput').value
@@ -387,7 +378,6 @@ function inputText() {
 				+ "Переход к пункту "
 				+ document.getElementById('numItemInput').value
 				+ ". ";
-
 	switch (item_counter) {
 		case 1: 
 			document.getElementById('p1_items').innerText = item_text;
@@ -466,13 +456,11 @@ document.getElementById('save_input').onclick = inputText;
 
 function inputOutputText() {
 	item_text = document.getElementById('numItemInputOutput').value + ". ";
-
 	if (document.getElementById('clientInputOutput').value != "") 
 	item_text += document.getElementById('clientInputOutput').value 
 				+ " предоставляет " 
 				+ document.getElementById('clientDataInputOutput').value
 				+ ". ";
-
 	if (document.getElementById('actorDataInputOutput') != "")
 		item_text += document.getElementById('actorInputOutput').value
 					+ " вводит в систему "
@@ -483,13 +471,10 @@ function inputOutputText() {
 					+ " вводит в систему "
 					+ document.getElementById('clientDataInputOutput').value
 					+ ". ";
-
 	item_text += "Система подтверждает корректность данных. ";
-
 	item_text += "Система возвращает "
 				+ document.getElementById('returnInputOutput').value
 				+ ". ";
-
 	switch (item_counter) {
 		case 1: 
 			document.getElementById('p1_items').innerText = item_text;
@@ -568,72 +553,57 @@ document.getElementById('save_input_output').onclick = inputOutputText;
 
 function requestText() {
 	item_text = document.getElementById('numItemRequest').value + ". ";
-
 	if (document.getElementById('clientRequest').value != "") 
 	item_text += document.getElementById('clientRequest').value 
 				+ " желает получить " 
 				+ document.getElementById('clientDataRequest').value
 				+ ". ";
-
 	item_text += document.getElementById('actorRequest').value
 				+ " запрашивает у системы "
 				+ document.getElementById('actorDataRequest').value;
-	
 	if (document.getElementById('reasonRequest').value != "")			
 		item_text += " на основании "
 					+ document.getElementById('reasonRequest').value;
-
 	if (document.getElementById('conditionRequest').value != "")			
 		item_text += " при условии "
 					+ document.getElementById('conditionRequest').value;
-
 	item_text += ". ";
-
 	item_text += "Система подтверждает корректность данных. ";
-
 	item_text += "Система выводит "
 				+ document.getElementById('actorDataRequest').value
 				+ ". ";
-
 	if (document.getElementById('clientRequest').value != "") 
 		item_text += document.getElementById('clientRequest').value
 					+ " / "
 					+ document.getElementById('actorRequest').value
 					+ " согласен"
 					+ ". \n";
-
 	if (document.getElementById('clientRequest').value != "") {
 		var alter = true;
 		item_text += document.getElementById('numItemRequest').value + ".a "
 				+ "Клиент не согласен"
 				+ ". \n"
-				
 	item_text += document.getElementById('numItemRequest').value + ".a.1 "
 				+ "Завершение варианта использования"
 				+ ". ";
 	}
-
 	if (document.getElementById('conditionRequest').value != ""){
 		item_text += "\n";
-
 		if (alter)
 			item_text += document.getElementById('numItemRequest').value + ".b ";
 		else
 			item_text += document.getElementById('numItemRequest').value + ".a "
-
 		item_text += "Условие " 
 					+ document.getElementById('conditionRequest').value
 					+ " для получения данного "
 					+ document.getElementById('actorDataRequest').value
 					+ " недопустимо"
 					+ ". \n";
-				
 	item_text += document.getElementById('numItemRequest').value + ".b.1 "
 				+ "Введите новое условие. Переход к пункту "
 				+ document.getElementById('numItemRequest').value
 				+ ". ";
 	}
-
 	switch (item_counter) {
 		case 1: 
 			document.getElementById('p1_items').innerText = item_text;
@@ -712,17 +682,14 @@ document.getElementById('save_request').onclick = requestText;
 
 function listText() {
 	item_text = document.getElementById('numItemList').value + ". ";
-
 	if (document.getElementById('clientList').value != "") 
 	item_text += document.getElementById('clientList').value 
 				+ " желает получить список " 
 				+ document.getElementById('clientDataList').value
 				+ ". ";
-
 	item_text += document.getElementById('actorList').value
 				+ " вводит в систему запрос на получение "
 				+ document.getElementById('actorDataList').value;
-
 	if (document.getElementById('conditionList').value != "")	{	
 		item_text += " при условии "
 					+ document.getElementById('conditionList').value
@@ -731,27 +698,21 @@ function listText() {
 	}
 	else
 		item_text += ". ";
-
-
 	item_text += "Система выводит "
 				+ document.getElementById('actorDataList').value
 				+ ". ";
-
 	if (document.getElementById('conditionList').value != ""){
 		item_text += "\n";
-
 		item_text += document.getElementById('numItemList').value + ".a "
 					+ "Условие " 
 					+ document.getElementById('conditionList').value
 					+ " для получения списка недопустимо"
 					+ ". \n";
-				
 		item_text += document.getElementById('numItemList').value + ".a.1 "
 				+ "Введите новое условие. Переход к пункту "
 				+ document.getElementById('numItemList').value
 				+ ". ";
 	}
-
 	switch (item_counter) {
 		case 1: 
 			document.getElementById('p1_items').innerText = item_text;
@@ -830,27 +791,22 @@ document.getElementById('save_list').onclick = listText;
 
 function selectText() {
 	item_text = document.getElementById('numItemSelect').value + ". ";
-
 	if (document.getElementById('clientSelect').value != "") 
 	item_text += document.getElementById('clientSelect').value 
 				+ " указывает на нужный элемент из списка " 
 				+ ". ";
-
 	item_text += document.getElementById('actorSelect').value
 				+ " выбирает элемент списка "
 				+ "и вводит его в систему"
 				+ ". \n";
-
 	if (document.getElementById('clientSelect').value != "") {
 		item_text += document.getElementById('numItemSelect').value + ".a "
 					+ "Клиент не согласен"
 					+ ". \n"
-						
 		item_text += document.getElementById('numItemSelect').value + ".a.1 "
 					+ "Завершение варианта использования"
 					+ ". ";
 	}
-
 	switch (item_counter) {
 		case 1: 
 			document.getElementById('p1_items').innerText = item_text;
@@ -929,32 +885,25 @@ document.getElementById('save_select').onclick = selectText;
 
 function serviceText() {
 	item_text = document.getElementById('numItemService').value + ". ";
-
 	if (document.getElementById('clientService').value != "") 
 		item_text += document.getElementById('clientService').value 
 					+ " желает работать с документом / желает получить " 
 					+ document.getElementById('clientRequestService').value
 					+ ". ";
-
 	item_text += document.getElementById('actorService').value 
 				+ " вводит в систему " 
 				+ document.getElementById('actorRequestService').value
 				+ ". ";
-
 	item_text += "Система подтверждает возможность выполнения услуги (документа). ";
-
 	item_text += "Передача управления на  пункт сценария "
 				+ document.getElementById('numService').value
 				+ ". \n";
-
 	item_text += document.getElementById('numItemService').value + ".a "
 				+ "Указанная услуга (документ) не может быть предоставлена"
-				+ ". \n"
-								
+				+ ". \n"		
 	item_text += document.getElementById('numItemService').value + ".a.1 "
 				+ "Завершение варианта использования"
 				+ ". ";
-
 	switch (item_counter) {
 		case 1: 
 			document.getElementById('p1_items').innerText = item_text;
@@ -1033,16 +982,13 @@ document.getElementById('save_service').onclick = serviceText;
 
 function repeatText() {
 	item_text = document.getElementById('numItemRepeat').value + ". ";
-
 	if (document.getElementById('clientRepeat').value != "") 
 		item_text += document.getElementById('clientRepeat').value
 					+ " / ";
-					
 	item_text += document.getElementById('actorRepeat').value
 				+ " желает повторить действия начиная с пункта "
 				+ document.getElementById('startRepeat').value
 				+ ". ";
-
 	switch (item_counter) {
 		case 1: 
 			document.getElementById('p1_items').innerText = item_text;
@@ -1126,7 +1072,6 @@ function callText() {
 				+ " вызывает вариант использования "
 				+ document.getElementById('uNameCall').value
 				+ ". ";
-
 	switch (item_counter) {
 		case 1: 
 			document.getElementById('p1_items').innerText = item_text;
@@ -1205,23 +1150,18 @@ document.getElementById('save_call').onclick = callText;
 
 function freeText() {
 	item_text = document.getElementById('numItemFree').value + ". ";	
-
 	if (document.getElementById('clientFree').value != "")
 		item_text += document.getElementById('clientFree').value
 					+ " "
 					+ document.getElementById('clientActivityFree').value
 					+ ". ";
-	
 	item_text += document.getElementById('actorFree').value
 				+ " "
 				+ document.getElementById('actorActivityFree').value
 				+ ". ";
-
 	item_text += document.getElementById('actionsFree').value
 				+ ". ";
-
 	item_text += document.getElementById('selectvalueFree').value;
-
 	switch (item_counter) {
 		case 1: 
 			document.getElementById('p1_items').innerText = item_text;
@@ -1300,24 +1240,20 @@ document.getElementById('save_free').onclick = freeText;
 
 function finishText() {
 	item_text = document.getElementById('numItemFinish').value + ". ";
-
 	if (document.getElementById('cb_1').checked) {
 		if (document.getElementById('clientFinish').value != "")
 			item_text += document.getElementById('clientFinish').value
 						+ " сообщает "
 						+ document.getElementById('clientDataFinish').value
 						+ ". ";
-
 		item_text += document.getElementById('actorFinish').value
 					+ " вводит "
 					+ document.getElementById('actorDataFinish').value
 					+ ". ";
-
 		item_text += "Система сохраняет данное в "
 					+ document.getElementById('objectSaveFinish').value
 					+ ". ";
 	}	
-
 	if (document.getElementById('cb_2').checked) {
 		item_text += "Система регистрирует "
 					+ document.getElementById('regDataFinish').value
@@ -1325,7 +1261,6 @@ function finishText() {
 					+ document.getElementById('regSaveFinish').value
 					+ ". ";
 	}	
-
 	if (document.getElementById('cb_3').checked) {
 		item_text += "Система выдает "
 					+ document.getElementById('docFinish').value
@@ -1333,9 +1268,7 @@ function finishText() {
 					+ document.getElementById('dataDocFinish').value
 					+ ". ";
 	}
-
 	item_text += "Завершение работы прецедента. ";
-
 	switch (item_counter) {
 		case 1: 
 			document.getElementById('p1_items').innerText = item_text;
@@ -1414,7 +1347,6 @@ document.getElementById('save_finish').onclick = finishText;
 
 function ccText() {
 	item_text = "";
-	
 	document.getElementById('p_cc').innerText = item_text;
 }
 document.getElementById('save_cc').onclick = ccText;
