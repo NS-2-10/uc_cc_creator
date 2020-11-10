@@ -601,7 +601,8 @@ function requestText() {
 					+ ". \n";
 
 	if (document.getElementById('clientRequest').value != "") {
-	item_text += document.getElementById('numItemRequest').value + ".a "
+		var alter = true;
+		item_text += document.getElementById('numItemRequest').value + ".a "
 				+ "Клиент не согласен"
 				+ ". \n"
 				
@@ -613,8 +614,12 @@ function requestText() {
 	if (document.getElementById('conditionRequest').value != ""){
 		item_text += "\n";
 
-		item_text += document.getElementById('numItemRequest').value + ".b "
-					+ "Условие " 
+		if (alter)
+			item_text += document.getElementById('numItemRequest').value + ".b ";
+		else
+			item_text += document.getElementById('numItemRequest').value + ".a "
+
+		item_text += "Условие " 
 					+ document.getElementById('conditionRequest').value
 					+ " для получения данного "
 					+ document.getElementById('actorDataRequest').value
