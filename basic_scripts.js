@@ -1391,9 +1391,14 @@ function ccText() {
 	item_text += "Время жизни объектов: "
 				+ document.getElementById('selectvalueTime').value
 				+"\n";
-	item_text += "Цель использования класса: " 
+	item_text += "\n"
+				+ "Цель использования класса:"
+				+ "\n"
+				+ "{"
+				+ "\n" 
+				+ "| "
 				+ document.getElementById('cPurp').value 
-				+ "\n";
+				+ "\n}\n";
 	item_text += "\n"
 				+ "Создание функции: "
 				+ document.getElementById('fName').value
@@ -1414,7 +1419,7 @@ function ccText() {
 	if (document.getElementById('idAr_1').value == ""
 		&& document.getElementById('idAr_2').value == ""
 		&& document.getElementById('idAr_3').value == "")
-		item_text += "|| нет";
+		item_text += "|| нет \n";
 	if (document.getElementById('idAr_1').value != "")
 		item_text += "|| Id: "
 					+ document.getElementById('idAr_1').value
@@ -1470,6 +1475,129 @@ function ccText() {
 				+ "\n"
 				+ "| }"
 				+ "\n|\n";
+	item_text += "| Атрибуты, новые значения"
+				+ "\n"
+				+ "| {"
+				+ "\n"
+				+ "|| "
+				+ document.getElementById('New').value
+				+ "\n"
+				+ "| }"
+				+ "\n|\n";
+	item_text += "| Атрибуты, вычисления"
+				+ "\n"
+				+ "| {"
+				+ "\n"
+				+ "|| "
+				+ document.getElementById('Calc').value
+				+ "\n"
+				+ "| }"
+				+ "\n|\n";
+	item_text += "| Ссылки на внешние функции"
+				+ "\n"
+				+ "| {"
+				+ "\n";
+	if (document.getElementById('extClass_1').value == ""
+		&& document.getElementById('extClass_2').value == ""
+		&& document.getElementById('extClass_3').value == "")
+		item_text += "|| нет \n";
+	if (document.getElementById('extClass_1').value != "")
+		item_text += "|| Класс: "
+					+ document.getElementById('extClass_1').value
+					+ "\n"
+					+ "|| Функция: "
+					+ document.getElementById('extFunc_1').value
+					+ "\n";
+	if (document.getElementById('extClass_2').value != "") 
+		item_text += "||\n"
+					+ "|| Класс: "
+					+ document.getElementById('extClass_2').value
+					+ "\n"
+					+ "|| Функция: "
+					+ document.getElementById('extFunc_2').value
+					+ "\n";
+	if (document.getElementById('extClass_3').value != "") 
+		item_text += "||\n"
+					+ "|| Класс: "
+					+ document.getElementById('extClass_3').value
+					+ "\n"
+					+ "|| Функция: "
+					+ document.getElementById('extFunc_3').value
+					+ "\n";
+	item_text += "| }"
+				+ "\n}\n";
+	item_text += "\n"
+				+ "Атрибуты: "
+				+ "\n{\n";
+	if (document.getElementById('nameAttr_1').value == ""
+		&& document.getElementById('nameAttr_2').value == ""
+		&& document.getElementById('nameAttr_3').value == "")
+		item_text += "| нет \n";
+	if (document.getElementById('nameAttr_1').value != "")
+		item_text += "| Название: "
+					+ document.getElementById('nameAttr_1').value
+					+ "\n"
+					+ "| Тип: "
+					+ document.getElementById('selectvalueAttr_1').value
+					+ "\n"
+					+ "| Цель: "
+					+ document.getElementById('goalAttr_1').value
+					+ "\n";
+	if (document.getElementById('nameAttr_2').value != "") 
+		item_text += "|\n"
+					+ "| Название: "
+					+ document.getElementById('nameAttr_2').value
+					+ "\n"
+					+ "| Тип: "
+					+ document.getElementById('selectvalueAttr_2').value
+					+ "\n"
+					+ "| Цель: "
+					+ document.getElementById('goalAttr_2').value
+					+ "\n";
+	if (document.getElementById('nameAttr_3').value != "") 
+		item_text += "|\n"
+					+ "| Название: "
+					+ document.getElementById('nameAttr_3').value
+					+ "\n"
+					+ "| Тип: "
+					+ document.getElementById('selectvalueAttr_3').value
+					+ "\n"
+					+ "| Цель: "
+					+ document.getElementById('goalAttr_3').value
+					+ "\n";
+	item_text += "| Ссылки на внешние функции"
+				+ "\n"
+				+ "| {"
+				+ "\n";
+	if (document.getElementById('extAttrClass_1').value == ""
+		&& document.getElementById('extAttrClass_2').value == ""
+		&& document.getElementById('extAttrClass_3').value == "")
+		item_text += "|| нет \n";
+	if (document.getElementById('extAttrClass_1').value != "")
+		item_text += "|| Класс: "
+					+ document.getElementById('extAttrClass_1').value
+					+ "\n"
+					+ "|| Функция: "
+					+ document.getElementById('extAttrFunc_1').value
+					+ "\n";
+	if (document.getElementById('extAttrClass_2').value != "") 
+		item_text += "||\n"
+					+ "|| Класс: "
+					+ document.getElementById('extAttrClass_2').value
+					+ "\n"
+					+ "|| Функция: "
+					+ document.getElementById('extAttrFunc_2').value
+					+ "\n";
+	if (document.getElementById('extAttrClass_3').value != "") 
+		item_text += "||\n"
+					+ "|| Класс: "
+					+ document.getElementById('extAttrClass_3').value
+					+ "\n"
+					+ "|| Функция: "
+					+ document.getElementById('extAttrFunc_3').value
+					+ "\n";
+	item_text += "| }"
+	item_text += "\n}\n";
 	document.getElementById('p_cc').innerText = item_text;
 }
 document.getElementById('save_cc').onclick = ccText;
