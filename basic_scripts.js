@@ -11,23 +11,26 @@ var da_i_3 = "";
 var pc = "";
 var gm = "";
 var gs = "";
-var item_counter;
+var item_counter = 0;
+var cc_counter = 0;
 var uc_counter = 0;
+var item_num = 0;
 var item_text = "";
-var item_num;
-var uc_item1;
-var uc_item2;
-var uc_item3;
-var uc_item4;
-var uc_item5;
-var cc_item1;
-var cc_item2;
-var cc_item3;
-var cc_item4;
-var cc_item5;
+var uc_item1 = "";
+var uc_item2 = "";
+var uc_item3 = "";
+var uc_item4 = "";
+var uc_item5 = "";
+var cc_item1 = "";
+var cc_item2 = "";
+var cc_item3 = "";
+var cc_item4 = "";
+var cc_item5 = "";
+var cc_counter = 0;
 
 window.onload = function() {
 	item_counter = 0;
+	cc_counter = 0;
 	document.getElementById('ucHeader').hidden=true;
 	document.getElementById('items_page').hidden=true;
 	document.getElementById('call_page').hidden=true;
@@ -205,6 +208,7 @@ function itemChoice(){
 ucScenario.onclick = itemChoice;
 
 function openCC() {
+	ccClear();
 	switch (item_counter) {
 		case 1:
 			document.getElementById('p_cc1').hidden = false;
@@ -303,6 +307,7 @@ document.getElementById('items_selection').onclick = openItems;
 document.getElementById('items_cc').onclick = openItems;
 
 function openUC() {
+	item_counter = 0;
 	document.getElementById('ucHeader').hidden=true;
 	document.getElementById('items_page').hidden=true;
 	document.getElementById('usecase_page').hidden=false;
@@ -318,24 +323,55 @@ function openUC() {
 	document.getElementById('cc_page').hidden=true;
 	document.getElementById('request_list_page').hidden=true;
 	document.getElementById('request_service_page').hidden=true;
-	item_counter = 0;
 	Clear();
 	Report();
 }
 document.getElementById('finish').onclick = openUC;
 
 function Report() {
+	cc_counter = cc_counter + 1;
 	var opened = window.open(""); 
 	opened.document.write("<html>"); 
 	opened.document.write("<head>")
-	opened.document.write("<title>UC~CC~Creator: Report</title>"); 
-	opened.document.write("<link rel='stylesheet' type='text/css' href='../basic_styles.css'>")
+	opened.document.write("<title>", "uc_", cc_counter,  "</title>"); 
+	opened.document.write('<link rel="stylesheet" type="text/css" href="simple.css">')
 	opened.document.write("</head>");
 	opened.document.write("<body>"); 
-	opened.document.write("<p>Название: ", uName, "<p>");
-	opened.document.write("<p>Основное действующее лицо: ", Actor, "<p>");
+	opened.document.write("<style>");
+	opened.document.write("p{font-family: Arial, Helvetica, sans-serif;font-style: normal;font-size: 20px;margin: 10px;}");
+	opened.document.write("</style>");
+	opened.document.write("<p><b>Преамбула</b></p>");
+	opened.document.write("<p>Название: ", uName, "</p>");
+	opened.document.write("<p>Основное действующее лицо: ", Actor, "</p>");
+	opened.document.write("<p>Область действия: ", r, "</p>");
+	opened.document.write("<p>Интересы участников", "</p>");
+	opened.document.write("<p>Участники: ", da_p_1, " ", da_p_2, " ", da_p_3, "</p>");
+	opened.document.write("<p>Интересы: ",da_i_1, " ", da_i_2, " ", da_i_3,  "</p>");
+	opened.document.write("<p>Предусловия: ", pc, "</p>");
+	opened.document.write("<p>Минимальные гарантии: ", gm, "</p>");
+	opened.document.write("<p>Гарантии успеха: ", gs, "</p>");
+	opened.document.write("<p>~</p>");
+	opened.document.write("<p><b>Описание варианта использования</b></p>");
+	opened.document.write("<p>", uc_item1, "</p>");
+	opened.document.write("<p>", uc_item2, "</p>");
+	opened.document.write("<p>", uc_item3, "</p>");
+	opened.document.write("<p>", uc_item4, "</p>");
+	opened.document.write("<p>", uc_item5, "</p>");
+	opened.document.write("<p>~</p>");
+	opened.document.write("<p><b>Концептуальные классы</b></p>");
+	opened.document.write("<p>", cc_item1, "</p>");
+	opened.document.write("<p>", cc_item2, "</p>");
+	opened.document.write("<p>", cc_item3, "</p>");
+	opened.document.write("<p>", cc_item4, "</p>");
+	opened.document.write("<p>", cc_item5, "</p>");
 	opened.document.write("</body>"); 
 	opened.document.write("</html>"); 
+}
+
+function ccClear() {
+	var cc = document.getElementsByName("cc");
+	for (var i = 0; i < cc.length; i++) 
+		cc[i].value = "";
 }
 
 function Clear() {
@@ -995,3 +1031,44 @@ function ccText() {
 	}
 }
 document.getElementById('save_cc').onclick = ccText;
+
+function openReport1() {
+	window.location.href = "reports/uc_1.html";
+}
+document.getElementById('uc_1').onclick = openReport1;
+function openReport2() {
+	window.location.href = "reports/uc_2.html";
+}
+document.getElementById('uc_2').onclick = openReport2;
+function openReport3() {
+	window.location.href = "reports/uc_3.html";
+}
+document.getElementById('uc_3').onclick = openReport3;
+function openReport4() {
+	window.location.href = "reports/uc_4.html";
+}
+document.getElementById('uc_4').onclick = openReport4;
+function openReport5() {
+	window.location.href = "reports/uc_5";
+}
+document.getElementById('uc_5').onclick = openReport5;
+function openReport6() {
+	window.location.href = "reports/uc_6.html";
+}
+document.getElementById('uc_6').onclick = openReport6;
+function openReport7() {
+	window.location.href = "reports/uc_7.html";
+}
+document.getElementById('uc_7').onclick = openReport7;
+function openReport8() {
+	window.location.href = "reports/uc_8.html";
+}
+document.getElementById('uc_8').onclick = openReport8;
+function openReport9() {
+	window.location.href = "reports/uc_9.html";
+}
+document.getElementById('uc_9').onclick = openReport9;
+function openReport10() {
+	window.location.href = "reports/uc_10.html";
+}
+document.getElementById('uc_10').onclick = openReport10;
