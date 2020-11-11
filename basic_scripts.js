@@ -1385,6 +1385,91 @@ function ccText() {
 	item_text += "Название класса: "
 				+ document.getElementById('cName').value
 				+"\n";
+	item_text += "Вид класса: "
+				+ document.getElementById('selectvalueClass').value
+				+"\n";
+	item_text += "Время жизни объектов: "
+				+ document.getElementById('selectvalueTime').value
+				+"\n";
+	item_text += "Цель использования класса: " 
+				+ document.getElementById('cPurp').value 
+				+ "\n";
+	item_text += "\n"
+				+ "Создание функции: "
+				+ document.getElementById('fName').value
+				+ "\n{\n";
+	item_text += "| Цель использования функции"
+				+ "\n"
+				+ "| {"
+				+ "\n"
+				+ "|| "
+				+ document.getElementById('fGoal').value
+				+ "\n"
+				+ "| }"
+				+ "\n|\n";
+	item_text += "| Аргументы функции"
+				+ "\n"
+				+ "| {"
+				+ "\n";
+	if (document.getElementById('idAr_1').value == ""
+		&& document.getElementById('idAr_2').value == ""
+		&& document.getElementById('idAr_3').value == "")
+		item_text += "|| нет";
+	if (document.getElementById('idAr_1').value != "")
+		item_text += "|| Id: "
+					+ document.getElementById('idAr_1').value
+					+ "\n"
+					+ "|| Тип: "
+					+ document.getElementById('selectvalueAr_1').value
+					+ "\n"
+					+ "|| Цель: "
+					+ document.getElementById('goalAr_1').value
+					+ "\n";
+	if (document.getElementById('idAr_2').value != "") 
+		item_text += "||\n"
+					+ "|| Id: "
+					+ document.getElementById('idAr_2').value
+					+ "\n"
+					+ "|| Тип: "
+					+ document.getElementById('selectvalueAr_2').value
+					+ "\n"
+					+ "|| Цель: "
+					+ document.getElementById('goalAr_2').value
+					+ "\n";
+	if (document.getElementById('idAr_3').value != "") 
+		item_text += "||\n"
+					+ "|| Id: "
+					+ document.getElementById('idAr_3').value
+					+ "\n"
+					+ "|| Тип: "
+					+ document.getElementById('selectvalueAr_3').value
+					+ "\n"
+					+ "|| Цель: "
+					+ document.getElementById('goalAr_3').value
+					+ "\n";
+	item_text += "| }"
+				+ "\n|\n";
+	item_text += "| Возвращаемое значение"
+				+ "\n"
+				+ "| {"
+				+ "\n"
+				+ "|| Тип: "
+				+ document.getElementById('selectvalueRet').value
+				+ "\n"
+				+ "|| Цель: "
+				+ document.getElementById('goalRet').value
+				+ "\n"
+				+ "| }"
+				+ "\n|\n";
+	item_text += "| Аргументы, результат вычисления"
+				+ "\n"
+				+ "| {"
+				+ "\n"
+				+ "|| "
+				+ document.getElementById('ResCalc').value
+				+ "\n"
+				+ "| }"
+				+ "\n|\n";
 	document.getElementById('p_cc').innerText = item_text;
 }
 document.getElementById('save_cc').onclick = ccText;
