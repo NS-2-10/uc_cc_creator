@@ -194,6 +194,43 @@ function itemChoice(){
 ucScenario.onclick = itemChoice;
 
 function openCC() {
+	switch (item_counter) {
+		case 1:
+			document.getElementById('p_cc1').hidden = false;
+			document.getElementById('p_cc2').hidden = true;
+			document.getElementById('p_cc3').hidden = true;
+			document.getElementById('p_cc4').hidden = true;
+			document.getElementById('p_cc5').hidden = true;
+			break;
+		case 2:
+			document.getElementById('p_cc1').hidden = true;
+			document.getElementById('p_cc2').hidden = false;
+			document.getElementById('p_cc3').hidden = true;
+			document.getElementById('p_cc4').hidden = true;
+			document.getElementById('p_cc5').hidden = true;
+			break;
+		case 3:
+			document.getElementById('p_cc1').hidden = true;
+			document.getElementById('p_cc2').hidden = true;
+			document.getElementById('p_cc3').hidden = false;
+			document.getElementById('p_cc4').hidden = true;
+			document.getElementById('p_cc5').hidden = true;
+			break;
+		case 4:
+			document.getElementById('p_cc1').hidden = true;
+			document.getElementById('p_cc2').hidden = true;
+			document.getElementById('p_cc3').hidden = true;
+			document.getElementById('p_cc4').hidden = false;
+			document.getElementById('p_cc5').hidden = true;
+			break;
+		case 5:
+			document.getElementById('p_cc1').hidden = true;
+			document.getElementById('p_cc2').hidden = true;
+			document.getElementById('p_cc3').hidden = true;
+			document.getElementById('p_cc4').hidden = true;
+			document.getElementById('p_cc5').hidden = false;
+			break;
+	}
 	document.getElementById('cc_page').hidden=false;
 	document.getElementById('ucHeader').hidden=true;
 	document.getElementById('items_page').hidden=true;
@@ -270,6 +307,23 @@ function openUC() {
 	document.getElementById('cc_page').hidden=true;
 	document.getElementById('request_list_page').hidden=true;
 	document.getElementById('request_service_page').hidden=true;
+	item_counter = 0;
+	var i;
+	var ta = document.getElementsByTagName("textarea");
+	for (i = 0; i < ta.length; i++) 
+		  ta[i].value = ""; 
+	var opened = window.open(""); 
+	opened.document.write("<html>"); 
+	opened.document.write("<head>")
+	opened.document.write("<title>UC~CC~Creator: Report</title>"); 
+	opened.document.write("<link rel='stylesheet' type='text/css' href='../basic_styles.css'>")
+	opened.document.write("</head>");
+	opened.document.write("<body>"); 
+	opened.document.write("<p>");
+	opened.document.write(document.getElementById('p_cc').value);
+	opened.document.write("</p>");
+	opened.document.write("</body>"); 
+	opened.document.write("</html>"); 
 }
 document.getElementById('finish').onclick = openUC;
 
@@ -1597,7 +1651,23 @@ function ccText() {
 					+ document.getElementById('extAttrFunc_3').value
 					+ "\n";
 	item_text += "| }"
-	item_text += "\n}\n";
-	document.getElementById('p_cc').innerText = item_text;
+	item_text += "\n}\n\n";
+	switch (item_counter) {
+		case 1:
+			document.getElementById('p_cc1').innerText = item_text;
+			break;
+		case 2:
+			document.getElementById('p_cc2').innerText = item_text;
+			break;
+		case 3:
+			document.getElementById('p_cc3').innerText = item_text;
+			break;
+		case 4:
+			document.getElementById('p_cc4').innerText = item_text;
+			break;
+		case 5:
+			document.getElementById('p_cc5').innerText = item_text;
+			break;
+	}
 }
 document.getElementById('save_cc').onclick = ccText;
