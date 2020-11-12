@@ -1,4 +1,4 @@
 # usecase_creator
-scenario &amp; concept classes
+scenario &amp; conceptual classes
 
 осторожно, хрупкое.
